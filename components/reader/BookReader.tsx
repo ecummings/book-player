@@ -137,7 +137,7 @@ export default function BookReader({ book, initialSettings }: Props) {
       stop();
       setPopup(null);
       setCurrentPageIndex(index);
-      track('page_viewed', { page_index: index, page_id: book.pages[index]?.page_id });
+      track('page_viewed', { page_index: index, page_id: book.pages[index]?.page_id, direction: index > currentPageIndex ? 'next' : 'prev' });
       pageStartTimeRef.current = Date.now();
     },
     [book.pages, stop, track, currentPageIndex]

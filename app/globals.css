@@ -11,6 +11,10 @@
   --surface: #f8f9fa;
   --border: #e2e8f0;
   --muted: #6b7280;
+  /* grade-base is overridden per grade band; size-adjust is overridden by user preference.
+     reader-root multiplies them so both settings work independently. */
+  --grade-base: 1rem;
+  --size-adjust: 1;
   --font-size-base: 1rem;
   --line-height-base: 1.6;
   --letter-spacing-base: 0.02em;
@@ -51,14 +55,17 @@
   --muted: #9ca3af;
 }
 
-[data-fontsize="small"]  { --font-size-base: 0.875rem; }
-[data-fontsize="default"]{ --font-size-base: 1rem; }
-[data-fontsize="large"]  { --font-size-base: 1.25rem; }
-[data-fontsize="xlarge"] { --font-size-base: 1.5rem; }
+/* User font-size preference: stored as a scale multiplier so it
+   compounds with the grade-band base rather than replacing it. */
+[data-fontsize="small"]  { --size-adjust: 0.8; }
+[data-fontsize="default"]{ --size-adjust: 1; }
+[data-fontsize="large"]  { --size-adjust: 1.25; }
+[data-fontsize="xlarge"] { --size-adjust: 1.5; }
 
-[data-gradeband="K-1"]  { --font-size-base: 1.75rem; --line-height-base: 1.8; }
-[data-gradeband="2-3"]  { --font-size-base: 1.375rem; --line-height-base: 1.65; }
-[data-gradeband="4-6"]  { --font-size-base: 1.125rem; --line-height-base: 1.55; }
+/* Grade-band base sizes (independent of user preference). */
+[data-gradeband="K-1"]  { --grade-base: 1.75rem; --line-height-base: 1.8; }
+[data-gradeband="2-3"]  { --grade-base: 1.375rem; --line-height-base: 1.65; }
+[data-gradeband="4-6"]  { --grade-base: 1.125rem; --line-height-base: 1.55; }
 
 [data-dyslexia="true"] {
   --letter-spacing-base: 0.12em;
@@ -76,8 +83,10 @@ html, body {
   font-family: var(--font-nunito), 'Nunito', Arial, sans-serif;
 }
 
-/* Reader root: font settings applied here so they are scoped and cascade correctly */
+/* Reader root: compute --font-size-base here so both grade-band and user
+   preference contribute independently, then cascade to all children. */
 .reader-root {
+  --font-size-base: calc(var(--grade-base) * var(--size-adjust));
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
   letter-spacing: var(--letter-spacing-base);
