@@ -1,14 +1,13 @@
 import { BookSummary } from '@/lib/types';
-import LibraryPage from '@/components/library/LibraryPage';
+import AppRoot from '@/components/AppRoot';
 
-async function getBooks(): Promise<BookSummary[]> {
-  // Import directly for server-side (avoids fetch loop in dev)
+async function getBookSummaries(): Promise<BookSummary[]> {
   const { ALL_BOOKS } = await import('@/data/books/index');
   const { bookToSummary } = await import('@/lib/books');
   return ALL_BOOKS.map(bookToSummary);
 }
 
 export default async function Home() {
-  const books = await getBooks();
-  return <LibraryPage books={books} />;
+  const books = await getBookSummaries();
+  return <AppRoot books={books} />;
 }

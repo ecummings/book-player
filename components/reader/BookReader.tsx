@@ -1,10 +1,10 @@
 'use client';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Book, ReadingMode, ReaderSettings } from '@/lib/types';
 import { useSpeech } from '@/hooks/useSpeech';
 import { useAnalytics } from '@/hooks/useAnalytics';
+import { loadReaderSettings, saveReaderSettings } from '@/lib/storage';
 import PageContent from './PageContent';
 import AudioControls from './AudioControls';
 import WordPopup from './WordPopup';
@@ -13,6 +13,7 @@ import SettingsPanel from '@/components/ui/SettingsPanel';
 interface Props {
   book: Book;
   initialSettings?: Partial<ReaderSettings>;
+  onClose?: () => void;
 }
 
 interface PopupState {
@@ -31,19 +32,21 @@ function getDefaultMode(gradeBand: string): ReadingMode {
 }
 
 const MODES: { value: ReadingMode; label: string }[] = [
-  { value: 'read-to-me', label: 'Read to Me' },
-  { value: 'read-with-me', label: 'Read With Me' },
-  { value: 'i-read', label: 'I Read' },
-  { value: 'practice', label: 'Practice' },
+  { value: 'read-to-me',  label: 'Read to Me' },
+  { value: 'read-with-me',label: 'Read With Me' },
+  { value: 'i-read',      label: 'I Read' },
+  { value: 'practice',    label: 'Practice' },
 ];
 
-export default function BookReader({ book, initialSettings }: Props) {
+export default function BookReader({ book, initialSettings, onClose }: Props) {
   const router = useRouter();
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [popup, setPopup] = useState<PopupState | null>(null);
   const pageStartTimeRef = useRef(Date.now());
 
+  // Merge grade-band defaults → persisted user prefs → explicit initialSettings.
+  // Grade band sets the reading MODE default; font/theme/size come from localStorage.
   const [settings, setSettings] = useState<ReaderSettings>(() => ({
     theme: 'default',
     fontSize: 'default',
@@ -51,6 +54,7 @@ export default function BookReader({ book, initialSettings }: Props) {
     speed: 1,
     highlightEnabled: true,
     mode: getDefaultMode(book.grade_band),
+    ...loadReaderSettings(),
     ...initialSettings,
   }));
 
@@ -72,14 +76,11 @@ export default function BookReader({ book, initialSettings }: Props) {
   const { track } = useAnalytics(book.book_id);
   const currentPage = book.pages[currentPageIndex];
 
-  // True after the user presses Play at least once; gates auto-advance playback.
   const autoPlayRef = useRef(false);
-  // Always-current ref to play() so the page-advance effect never captures stale closures.
-  const playRef = useRef<() => void>(() => {});
-  const modeRef = useRef(settings.mode);
+  const playRef    = useRef<() => void>(() => {});
+  const modeRef    = useRef(settings.mode);
   modeRef.current = settings.mode;
 
-  // When the current page finishes narrating, advance and keep playing.
   const handlePageComplete = useCallback(() => {
     const dwell = Date.now() - pageStartTimeRef.current;
     track('page_completed', { page_index: currentPageIndex, dwell_ms: dwell });
@@ -89,11 +90,10 @@ export default function BookReader({ book, initialSettings }: Props) {
       setCurrentPageIndex(prev => {
         const next = prev + 1;
         if (next < book.pages.length) {
-          track('page_viewed', { page_index: next, page_id: book.pages[next]?.page_id });
+          track('page_viewed', { page_index: next, page_id: book.pages[next]?.page_id, direction: 'next' });
           pageStartTimeRef.current = Date.now();
           return next;
         }
-        // Reached last page.
         autoPlayRef.current = false;
         track('book_completed', { total_pages: book.pages.length });
         return prev;
@@ -107,10 +107,8 @@ export default function BookReader({ book, initialSettings }: Props) {
     handlePageComplete,
   );
 
-  // Keep playRef current so the page-change effect always calls the right play().
   playRef.current = play;
 
-  // Log book opened once.
   useEffect(() => {
     track('book_opened', { title: book.title, grade_band: book.grade_band, mode: settings.mode });
     track('page_viewed', { page_index: 0, page_id: book.pages[0]?.page_id });
@@ -118,8 +116,6 @@ export default function BookReader({ book, initialSettings }: Props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // When page index changes AND autoPlay is active, start narration on the new page.
-  // We skip index 0 on mount (autoPlayRef starts false) so nothing plays automatically.
   const prevAutoPageRef = useRef(-1);
   useEffect(() => {
     if (!autoPlayRef.current) return;
@@ -154,17 +150,14 @@ export default function BookReader({ book, initialSettings }: Props) {
     track('audio_paused', { page_index: currentPageIndex });
   }, [pause, track, currentPageIndex]);
 
-  // Word tap → show popup with sound/definition options.
   const handleWordTap = useCallback(
     (wordId: string, text: string, x: number, y: number) => {
-      // Look up definition in book vocabulary.
       const cleanText = text.replace(/[^a-zA-Z'-]/g, '').toLowerCase();
       const vocab = book.vocabulary?.[cleanText] ?? book.vocabulary?.[text.toLowerCase()];
       setPopup({
         wordId,
         text: text.replace(/[^a-zA-Z'-]/g, ''),
-        x,
-        y,
+        x, y,
         definition: vocab?.definition,
         phonetic: vocab?.phonetic,
       });
@@ -177,7 +170,12 @@ export default function BookReader({ book, initialSettings }: Props) {
     if (popup) speakWord(popup.text);
   }, [popup, speakWord]);
 
-  // Keyboard shortcuts.
+  const handleExit = useCallback(() => {
+    stop();
+    if (onClose) onClose();
+    else router.push('/');
+  }, [stop, onClose, router]);
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement;
@@ -197,143 +195,59 @@ export default function BookReader({ book, initialSettings }: Props) {
         e.preventDefault();
         if (popup) { setPopup(null); return; }
         if (settingsOpen) { setSettingsOpen(false); return; }
-        router.push('/');
+        handleExit();
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isPlaying, handlePlay, handlePause, goToPage, currentPageIndex, settingsOpen, router, popup]);
+  }, [isPlaying, handlePlay, handlePause, goToPage, currentPageIndex, settingsOpen, popup, handleExit]);
 
   const updateSetting = <K extends keyof ReaderSettings>(key: K, value: ReaderSettings[K]) => {
-    setSettings(prev => ({ ...prev, [key]: value }));
+    setSettings(prev => {
+      const next = { ...prev, [key]: value };
+      saveReaderSettings(next);
+      return next;
+    });
     track('setting_changed', { setting: key, value: String(value) });
   };
 
-  return (
-    <div
-      className="reader-root"
-      data-dyslexia={settings.fontFamily === 'dyslexia' ? 'true' : 'false'}
-    >
-      {/* Top bar */}
-      <header
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          padding: '0.75rem 1rem',
-          borderBottom: '1px solid var(--border)',
-          backgroundColor: 'var(--surface)',
-          position: 'sticky',
-          top: 0,
-          zIndex: 10,
-        }}
-      >
-        <Link
-          href="/"
-          aria-label="Exit to library"
-          style={{
-            minWidth: 44,
-            minHeight: 44,
-            display: 'flex',
-            alignItems: 'center',
-            padding: '0 0.5rem',
-            color: 'var(--text)',
-            textDecoration: 'none',
-            fontWeight: 600,
-            borderRadius: '6px',
-            border: '1px solid var(--border)',
-            WebkitTapHighlightColor: 'transparent',
-          }}
-        >
-          ← Exit
-        </Link>
+  const exitBtnStyle: React.CSSProperties = {
+    minWidth: 44, minHeight: 44, display: 'flex', alignItems: 'center',
+    padding: '0 0.5rem', color: 'var(--text)', textDecoration: 'none',
+    fontWeight: 600, borderRadius: '6px', border: '1px solid var(--border)',
+    background: 'none', cursor: 'pointer', WebkitTapHighlightColor: 'transparent',
+    fontSize: 'inherit',
+  };
 
-        <h1
-          style={{
-            margin: 0,
-            fontSize: '1rem',
-            fontWeight: 700,
-            textAlign: 'center',
-            flex: 1,
-            padding: '0 0.5rem',
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            whiteSpace: 'nowrap',
-          }}
-        >
+  return (
+    <div className="reader-root" data-dyslexia={settings.fontFamily === 'dyslexia' ? 'true' : 'false'}>
+      {/* Top bar */}
+      <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.75rem 1rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--surface)', position: 'sticky', top: 0, zIndex: 10 }}>
+        <button onClick={handleExit} aria-label="Exit to library" style={exitBtnStyle}>
+          ← Exit
+        </button>
+
+        <h1 style={{ margin: 0, fontSize: '1rem', fontWeight: 700, textAlign: 'center', flex: 1, padding: '0 0.5rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
           {book.title}
         </h1>
 
-        <button
-          onClick={() => setSettingsOpen(true)}
-          aria-label="Open settings"
-          style={{
-            minWidth: 44,
-            minHeight: 44,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: 'var(--surface)',
-            border: '1px solid var(--border)',
-            borderRadius: '6px',
-            cursor: 'pointer',
-            color: 'var(--text)',
-            fontSize: '1.25rem',
-            WebkitTapHighlightColor: 'transparent',
-          }}
-        >
+        <button onClick={() => setSettingsOpen(true)} aria-label="Open settings" style={{ minWidth: 44, minHeight: 44, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '6px', cursor: 'pointer', color: 'var(--text)', fontSize: '1.25rem', WebkitTapHighlightColor: 'transparent' }}>
           ⚙
         </button>
       </header>
 
       {/* Mode selector */}
-      <div
-        style={{
-          display: 'flex',
-          gap: '0.5rem',
-          padding: '0.5rem 1rem',
-          backgroundColor: 'var(--surface)',
-          borderBottom: '1px solid var(--border)',
-          overflowX: 'auto',
-          WebkitOverflowScrolling: 'touch',
-        }}
-      >
+      <div style={{ display: 'flex', gap: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'var(--surface)', borderBottom: '1px solid var(--border)', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
         {MODES.map(m => (
-          <button
-            key={m.value}
-            onClick={() => { stop(); updateSetting('mode', m.value); }}
-            aria-label={`Mode: ${m.label}`}
-            aria-pressed={settings.mode === m.value}
-            style={{
-              minHeight: 36,
-              padding: '0 0.75rem',
-              borderRadius: '6px',
-              border: '1px solid var(--border)',
-              cursor: 'pointer',
-              fontWeight: settings.mode === m.value ? 700 : 400,
-              backgroundColor: settings.mode === m.value ? 'var(--accent)' : 'transparent',
-              color: settings.mode === m.value ? 'var(--accent-fg)' : 'var(--text)',
-              fontSize: '0.8125rem',
-              whiteSpace: 'nowrap',
-              WebkitTapHighlightColor: 'transparent',
-              flexShrink: 0,
-            }}
-          >
+          <button key={m.value} onClick={() => { stop(); updateSetting('mode', m.value); }} aria-label={`Mode: ${m.label}`} aria-pressed={settings.mode === m.value}
+            style={{ minHeight: 36, padding: '0 0.75rem', borderRadius: '6px', border: '1px solid var(--border)', cursor: 'pointer', fontWeight: settings.mode === m.value ? 700 : 400, backgroundColor: settings.mode === m.value ? 'var(--accent)' : 'transparent', color: settings.mode === m.value ? 'var(--accent-fg)' : 'var(--text)', fontSize: '0.8125rem', whiteSpace: 'nowrap', WebkitTapHighlightColor: 'transparent', flexShrink: 0 }}>
             {m.label}
           </button>
         ))}
       </div>
 
       {/* Main content */}
-      <main
-        style={{
-          flex: 1,
-          padding: '1.5rem 1rem',
-          overflowY: 'auto',
-          WebkitOverflowScrolling: 'touch',
-        }}
-        onClick={() => popup && setPopup(null)}
-      >
+      <main style={{ flex: 1, padding: '1.5rem 1rem', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }} onClick={() => popup && setPopup(null)}>
         {currentPage && (
           <PageContent
             page={currentPage}
@@ -346,7 +260,6 @@ export default function BookReader({ book, initialSettings }: Props) {
         )}
       </main>
 
-      {/* Audio controls */}
       <AudioControls
         isPlaying={isPlaying}
         onPlay={handlePlay}
@@ -361,7 +274,6 @@ export default function BookReader({ book, initialSettings }: Props) {
         mode={settings.mode}
       />
 
-      {/* Word popup */}
       {popup && (
         <WordPopup
           word={popup.text}
@@ -374,7 +286,6 @@ export default function BookReader({ book, initialSettings }: Props) {
         />
       )}
 
-      {/* Settings panel */}
       <SettingsPanel
         open={settingsOpen}
         onClose={() => setSettingsOpen(false)}

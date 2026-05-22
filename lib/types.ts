@@ -1,4 +1,24 @@
 export type Grade = 'K' | '1' | '2' | '3' | '4' | '5' | '6';
+export type UserRole = 'teacher' | 'student';
+
+export interface UserProfile {
+  id: string;
+  name: string;
+  role: UserRole;
+  avatar: string;
+  grade_band?: GradeBand;   // students only
+  teacher_id?: string;      // students only
+  class_name?: string;      // teachers only
+}
+
+export interface Assignment {
+  id: string;
+  teacher_id: string;
+  student_id: string;
+  book_id: string;
+  assigned_at: number;
+  note?: string;
+}
 export type GradeBand = 'K-1' | '2-3' | '4-6';
 export type ReadingMode = 'read-to-me' | 'read-with-me' | 'i-read' | 'practice';
 export type Theme = 'default' | 'soft' | 'high-contrast' | 'dark';
