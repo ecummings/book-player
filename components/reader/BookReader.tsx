@@ -5,6 +5,7 @@ import { Book, ReadingMode, ReaderSettings } from '@/lib/types';
 import { useSpeech } from '@/hooks/useSpeech';
 import { useAnalytics } from '@/hooks/useAnalytics';
 import { loadReaderSettings, saveReaderSettings } from '@/lib/storage';
+import { COMMON_VOCABULARY } from '@/lib/vocabulary';
 import PageContent from './PageContent';
 import AudioControls from './AudioControls';
 import WordPopup from './WordPopup';
@@ -76,6 +77,8 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
   const { track } = useAnalytics(book.book_id);
   const currentPage = book.pages[currentPageIndex];
 
+  const [isBookComplete, setIsBookComplete] = useState(false);
+
   const autoPlayRef = useRef(false);
   const playRef    = useRef<() => void>(() => {});
   const modeRef    = useRef(settings.mode);
@@ -96,6 +99,7 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
         }
         autoPlayRef.current = false;
         track('book_completed', { total_pages: book.pages.length });
+        setIsBookComplete(true);
         return prev;
       });
     }
@@ -125,9 +129,25 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
     return () => clearTimeout(t);
   }, [currentPageIndex]);
 
+  const handleRestart = useCallback(() => {
+    stop();
+    setIsBookComplete(false);
+    setCurrentPageIndex(0);
+    autoPlayRef.current = false;
+    prevAutoPageRef.current = -1;
+    pageStartTimeRef.current = Date.now();
+    track('book_restarted', { book_id: book.book_id });
+  }, [stop, track, book.book_id]);
+
   const goToPage = useCallback(
     (index: number) => {
-      if (index < 0 || index >= book.pages.length) return;
+      if (index < 0) return;
+      if (index >= book.pages.length) {
+        // Pressed Next on the last page → show completion screen.
+        setIsBookComplete(true);
+        track('book_completed', { total_pages: book.pages.length });
+        return;
+      }
       const dwell = Date.now() - pageStartTimeRef.current;
       track('page_completed', { page_index: currentPageIndex, dwell_ms: dwell });
       stop();
@@ -153,7 +173,12 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
   const handleWordTap = useCallback(
     (wordId: string, text: string, x: number, y: number) => {
       const cleanText = text.replace(/[^a-zA-Z'-]/g, '').toLowerCase();
-      const vocab = book.vocabulary?.[cleanText] ?? book.vocabulary?.[text.toLowerCase()];
+      // Book-specific vocabulary takes priority; fall back to shared library.
+      const vocab =
+        book.vocabulary?.[cleanText] ??
+        book.vocabulary?.[text.toLowerCase()] ??
+        COMMON_VOCABULARY[cleanText] ??
+        COMMON_VOCABULARY[text.toLowerCase()];
       setPopup({
         wordId,
         text: text.replace(/[^a-zA-Z'-]/g, ''),
@@ -220,7 +245,7 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
   };
 
   return (
-    <div className="reader-root" data-dyslexia={settings.fontFamily === 'dyslexia' ? 'true' : 'false'}>
+    <div className="reader-root" data-dyslexia={settings.fontFamily === 'dyslexia' ? 'true' : 'false'} style={{ position: 'relative' }}>
       {/* Top bar */}
       <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.75rem 1rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--surface)', position: 'sticky', top: 0, zIndex: 10 }}>
         <button onClick={handleExit} aria-label="Exit to library" style={exitBtnStyle}>
@@ -298,6 +323,53 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
         highlightEnabled={settings.highlightEnabled}
         onHighlight={b => updateSetting('highlightEnabled', b)}
       />
+
+      {/* Book-complete overlay */}
+      {isBookComplete && (
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            zIndex: 300,
+            backgroundColor: 'rgba(0,0,0,0.75)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '1rem',
+            padding: '2rem',
+            textAlign: 'center',
+          }}
+        >
+          <div style={{ fontSize: '3.5rem' }}>🎉</div>
+          <h2 style={{ margin: 0, color: '#fff', fontSize: '1.5rem', fontWeight: 800 }}>
+            You finished the book!
+          </h2>
+          <p style={{ margin: 0, color: 'rgba(255,255,255,0.8)', fontSize: '1rem' }}>
+            {book.title}
+          </p>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center', marginTop: '0.5rem' }}>
+            <button
+              onClick={handleRestart}
+              style={{ minHeight: 48, padding: '0 1.5rem', borderRadius: '10px', border: 'none', backgroundColor: '#2563eb', color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer' }}
+            >
+              🔄 Restart
+            </button>
+            <button
+              onClick={() => { setIsBookComplete(false); goToPage(book.pages.length - 2); }}
+              style={{ minHeight: 48, padding: '0 1.5rem', borderRadius: '10px', border: '2px solid rgba(255,255,255,0.4)', backgroundColor: 'transparent', color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer' }}
+            >
+              ← Go Back
+            </button>
+            <button
+              onClick={handleExit}
+              style={{ minHeight: 48, padding: '0 1.5rem', borderRadius: '10px', border: '2px solid rgba(255,255,255,0.4)', backgroundColor: 'transparent', color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer' }}
+            >
+              ✕ Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

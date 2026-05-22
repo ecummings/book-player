@@ -40,40 +40,56 @@ interface StudentStats {
   pagesRead: number;
   wordsTapped: number;
   defsShown: number;
+  sentencesReplayed: number;
   totalDwellMs: number;
   avgDwellMs: number;
   lastSeen: number;
   topWords: [string, number][];
   modeUsage: Record<string, number>;
   audioStarts: number;
+  audioSessions: number;
+  topSpeed: string | null;
+  forwardNavs: number;
+  backNavs: number;
 }
 
 function computeStats(studentId: string, events: AnalyticsEvent[]): StudentStats {
   const ev = events.filter(e => e.properties.student_id === studentId);
-  const sessions     = new Set(ev.map(e => e.session_id)).size;
-  const booksOpened  = ev.filter(e => e.event === 'book_opened').length;
-  const booksCompleted = ev.filter(e => e.event === 'book_completed').length;
-  const pagesRead    = ev.filter(e => e.event === 'page_viewed').length;
-  const wordTaps     = ev.filter(e => e.event === 'word_tapped');
-  const wordsTapped  = wordTaps.length;
-  const defsShown    = wordTaps.filter(e => e.properties.definition_shown === true).length;
-  const completions  = ev.filter(e => e.event === 'page_completed');
-  const totalDwellMs = completions.reduce((s, e) => s + Number(e.properties.dwell_ms ?? 0), 0);
-  const avgDwellMs   = completions.length > 0 ? totalDwellMs / completions.length : 0;
-  const lastSeen     = ev.length > 0 ? Math.max(...ev.map(e => e.timestamp)) : 0;
-  const wordFreq     = new Map<string, number>();
+  const sessions        = new Set(ev.map(e => e.session_id)).size;
+  const booksOpened     = ev.filter(e => e.event === 'book_opened').length;
+  const booksCompleted  = ev.filter(e => e.event === 'book_completed').length;
+  const pagesRead       = ev.filter(e => e.event === 'page_viewed').length;
+  const wordTaps        = ev.filter(e => e.event === 'word_tapped');
+  const wordsTapped     = wordTaps.length;
+  const defsShown       = wordTaps.filter(e => e.properties.definition_shown === true).length;
+  const sentencesReplayed = ev.filter(e => e.event === 'sentence_replayed').length;
+  const completions     = ev.filter(e => e.event === 'page_completed');
+  const totalDwellMs    = completions.reduce((s, e) => s + Number(e.properties.dwell_ms ?? 0), 0);
+  const avgDwellMs      = completions.length > 0 ? totalDwellMs / completions.length : 0;
+  const lastSeen        = ev.length > 0 ? Math.max(...ev.map(e => e.timestamp)) : 0;
+  const wordFreq        = new Map<string, number>();
   wordTaps.forEach(e => {
     const w = String(e.properties.text ?? '').replace(/[^a-zA-Z'-]/g, '').toLowerCase();
     if (w) wordFreq.set(w, (wordFreq.get(w) ?? 0) + 1);
   });
-  const topWords = [...wordFreq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const topWords    = [...wordFreq.entries()].sort((a, b) => b[1] - a[1]).slice(0, 6);
   const modeUsage: Record<string, number> = {};
   ev.filter(e => e.event === 'book_opened').forEach(e => {
     const m = String(e.properties.mode ?? 'unknown');
     modeUsage[m] = (modeUsage[m] ?? 0) + 1;
   });
-  const audioStarts = ev.filter(e => e.event === 'audio_started').length;
-  return { sessions, booksOpened, booksCompleted, pagesRead, wordsTapped, defsShown, totalDwellMs, avgDwellMs, lastSeen, topWords, modeUsage, audioStarts };
+  const audioStarts   = ev.filter(e => e.event === 'audio_started').length;
+  const audioSessions = new Set(ev.filter(e => e.event === 'audio_started').map(e => e.session_id)).size;
+  const speedCounts: Record<string, number> = {};
+  ev.filter(e => e.event === 'setting_changed' && e.properties.setting === 'speed').forEach(e => {
+    const v = String(e.properties.value ?? '1');
+    speedCounts[v] = (speedCounts[v] ?? 0) + 1;
+  });
+  const topSpeedEntry = Object.entries(speedCounts).sort((a, b) => b[1] - a[1])[0];
+  const topSpeed      = topSpeedEntry ? `${topSpeedEntry[0]}×` : null;
+  const forwardNavs   = ev.filter(e => e.event === 'page_viewed' && e.properties.direction === 'next').length;
+  const backNavs      = ev.filter(e => e.event === 'page_viewed' && e.properties.direction === 'prev').length;
+  return { sessions, booksOpened, booksCompleted, pagesRead, wordsTapped, defsShown, sentencesReplayed, totalDwellMs, avgDwellMs, lastSeen, topWords, modeUsage, audioStarts, audioSessions, topSpeed, forwardNavs, backNavs };
 }
 
 function generateInsights(student: UserProfile, stats: StudentStats, assignmentCount: number): string[] {
@@ -133,6 +149,25 @@ function StatPill({ label, value }: { label: string; value: string | number }) {
   );
 }
 
+function CategoryBlock({ icon, title, rows }: { icon: string; title: string; rows: { label: string; value: string | number; sub?: string }[] }) {
+  return (
+    <div style={{ backgroundColor: 'var(--bg)', border: '1px solid var(--border)', borderRadius: '10px', overflow: 'hidden' }}>
+      <div style={{ padding: '0.5rem 0.875rem', borderBottom: '1px solid var(--border)', fontWeight: 700, fontSize: '0.8125rem', display: 'flex', alignItems: 'center', gap: '0.375rem', backgroundColor: 'var(--surface)' }}>
+        <span>{icon}</span>{title}
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(110px, 1fr))' }}>
+        {rows.map((r, i) => (
+          <div key={r.label} style={{ padding: '0.625rem 0.875rem', borderRight: i < rows.length - 1 ? '1px solid var(--border)' : undefined }}>
+            <div style={{ fontSize: '1.125rem', fontWeight: 800, color: 'var(--accent)', lineHeight: 1 }}>{r.value}</div>
+            <div style={{ fontSize: '0.6875rem', fontWeight: 600, marginTop: '0.125rem' }}>{r.label}</div>
+            {r.sub && <div style={{ fontSize: '0.625rem', color: 'var(--muted)', marginTop: '0.0625rem' }}>{r.sub}</div>}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ── Student detail panel ──────────────────────────────────────────────────────
 
 function StudentDetail({ student, stats, assignments, books, onClose, onAddAssignment, onRemoveAssignment }: {
@@ -179,15 +214,49 @@ function StudentDetail({ student, stats, assignments, books, onClose, onAddAssig
           <button onClick={onClose} aria-label="Close" style={{ minWidth: 36, minHeight: 36, background: 'none', border: '1px solid var(--border)', borderRadius: '8px', cursor: 'pointer', color: 'var(--text)', fontSize: '1rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>✕</button>
         </div>
 
-        {/* Stats row */}
+        {/* Summary row */}
         <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-          <StatPill label="Sessions"   value={stats.sessions} />
-          <StatPill label="Pages Read" value={stats.pagesRead} />
-          <StatPill label="Books Done" value={stats.booksCompleted} />
-          <StatPill label="Words Tapped" value={stats.wordsTapped} />
+          <StatPill label="Sessions"    value={stats.sessions} />
+          <StatPill label="Pages Read"  value={stats.pagesRead} />
+          <StatPill label="Books Done"  value={stats.booksCompleted} />
           {stats.avgDwellMs > 0 && <StatPill label="Avg/Page" value={fmt(stats.avgDwellMs)} />}
           {stats.lastSeen > 0 && <StatPill label="Last Seen" value={fmtDate(stats.lastSeen)} />}
         </div>
+
+        {/* ── Full 5-category statistics ── */}
+        {stats.sessions === 0 ? (
+          <p style={{ color: 'var(--muted)', fontSize: '0.875rem', margin: 0, fontStyle: 'italic' }}>No reading activity yet — statistics will appear after the first session.</p>
+        ) : (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.625rem' }}>
+            <CategoryBlock icon="📚" title="Engagement" rows={[
+              { label: 'Sessions',     value: stats.sessions },
+              { label: 'Books Opened', value: stats.booksOpened },
+              { label: 'Books Done',   value: stats.booksCompleted, sub: stats.booksOpened > 0 ? `${Math.round(stats.booksCompleted / stats.booksOpened * 100)}% rate` : undefined },
+              { label: 'Avg Pages / Session', value: stats.sessions > 0 ? (stats.pagesRead / stats.sessions).toFixed(1) : '—' },
+            ]} />
+            <CategoryBlock icon="⚡" title="Fluency" rows={[
+              { label: 'Pages Read',      value: stats.pagesRead },
+              { label: 'Avg Time / Page', value: stats.avgDwellMs > 0 ? fmt(stats.avgDwellMs) : '—', sub: 'Reading pace' },
+              { label: 'Total Time',      value: stats.totalDwellMs > 0 ? fmt(stats.totalDwellMs) : '—' },
+            ]} />
+            <CategoryBlock icon="🧠" title="Comprehension Support" rows={[
+              { label: 'Words Tapped',  value: stats.wordsTapped },
+              { label: 'Definitions',   value: stats.defsShown, sub: stats.wordsTapped > 0 ? `${Math.round(stats.defsShown / stats.wordsTapped * 100)}% of taps` : undefined },
+              { label: 'Replays',       value: stats.sentencesReplayed },
+            ]} />
+            <CategoryBlock icon="🎧" title="Audio Usage" rows={[
+              { label: 'Audio Starts',   value: stats.audioStarts },
+              { label: 'Audio Sessions', value: stats.audioSessions },
+              { label: 'Pref. Speed',    value: stats.topSpeed ?? '—' },
+              { label: 'Top Mode',       value: Object.entries(stats.modeUsage).sort((a, b) => b[1] - a[1])[0]?.[0]?.replace('read-to-me','Read-to-Me').replace('read-with-me','With Me').replace('i-read','I Read') ?? '—' },
+            ]} />
+            <CategoryBlock icon="🗺" title="Navigation" rows={[
+              { label: 'Forward Turns', value: stats.forwardNavs },
+              { label: 'Back Turns',    value: stats.backNavs },
+              { label: 'Pages / Session', value: stats.sessions > 0 ? (stats.pagesRead / stats.sessions).toFixed(1) : '—' },
+            ]} />
+          </div>
+        )}
 
         {/* Teacher insights */}
         <section>
