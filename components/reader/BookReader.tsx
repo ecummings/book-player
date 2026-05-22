@@ -32,11 +32,11 @@ function getDefaultMode(gradeBand: string): ReadingMode {
   return 'i-read';
 }
 
-const MODES: { value: ReadingMode; label: string }[] = [
-  { value: 'read-to-me',  label: 'Read to Me' },
-  { value: 'read-with-me',label: 'Read With Me' },
-  { value: 'i-read',      label: 'I Read' },
-  { value: 'practice',    label: 'Practice' },
+const MODES: { value: ReadingMode; label: string; icon: string }[] = [
+  { value: 'read-to-me',   label: 'Read to Me',   icon: '🎧' },
+  { value: 'read-with-me', label: 'Read With Me',  icon: '🤝' },
+  { value: 'i-read',       label: 'I Read',        icon: '📖' },
+  { value: 'practice',     label: 'Practice',      icon: '🎯' },
 ];
 
 export default function BookReader({ book, initialSettings, onClose }: Props) {
@@ -46,8 +46,6 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
   const [popup, setPopup] = useState<PopupState | null>(null);
   const pageStartTimeRef = useRef(Date.now());
 
-  // Merge grade-band defaults → persisted user prefs → explicit initialSettings.
-  // Grade band sets the reading MODE default; font/theme/size come from localStorage.
   const [settings, setSettings] = useState<ReaderSettings>(() => ({
     theme: 'default',
     fontSize: 'default',
@@ -59,20 +57,13 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
     ...initialSettings,
   }));
 
-  // Apply all visual settings to <html> so CSS variables cascade everywhere.
+  // Only apply data-theme to <html>. Font/size/dyslexia settings are scoped
+  // to the .book-content wrapper so UI chrome never changes size.
   useEffect(() => {
     const html = document.documentElement;
     html.setAttribute('data-theme', settings.theme);
-    html.setAttribute('data-fontsize', settings.fontSize);
-    html.setAttribute('data-gradeband', book.grade_band);
-    html.setAttribute('data-dyslexia', settings.fontFamily === 'dyslexia' ? 'true' : 'false');
-    return () => {
-      html.removeAttribute('data-theme');
-      html.removeAttribute('data-fontsize');
-      html.removeAttribute('data-gradeband');
-      html.removeAttribute('data-dyslexia');
-    };
-  }, [settings.theme, settings.fontSize, settings.fontFamily, book.grade_band]);
+    return () => { html.removeAttribute('data-theme'); };
+  }, [settings.theme]);
 
   const { track } = useAnalytics(book.book_id);
   const currentPage = book.pages[currentPageIndex];
@@ -143,7 +134,6 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
     (index: number) => {
       if (index < 0) return;
       if (index >= book.pages.length) {
-        // Pressed Next on the last page → show completion screen.
         setIsBookComplete(true);
         track('book_completed', { total_pages: book.pages.length });
         return;
@@ -173,7 +163,6 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
   const handleWordTap = useCallback(
     (wordId: string, text: string, x: number, y: number) => {
       const cleanText = text.replace(/[^a-zA-Z'-]/g, '').toLowerCase();
-      // Book-specific vocabulary takes priority; fall back to shared library.
       const vocab =
         book.vocabulary?.[cleanText] ??
         book.vocabulary?.[text.toLowerCase()] ??
@@ -200,6 +189,28 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
     if (onClose) onClose();
     else router.push('/');
   }, [stop, onClose, router]);
+
+  // Swipe navigation
+  const touchStartXRef = useRef<number | null>(null);
+  const touchStartYRef = useRef<number | null>(null);
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartXRef.current = e.touches[0].clientX;
+    touchStartYRef.current = e.touches[0].clientY;
+  }, []);
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (touchStartXRef.current === null || touchStartYRef.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartXRef.current;
+    const dy = e.changedTouches[0].clientY - touchStartYRef.current;
+    touchStartXRef.current = null;
+    touchStartYRef.current = null;
+    // Only treat as horizontal swipe if horizontal movement dominates
+    if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    if (popup) { setPopup(null); return; }
+    if (dx < 0) goToPage(currentPageIndex + 1);
+    else goToPage(currentPageIndex - 1);
+  }, [goToPage, currentPageIndex, popup]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -236,52 +247,135 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
     track('setting_changed', { setting: key, value: String(value) });
   };
 
-  const exitBtnStyle: React.CSSProperties = {
-    minWidth: 44, minHeight: 44, display: 'flex', alignItems: 'center',
-    padding: '0 0.5rem', color: 'var(--text)', textDecoration: 'none',
-    fontWeight: 600, borderRadius: '6px', border: '1px solid var(--border)',
-    background: 'none', cursor: 'pointer', WebkitTapHighlightColor: 'transparent',
-    fontSize: 'inherit',
-  };
+  const progressPct = ((currentPageIndex + 1) / book.pages.length) * 100;
 
   return (
-    <div className="reader-root" data-dyslexia={settings.fontFamily === 'dyslexia' ? 'true' : 'false'} style={{ position: 'relative' }}>
-      {/* Top bar */}
-      <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.75rem 1rem', borderBottom: '1px solid var(--border)', backgroundColor: 'var(--surface)', position: 'sticky', top: 0, zIndex: 10 }}>
-        <button onClick={handleExit} aria-label="Exit to library" style={exitBtnStyle}>
-          ← Exit
+    <div className="reader-root" style={{ height: '100%' }}>
+      {/* ── Top bar ─────────────────────────────────────────────────── */}
+      <header style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        padding: '0.625rem 1rem',
+        borderBottom: '1px solid var(--border)',
+        backgroundColor: 'var(--surface)',
+        zIndex: 10,
+        flexShrink: 0,
+      }}>
+        <button
+          onClick={handleExit}
+          aria-label="Exit to library"
+          style={{
+            minWidth: 44, minHeight: 44, display: 'flex', alignItems: 'center',
+            padding: '0 0.5rem', color: 'var(--text)',
+            fontWeight: 600, borderRadius: '8px', border: '1px solid var(--border)',
+            background: 'none', cursor: 'pointer', fontSize: '0.9375rem',
+            gap: '0.25rem',
+          }}
+        >
+          ← <span style={{ fontSize: '0.8125rem' }}>Exit</span>
         </button>
 
-        <h1 style={{ margin: 0, fontSize: '1rem', fontWeight: 700, textAlign: 'center', flex: 1, padding: '0 0.5rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-          {book.title}
-        </h1>
+        <div style={{ flex: 1, textAlign: 'center', padding: '0 0.5rem', minWidth: 0 }}>
+          <h1 style={{
+            margin: 0, fontSize: '0.9375rem', fontWeight: 700,
+            overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+          }}>
+            {book.title}
+          </h1>
+          <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--muted)' }}>
+            Page {currentPageIndex + 1} of {book.pages.length}
+          </p>
+        </div>
 
-        <button onClick={() => setSettingsOpen(true)} aria-label="Open settings" style={{ minWidth: 44, minHeight: 44, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '6px', cursor: 'pointer', color: 'var(--text)', fontSize: '1.25rem', WebkitTapHighlightColor: 'transparent' }}>
+        <button
+          onClick={() => setSettingsOpen(true)}
+          aria-label="Open settings"
+          style={{
+            minWidth: 44, minHeight: 44, display: 'flex', alignItems: 'center',
+            justifyContent: 'center', backgroundColor: 'transparent',
+            border: '1px solid var(--border)', borderRadius: '8px',
+            cursor: 'pointer', color: 'var(--text)', fontSize: '1.125rem',
+          }}
+        >
           ⚙
         </button>
       </header>
 
-      {/* Mode selector */}
-      <div style={{ display: 'flex', gap: '0.5rem', padding: '0.5rem 1rem', backgroundColor: 'var(--surface)', borderBottom: '1px solid var(--border)', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+      {/* ── Reading progress bar ─────────────────────────────────────── */}
+      <div style={{ height: 3, backgroundColor: 'var(--border)', flexShrink: 0 }}>
+        <div style={{
+          height: '100%',
+          width: `${progressPct}%`,
+          backgroundColor: 'var(--accent)',
+          transition: 'width 0.35s ease',
+        }} />
+      </div>
+
+      {/* ── Mode selector ───────────────────────────────────────────── */}
+      <div style={{
+        display: 'flex', gap: '0.375rem',
+        padding: '0.5rem 1rem',
+        backgroundColor: 'var(--surface)',
+        borderBottom: '1px solid var(--border)',
+        overflowX: 'auto',
+        WebkitOverflowScrolling: 'touch',
+        flexShrink: 0,
+        scrollbarWidth: 'none',
+      }}>
         {MODES.map(m => (
-          <button key={m.value} onClick={() => { stop(); updateSetting('mode', m.value); }} aria-label={`Mode: ${m.label}`} aria-pressed={settings.mode === m.value}
-            style={{ minHeight: 36, padding: '0 0.75rem', borderRadius: '6px', border: '1px solid var(--border)', cursor: 'pointer', fontWeight: settings.mode === m.value ? 700 : 400, backgroundColor: settings.mode === m.value ? 'var(--accent)' : 'transparent', color: settings.mode === m.value ? 'var(--accent-fg)' : 'var(--text)', fontSize: '0.8125rem', whiteSpace: 'nowrap', WebkitTapHighlightColor: 'transparent', flexShrink: 0 }}>
+          <button
+            key={m.value}
+            onClick={() => { stop(); updateSetting('mode', m.value); }}
+            aria-label={`Mode: ${m.label}`}
+            aria-pressed={settings.mode === m.value}
+            style={{
+              minHeight: 34, padding: '0 0.625rem',
+              borderRadius: '20px',
+              border: '1.5px solid',
+              borderColor: settings.mode === m.value ? 'var(--accent)' : 'var(--border)',
+              cursor: 'pointer',
+              fontWeight: settings.mode === m.value ? 700 : 400,
+              backgroundColor: settings.mode === m.value ? 'var(--accent)' : 'transparent',
+              color: settings.mode === m.value ? 'var(--accent-fg)' : 'var(--text)',
+              fontSize: '0.8125rem',
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
+              display: 'flex', alignItems: 'center', gap: '0.3rem',
+              transition: 'all 0.15s ease',
+            }}
+          >
+            <span aria-hidden="true">{m.icon}</span>
             {m.label}
           </button>
         ))}
       </div>
 
-      {/* Main content */}
-      <main style={{ flex: 1, padding: '1.5rem 1rem', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }} onClick={() => popup && setPopup(null)}>
+      {/* ── Main reading area ────────────────────────────────────────── */}
+      <main
+        style={{ flex: 1, padding: '1.25rem 1rem', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}
+        onClick={() => popup && setPopup(null)}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         {currentPage && (
-          <PageContent
-            page={currentPage}
-            currentWordId={settings.highlightEnabled ? currentWordId : null}
-            currentSentenceId={settings.highlightEnabled ? currentSentenceId : null}
-            onWordTap={handleWordTap}
-            gradeBand={book.grade_band}
-            showIllustration={true}
-          />
+          /* key forces remount → page-fade-in animation replays on page change */
+          <div key={currentPageIndex} className="page-fade-in">
+            {/* book-content is the ONLY ancestor that gets font/size/dyslexia attrs */}
+            <div
+              className="book-content"
+              data-fontsize={settings.fontSize}
+              data-gradeband={book.grade_band}
+              data-dyslexia={settings.fontFamily === 'dyslexia' ? 'true' : 'false'}
+            >
+              <PageContent
+                page={currentPage}
+                currentWordId={settings.highlightEnabled ? currentWordId : null}
+                currentSentenceId={settings.highlightEnabled ? currentSentenceId : null}
+                onWordTap={handleWordTap}
+                gradeBand={book.grade_band}
+                showIllustration={true}
+              />
+            </div>
+          </div>
         )}
       </main>
 
@@ -324,46 +418,53 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
         onHighlight={b => updateSetting('highlightEnabled', b)}
       />
 
-      {/* Book-complete overlay */}
+      {/* ── Book-complete overlay ────────────────────────────────────── */}
       {isBookComplete && (
         <div
           style={{
-            position: 'absolute',
-            inset: 0,
-            zIndex: 300,
-            backgroundColor: 'rgba(0,0,0,0.75)',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '1rem',
-            padding: '2rem',
-            textAlign: 'center',
+            position: 'absolute', inset: 0, zIndex: 300,
+            backgroundColor: 'rgba(0,0,0,0.8)',
+            display: 'flex', flexDirection: 'column',
+            alignItems: 'center', justifyContent: 'center',
+            gap: '1rem', padding: '2rem', textAlign: 'center',
+            animation: 'fade-in 0.3s ease',
           }}
         >
-          <div style={{ fontSize: '3.5rem' }}>🎉</div>
-          <h2 style={{ margin: 0, color: '#fff', fontSize: '1.5rem', fontWeight: 800 }}>
+          <div style={{ fontSize: '4rem', lineHeight: 1 }}>🎉</div>
+          <h2 style={{ margin: 0, color: '#fff', fontSize: '1.5rem', fontWeight: 800, lineHeight: 1.2 }}>
             You finished the book!
           </h2>
-          <p style={{ margin: 0, color: 'rgba(255,255,255,0.8)', fontSize: '1rem' }}>
+          <p style={{ margin: 0, color: 'rgba(255,255,255,0.75)', fontSize: '1rem' }}>
             {book.title}
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', justifyContent: 'center', marginTop: '0.5rem' }}>
             <button
               onClick={handleRestart}
-              style={{ minHeight: 48, padding: '0 1.5rem', borderRadius: '10px', border: 'none', backgroundColor: '#2563eb', color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer' }}
+              style={{
+                minHeight: 48, padding: '0 1.5rem', borderRadius: '12px',
+                border: 'none', backgroundColor: 'var(--accent)', color: 'var(--accent-fg)',
+                fontWeight: 700, fontSize: '1rem', cursor: 'pointer',
+              }}
             >
               🔄 Restart
             </button>
             <button
               onClick={() => { setIsBookComplete(false); goToPage(book.pages.length - 2); }}
-              style={{ minHeight: 48, padding: '0 1.5rem', borderRadius: '10px', border: '2px solid rgba(255,255,255,0.4)', backgroundColor: 'transparent', color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer' }}
+              style={{
+                minHeight: 48, padding: '0 1.5rem', borderRadius: '12px',
+                border: '2px solid rgba(255,255,255,0.3)', backgroundColor: 'transparent',
+                color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer',
+              }}
             >
               ← Go Back
             </button>
             <button
               onClick={handleExit}
-              style={{ minHeight: 48, padding: '0 1.5rem', borderRadius: '10px', border: '2px solid rgba(255,255,255,0.4)', backgroundColor: 'transparent', color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer' }}
+              style={{
+                minHeight: 48, padding: '0 1.5rem', borderRadius: '12px',
+                border: '2px solid rgba(255,255,255,0.3)', backgroundColor: 'transparent',
+                color: '#fff', fontWeight: 700, fontSize: '1rem', cursor: 'pointer',
+              }}
             >
               ✕ Close
             </button>
