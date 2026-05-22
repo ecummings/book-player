@@ -128,8 +128,66 @@ html, body {
   line-height: var(--line-height-base);
   color: var(--text);
   max-width: 65ch;
+  width: 100%;
 }
 
+/* ── Responsive page layouts ───────────────────────────────────── */
+.page-layout {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.page-layout-col {
+  flex-direction: column;
+}
+
+.page-layout-row {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Stack side-by-side layouts on narrow screens */
+@media (max-width: 600px) {
+  .page-layout-row {
+    flex-direction: column;
+  }
+}
+
+.page-illustration {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-illustration svg {
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .page-illustration svg {
+    max-height: 200px;
+  }
+}
+
+/* ── Touch improvements ────────────────────────────────────────── */
+.word-span {
+  touch-action: manipulation; /* removes 300ms tap delay */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+button, a, [role="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ── Focus ─────────────────────────────────────────────────────── */
 button:focus-visible,
 a:focus-visible,
 [role="button"]:focus-visible {

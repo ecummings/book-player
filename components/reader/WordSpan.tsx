@@ -21,21 +21,13 @@ export default function WordSpan({
 }: Props) {
   const [tapped, setTapped] = useState(false);
 
-  const handleTap = useCallback((e: React.MouseEvent | React.TouchEvent) => {
+  // Use onClick only. touch-action: manipulation (in CSS) removes the 300ms
+  // delay on mobile without needing a separate onTouchEnd handler.
+  // A separate onTouchEnd would cause the handler to fire twice on mobile
+  // (touchend → then synthetic click), which breaks popup timing.
+  const handleClick = useCallback((e: React.MouseEvent<HTMLSpanElement>) => {
     e.stopPropagation();
-    let x: number, y: number;
-    if ('touches' in e && e.touches.length > 0) {
-      x = e.touches[0].clientX;
-      y = e.touches[0].clientY;
-    } else if ('changedTouches' in e && e.changedTouches.length > 0) {
-      x = e.changedTouches[0].clientX;
-      y = e.changedTouches[0].clientY;
-    } else {
-      const me = e as React.MouseEvent;
-      x = me.clientX;
-      y = me.clientY;
-    }
-    onTap(wordId, text, x, y);
+    onTap(wordId, text, e.clientX, e.clientY);
     setTapped(true);
     setTimeout(() => setTapped(false), 600);
   }, [wordId, text, onTap]);
@@ -60,7 +52,6 @@ export default function WordSpan({
     tapped ? 'tapped' : '',
   ].filter(Boolean).join(' ');
 
-  // Grade-band-appropriate minimum touch target.
   const minSize = gradeBand === 'K-1' ? 56 : gradeBand === '2-3' ? 48 : 44;
 
   return (
@@ -68,11 +59,10 @@ export default function WordSpan({
       className={classNames}
       role="button"
       tabIndex={0}
-      aria-label={`Word: ${text}. Tap for options.`}
-      onClick={handleTap}
-      onTouchEnd={handleTap}
+      aria-label={`${text} — tap for options`}
+      onClick={handleClick}
       onKeyDown={handleKeyDown}
-      style={{ minHeight: minSize, display: 'inline', cursor: 'pointer', WebkitTapHighlightColor: 'transparent' }}
+      style={{ minHeight: minSize, display: 'inline', cursor: 'pointer' }}
     >
       {text}{' '}
     </span>

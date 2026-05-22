@@ -72,11 +72,20 @@ export default function BookReader({ book, initialSettings }: Props) {
   const { track } = useAnalytics(book.book_id);
   const currentPage = book.pages[currentPageIndex];
 
-  // Auto advance page when narration finishes (Read to Me / Read with Me).
+  // True after the user presses Play at least once; gates auto-advance playback.
+  const autoPlayRef = useRef(false);
+  // Always-current ref to play() so the page-advance effect never captures stale closures.
+  const playRef = useRef<() => void>(() => {});
+  const modeRef = useRef(settings.mode);
+  modeRef.current = settings.mode;
+
+  // When the current page finishes narrating, advance and keep playing.
   const handlePageComplete = useCallback(() => {
     const dwell = Date.now() - pageStartTimeRef.current;
     track('page_completed', { page_index: currentPageIndex, dwell_ms: dwell });
-    if (settings.mode === 'read-to-me' || settings.mode === 'read-with-me') {
+
+    const mode = modeRef.current;
+    if (mode === 'read-to-me' || mode === 'read-with-me') {
       setCurrentPageIndex(prev => {
         const next = prev + 1;
         if (next < book.pages.length) {
@@ -84,17 +93,22 @@ export default function BookReader({ book, initialSettings }: Props) {
           pageStartTimeRef.current = Date.now();
           return next;
         }
+        // Reached last page.
+        autoPlayRef.current = false;
         track('book_completed', { total_pages: book.pages.length });
         return prev;
       });
     }
-  }, [settings.mode, book.pages, book.pages.length, track, currentPageIndex]);
+  }, [book.pages, track, currentPageIndex]);
 
   const { isPlaying, currentWordId, currentSentenceId, play, pause, stop, speakWord } = useSpeech(
     currentPage,
     settings.speed,
     handlePageComplete,
   );
+
+  // Keep playRef current so the page-change effect always calls the right play().
+  playRef.current = play;
 
   // Log book opened once.
   useEffect(() => {
@@ -104,17 +118,16 @@ export default function BookReader({ book, initialSettings }: Props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Auto-play when mode is "read-to-me" and page changes.
-  const prevPageIndexRef = useRef(-1);
+  // When page index changes AND autoPlay is active, start narration on the new page.
+  // We skip index 0 on mount (autoPlayRef starts false) so nothing plays automatically.
+  const prevAutoPageRef = useRef(-1);
   useEffect(() => {
-    if (settings.mode === 'read-to-me' && prevPageIndexRef.current !== currentPageIndex) {
-      prevPageIndexRef.current = currentPageIndex;
-      // Small delay so the new page renders first.
-      const t = setTimeout(() => play(), 150);
-      return () => clearTimeout(t);
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentPageIndex, settings.mode]);
+    if (!autoPlayRef.current) return;
+    if (prevAutoPageRef.current === currentPageIndex) return;
+    prevAutoPageRef.current = currentPageIndex;
+    const t = setTimeout(() => playRef.current(), 180);
+    return () => clearTimeout(t);
+  }, [currentPageIndex]);
 
   const goToPage = useCallback(
     (index: number) => {
@@ -131,6 +144,7 @@ export default function BookReader({ book, initialSettings }: Props) {
   );
 
   const handlePlay = useCallback(() => {
+    autoPlayRef.current = true;
     play();
     track('audio_started', { page_index: currentPageIndex, speed: settings.speed });
   }, [play, track, currentPageIndex, settings.speed]);

@@ -21,8 +21,9 @@ export default function PageContent({
 }: Props) {
   const illustration = page.illustration && showIllustration ? (
     <div
+      className="page-illustration"
       aria-label={page.illustration.alt}
-      style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+      role="img"
       dangerouslySetInnerHTML={{ __html: page.illustration.svg }}
     />
   ) : null;
@@ -31,12 +32,11 @@ export default function PageContent({
     <div
       role="article"
       className="book-text"
-      style={{ flex: 1, minWidth: 0 }}
     >
-      {page.paragraphs.map((para) => (
-        <p key={para.paragraph_id} style={{ marginBottom: '1em' }}>
-          {para.sentences.map((sentence) =>
-            sentence.words.map((word) => (
+      {page.paragraphs.map(para => (
+        <p key={para.paragraph_id} style={{ marginBottom: '1em', marginTop: 0 }}>
+          {para.sentences.map(sentence =>
+            sentence.words.map(word => (
               <WordSpan
                 key={word.word_id}
                 wordId={word.word_id}
@@ -54,19 +54,15 @@ export default function PageContent({
     </div>
   );
 
-  const layout = page.layout;
+  const { layout } = page;
 
   if (layout === 'text-only') {
-    return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', height: '100%' }}>
-        {textArea}
-      </div>
-    );
+    return <div className="page-layout page-layout-col">{textArea}</div>;
   }
 
   if (layout === 'text-bottom') {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', height: '100%' }}>
+      <div className="page-layout page-layout-col">
         {illustration}
         {textArea}
       </div>
@@ -75,34 +71,35 @@ export default function PageContent({
 
   if (layout === 'text-top') {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', height: '100%' }}>
+      <div className="page-layout page-layout-col">
         {textArea}
         {illustration}
       </div>
     );
   }
 
+  // text-right: illustration on left, text on right (stacks on mobile)
   if (layout === 'text-right') {
     return (
-      <div style={{ display: 'flex', flexDirection: 'row', gap: '1.5rem', height: '100%', alignItems: 'flex-start' }}>
+      <div className="page-layout page-layout-row">
         {illustration}
         {textArea}
       </div>
     );
   }
 
+  // text-left: text on left, illustration on right (stacks on mobile)
   if (layout === 'text-left') {
     return (
-      <div style={{ display: 'flex', flexDirection: 'row', gap: '1.5rem', height: '100%', alignItems: 'flex-start' }}>
+      <div className="page-layout page-layout-row">
         {textArea}
         {illustration}
       </div>
     );
   }
 
-  // Fallback
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+    <div className="page-layout page-layout-col">
       {illustration}
       {textArea}
     </div>
