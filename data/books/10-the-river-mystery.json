@@ -1,0 +1,227 @@
+{
+  "book_id": "10-the-river-mystery",
+  "title": "The River Mystery",
+  "author": "Elena Vasquez",
+  "grade": "6",
+  "grade_band": "4-6",
+  "lexile": "980L",
+  "reading_level": "Grade 6",
+  "cover_color": "#1B5E20",
+  "tags": ["mystery", "environment", "science", "community", "investigation"],
+  "cover_illustration": {
+    "type": "svg",
+    "alt": "A murky river with a silhouetted figure examining water samples at dusk",
+    "svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='200' fill='#1A237E'/><circle cx='170' cy='30' r='25' fill='#FF8F00' opacity='0.8'/><rect x='0' y='100' width='200' height='100' fill='#1565C0'/><path d='M0,100 Q50,88 100,100 Q150,112 200,100 L200,110 Q150,122 100,110 Q50,98 0,110 Z' fill='#0D47A1'/><rect x='10' y='55' width='25' height='55' fill='#1B5E20'/><ellipse cx='22' cy='55' rx='30' ry='25' fill='#2E7D32'/><rect x='80' y='60' width='18' height='50' fill='#4E342E'/><ellipse cx='89' cy='60' rx='22' ry='18' fill='#33691E'/><rect x='150' y='65' width='22' height='45' fill='#5D4037'/><ellipse cx='161' cy='65' rx='28' ry='22' fill='#1B5E20'/><circle cx='100' cy='90' r='12' fill='#1A1A2E'/><rect x='96' y='100' width='8' height='30' fill='#37474F'/><rect x='88' y='118' width='24' height='6' rx='3' fill='#546E7A'/><circle cx='100' cy='108' r='5' fill='#80DEEA' opacity='0.8'/><text x='58' y='185' font-size='6' fill='#90CAF9' font-family='monospace'>pH: 5.2 | turbidity: high</text></svg>"
+  },
+  "pages": [
+    {
+      "page_id": "p1",
+      "layout": "text-right",
+      "illustration": {
+        "type": "svg",
+        "alt": "Dead fish floating in a brown, foamy river",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E8F5E9'/><rect x='0' y='80' width='300' height='120' fill='#6D4C41'/><path d='M0,80 Q75,65 150,80 Q225,95 300,80 L300,100 Q225,115 150,100 Q75,85 0,100 Z' fill='#795548'/><path d='M0,100 Q75,88 150,100 Q225,112 300,100 L300,120 Q225,132 150,120 Q75,108 0,120 Z' fill='#8D6E63' opacity='0.6'/><ellipse cx='80' cy='90' rx='30' ry='8' fill='#9E9E9E' transform='rotate(15 80 90)'/><circle cx='60' cy='86' r='5' fill='#757575'/><ellipse cx='200' cy='95' rx='25' ry='7' fill='#9E9E9E' transform='rotate(-10 200 95)'/><ellipse cx='150' cy='78' rx='20' ry='6' fill='#BDBDBD' transform='rotate(5 150 78)'/><ellipse cx='260' cy='85' rx='15' ry='5' fill='#9E9E9E' transform='rotate(-15 260 85)'/><ellipse cx='25' cy='68' rx='40' ry='8' fill='#FFFFFF' opacity='0.4'/><ellipse cx='120' cy='72' rx='30' ry='6' fill='#FFFFFF' opacity='0.3'/><rect x='0' y='150' width='300' height='50' fill='#A5D6A7'/><rect x='50' y='60' width='12' height='30' fill='#4E342E'/><ellipse cx='56' cy='60' rx='18' ry='15' fill='#558B2F'/><rect x='230' y='50' width='10' height='40' fill='#5D4037'/><ellipse cx='235' cy='50' rx='20' ry='16' fill='#33691E'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 11500,
+              "words": [
+                {"word_id": "w1", "text": "The", "audio_start_ms": 0, "audio_end_ms": 220},
+                {"word_id": "w2", "text": "morning", "audio_start_ms": 230, "audio_end_ms": 620},
+                {"word_id": "w3", "text": "Jordan", "audio_start_ms": 630, "audio_end_ms": 1050},
+                {"word_id": "w4", "text": "arrived", "audio_start_ms": 1060, "audio_end_ms": 1520},
+                {"word_id": "w5", "text": "at", "audio_start_ms": 1530, "audio_end_ms": 1720},
+                {"word_id": "w6", "text": "Clearwater", "audio_start_ms": 1730, "audio_end_ms": 2280},
+                {"word_id": "w7", "text": "Creek,", "audio_start_ms": 2290, "audio_end_ms": 2750},
+                {"word_id": "w8", "text": "the", "audio_start_ms": 2760, "audio_end_ms": 2930},
+                {"word_id": "w9", "text": "river", "audio_start_ms": 2940, "audio_end_ms": 3280},
+                {"word_id": "w10", "text": "that", "audio_start_ms": 3290, "audio_end_ms": 3560},
+                {"word_id": "w11", "text": "had", "audio_start_ms": 3570, "audio_end_ms": 3810},
+                {"word_id": "w12", "text": "run", "audio_start_ms": 3820, "audio_end_ms": 4080},
+                {"word_id": "w13", "text": "crystal-clear", "audio_start_ms": 4090, "audio_end_ms": 4780},
+                {"word_id": "w14", "text": "for", "audio_start_ms": 4790, "audio_end_ms": 4990},
+                {"word_id": "w15", "text": "as", "audio_start_ms": 5000, "audio_end_ms": 5180},
+                {"word_id": "w16", "text": "long", "audio_start_ms": 5190, "audio_end_ms": 5520},
+                {"word_id": "w17", "text": "as", "audio_start_ms": 5530, "audio_end_ms": 5710},
+                {"word_id": "w18", "text": "anyone", "audio_start_ms": 5720, "audio_end_ms": 6180},
+                {"word_id": "w19", "text": "could", "audio_start_ms": 6190, "audio_end_ms": 6490},
+                {"word_id": "w20", "text": "remember,", "audio_start_ms": 6500, "audio_end_ms": 7080},
+                {"word_id": "w21", "text": "was", "audio_start_ms": 7090, "audio_end_ms": 7340},
+                {"word_id": "w22", "text": "brown", "audio_start_ms": 7350, "audio_end_ms": 7720},
+                {"word_id": "w23", "text": "and", "audio_start_ms": 7730, "audio_end_ms": 7940},
+                {"word_id": "w24", "text": "foaming.", "audio_start_ms": 7950, "audio_end_ms": 8550}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p2",
+      "layout": "text-left",
+      "illustration": {
+        "type": "svg",
+        "alt": "Jordan collecting water samples in test tubes near the riverbank",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E8F5E9'/><rect x='0' y='140' width='300' height='60' fill='#795548'/><path d='M0,140 Q75,128 150,140 Q225,152 300,140' fill='#6D4C41'/><rect x='0' y='140' width='300' height='15' fill='#8D6E63' opacity='0.5'/><circle cx='180' cy='105' r='32' fill='#FFCC80'/><rect x='155' y='133' width='50' height='55' rx='6' fill='#1976D2'/><rect x='142' y='142' width='20' height='9' rx='4.5' fill='#FFCC80'/><rect x='198' y='140' width='22' height='9' rx='4.5' fill='#FFCC80'/><circle cx='172' cy='92' r='12' fill='#FF7043'/><circle cx='188' cy='92' r='12' fill='#FF5722'/><rect x='120' y='115' width='8' height='35' rx='4' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/><rect x='121' y='130' width='6' height='12' rx='3' fill='#6D4C41' opacity='0.7'/><rect x='138' y='112' width='8' height='32' rx='4' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/><rect x='139' y='124' width='6' height='10' rx='3' fill='#795548' opacity='0.6'/><rect x='156' y='110' width='8' height='38' rx='4' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/><rect x='157' y='118' width='6' height='16' rx='3' fill='#4CAF50' opacity='0.5'/><rect x='108' y='145' width='28' height='10' rx='3' fill='#E0E0E0'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 12000,
+              "words": [
+                {"word_id": "w1", "text": "Jordan", "audio_start_ms": 0, "audio_end_ms": 430},
+                {"word_id": "w2", "text": "pulled", "audio_start_ms": 440, "audio_end_ms": 780},
+                {"word_id": "w3", "text": "on", "audio_start_ms": 790, "audio_end_ms": 980},
+                {"word_id": "w4", "text": "nitrile", "audio_start_ms": 990, "audio_end_ms": 1450},
+                {"word_id": "w5", "text": "gloves,", "audio_start_ms": 1460, "audio_end_ms": 1920},
+                {"word_id": "w6", "text": "uncapped", "audio_start_ms": 1930, "audio_end_ms": 2450},
+                {"word_id": "w7", "text": "three", "audio_start_ms": 2460, "audio_end_ms": 2770},
+                {"word_id": "w8", "text": "collection", "audio_start_ms": 2780, "audio_end_ms": 3280},
+                {"word_id": "w9", "text": "vials,", "audio_start_ms": 3290, "audio_end_ms": 3750},
+                {"word_id": "w10", "text": "and", "audio_start_ms": 3760, "audio_end_ms": 3960},
+                {"word_id": "w11", "text": "knelt", "audio_start_ms": 3970, "audio_end_ms": 4330},
+                {"word_id": "w12", "text": "at", "audio_start_ms": 4340, "audio_end_ms": 4530},
+                {"word_id": "w13", "text": "the", "audio_start_ms": 4540, "audio_end_ms": 4700},
+                {"word_id": "w14", "text": "waterline.", "audio_start_ms": 4710, "audio_end_ms": 5350}
+              ]
+            },
+            {
+              "sentence_id": "s2",
+              "audio_start_ms": 5450,
+              "audio_end_ms": 13000,
+              "words": [
+                {"word_id": "w15", "text": "If", "audio_start_ms": 5450, "audio_end_ms": 5660},
+                {"word_id": "w16", "text": "something", "audio_start_ms": 5670, "audio_end_ms": 6170},
+                {"word_id": "w17", "text": "was", "audio_start_ms": 6180, "audio_end_ms": 6420},
+                {"word_id": "w18", "text": "poisoning", "audio_start_ms": 6430, "audio_end_ms": 6980},
+                {"word_id": "w19", "text": "this", "audio_start_ms": 6990, "audio_end_ms": 7220},
+                {"word_id": "w20", "text": "river,", "audio_start_ms": 7230, "audio_end_ms": 7680},
+                {"word_id": "w21", "text": "the", "audio_start_ms": 7690, "audio_end_ms": 7850},
+                {"word_id": "w22", "text": "evidence", "audio_start_ms": 7860, "audio_end_ms": 8380},
+                {"word_id": "w23", "text": "was", "audio_start_ms": 8390, "audio_end_ms": 8630},
+                {"word_id": "w24", "text": "already", "audio_start_ms": 8640, "audio_end_ms": 9100},
+                {"word_id": "w25", "text": "here.", "audio_start_ms": 9110, "audio_end_ms": 9600}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p3",
+      "layout": "text-right",
+      "illustration": {
+        "type": "svg",
+        "alt": "A map showing the river, the factory upstream, and pollution markers",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#FFF9C4'/><path d='M250,10 Q200,50 170,80 Q140,110 100,130 Q60,150 10,180' stroke='#1565C0' stroke-width='8' fill='none' opacity='0.7'/><path d='M248,14 Q198,54 168,84 Q138,114 98,134 Q58,154 8,184' stroke='#795548' stroke-width='5' fill='none' opacity='0.5'/><rect x='230' y='10' width='50' height='35' rx='4' fill='#546E7A'/><rect x='235' y='5' width='10' height='12' fill='#455A64'/><rect x='255' y='3' width='10' height='14' fill='#455A64'/><rect x='240' y='0' width='6' height='10' fill='#FF5722'/><rect x='260' y='0' width='6' height='10' fill='#FF5722'/><rect x='268' y='0' width='6' height='10' fill='#FF5722'/><circle cx='215' cy='62' r='8' fill='#F44336'/><text x='205' y='58' font-size='8' fill='#B71C1C' font-weight='bold'>!</text><circle cx='170' cy='95' r='6' fill='#FF9800'/><circle cx='130' cy='122' r='5' fill='#FFEB3B'/><circle cx='80' cy='158' r='7' fill='#4CAF50'/><text x='230' y='60' font-size='7' fill='#37474F' font-family='sans-serif'>Factory</text><text x='185' y='108' font-size='6' fill='#B71C1C'>pH 4.1</text><text x='140' y='138' font-size='6' fill='#E65100'>pH 5.8</text><text x='88' y='172' font-size='6' fill='#1B5E20'>pH 6.9</text><rect x='10' y='10' width='75' height='55' rx='3' fill='#FFFFFF' stroke='#BDBDBD' stroke-width='1'/><text x='15' y='23' font-size='7' fill='#1A1A1A' font-weight='bold'>LEGEND</text><circle cx='18' cy='33' r='4' fill='#F44336'/><text x='26' y='36' font-size='6' fill='#37474F'>Critical</text><circle cx='18' cy='45' r='4' fill='#FF9800'/><text x='26' y='48' font-size='6' fill='#37474F'>Warning</text><circle cx='18' cy='57' r='4' fill='#4CAF50'/><text x='26' y='60' font-size='6' fill='#37474F'>Normal</text></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 12000,
+              "words": [
+                {"word_id": "w1", "text": "The", "audio_start_ms": 0, "audio_end_ms": 220},
+                {"word_id": "w2", "text": "pH", "audio_start_ms": 230, "audio_end_ms": 580},
+                {"word_id": "w3", "text": "readings", "audio_start_ms": 590, "audio_end_ms": 1050},
+                {"word_id": "w4", "text": "told", "audio_start_ms": 1060, "audio_end_ms": 1380},
+                {"word_id": "w5", "text": "the", "audio_start_ms": 1390, "audio_end_ms": 1550},
+                {"word_id": "w6", "text": "story:", "audio_start_ms": 1560, "audio_end_ms": 1980},
+                {"word_id": "w7", "text": "4.1", "audio_start_ms": 1990, "audio_end_ms": 2520},
+                {"word_id": "w8", "text": "upstream", "audio_start_ms": 2530, "audio_end_ms": 3050},
+                {"word_id": "w9", "text": "near", "audio_start_ms": 3060, "audio_end_ms": 3350},
+                {"word_id": "w10", "text": "the", "audio_start_ms": 3360, "audio_end_ms": 3520},
+                {"word_id": "w11", "text": "factory,", "audio_start_ms": 3530, "audio_end_ms": 4050},
+                {"word_id": "w12", "text": "rising", "audio_start_ms": 4060, "audio_end_ms": 4480},
+                {"word_id": "w13", "text": "gradually", "audio_start_ms": 4490, "audio_end_ms": 5050},
+                {"word_id": "w14", "text": "to", "audio_start_ms": 5060, "audio_end_ms": 5250},
+                {"word_id": "w15", "text": "6.9", "audio_start_ms": 5260, "audio_end_ms": 5850},
+                {"word_id": "w16", "text": "ten", "audio_start_ms": 5860, "audio_end_ms": 6150},
+                {"word_id": "w17", "text": "kilometers", "audio_start_ms": 6160, "audio_end_ms": 6750},
+                {"word_id": "w18", "text": "downstream.", "audio_start_ms": 6760, "audio_end_ms": 7480}
+              ]
+            },
+            {
+              "sentence_id": "s2",
+              "audio_start_ms": 7580,
+              "audio_end_ms": 14000,
+              "words": [
+                {"word_id": "w19", "text": "The", "audio_start_ms": 7580, "audio_end_ms": 7760},
+                {"word_id": "w20", "text": "source", "audio_start_ms": 7770, "audio_end_ms": 8150},
+                {"word_id": "w21", "text": "wasn't", "audio_start_ms": 8160, "audio_end_ms": 8550},
+                {"word_id": "w22", "text": "a", "audio_start_ms": 8560, "audio_end_ms": 8700},
+                {"word_id": "w23", "text": "mystery", "audio_start_ms": 8710, "audio_end_ms": 9200},
+                {"word_id": "w24", "text": "anymore.", "audio_start_ms": 9210, "audio_end_ms": 9800}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p4",
+      "layout": "text-left",
+      "illustration": {
+        "type": "svg",
+        "alt": "Jordan presenting findings to the town council with charts and data",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E8EAF6'/><rect x='0' y='160' width='300' height='40' fill='#9FA8DA'/><rect x='40' y='100' width='220' height='70' rx='4' fill='#7986CB'/><rect x='45' y='105' width='50' height='30' rx='3' fill='#BDBDBD'/><rect x='100' y='105' width='50' height='30' rx='3' fill='#BDBDBD'/><rect x='155' y='105' width='50' height='30' rx='3' fill='#BDBDBD'/><rect x='210' y='105' width='50' height='30' rx='3' fill='#BDBDBD'/><rect x='120' y='30' width='60' height='75' rx='4' fill='#ECEFF1' stroke='#9FA8DA' stroke-width='2'/><rect x='128' y='38' width='6' height='45' fill='#F44336'/><rect x='138' y='52' width='6' height='31' fill='#FF9800'/><rect x='148' y='60' width='6' height='23' fill='#FFEB3B'/><rect x='158' y='68' width='6' height='15' fill='#4CAF50'/><rect x='168' y='73' width='6' height='10' fill='#2196F3'/><circle cx='150' cy='145' r='25' fill='#FFCC80'/><rect x='128' y='168' width='44' height='32' rx='5' fill='#3F51B5'/><rect x='115' y='176' width='18' height='8' rx='4' fill='#FFCC80'/><rect x='167' y='174' width='18' height='8' rx='4' fill='#FFCC80'/><circle cx='142' cy='135' r='10' fill='#FF7043'/><circle cx='158' cy='135' r='10' fill='#FF5722'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 12000,
+              "words": [
+                {"word_id": "w1", "text": "Three", "audio_start_ms": 0, "audio_end_ms": 380},
+                {"word_id": "w2", "text": "weeks", "audio_start_ms": 390, "audio_end_ms": 730},
+                {"word_id": "w3", "text": "later,", "audio_start_ms": 740, "audio_end_ms": 1150},
+                {"word_id": "w4", "text": "Jordan", "audio_start_ms": 1160, "audio_end_ms": 1570},
+                {"word_id": "w5", "text": "stood", "audio_start_ms": 1580, "audio_end_ms": 1930},
+                {"word_id": "w6", "text": "before", "audio_start_ms": 1940, "audio_end_ms": 2340},
+                {"word_id": "w7", "text": "the", "audio_start_ms": 2350, "audio_end_ms": 2510},
+                {"word_id": "w8", "text": "town", "audio_start_ms": 2520, "audio_end_ms": 2840},
+                {"word_id": "w9", "text": "council,", "audio_start_ms": 2850, "audio_end_ms": 3350},
+                {"word_id": "w10", "text": "forty-seven", "audio_start_ms": 3360, "audio_end_ms": 4050},
+                {"word_id": "w11", "text": "pages", "audio_start_ms": 4060, "audio_end_ms": 4430},
+                {"word_id": "w12", "text": "of", "audio_start_ms": 4440, "audio_end_ms": 4620},
+                {"word_id": "w13", "text": "data", "audio_start_ms": 4630, "audio_end_ms": 4980},
+                {"word_id": "w14", "text": "in", "audio_start_ms": 4990, "audio_end_ms": 5170},
+                {"word_id": "w15", "text": "hand,", "audio_start_ms": 5180, "audio_end_ms": 5580},
+                {"word_id": "w16", "text": "ready", "audio_start_ms": 5590, "audio_end_ms": 5940},
+                {"word_id": "w17", "text": "to", "audio_start_ms": 5950, "audio_end_ms": 6140},
+                {"word_id": "w18", "text": "prove", "audio_start_ms": 6150, "audio_end_ms": 6530},
+                {"word_id": "w19", "text": "that", "audio_start_ms": 6540, "audio_end_ms": 6800},
+                {"word_id": "w20", "text": "science", "audio_start_ms": 6810, "audio_end_ms": 7260},
+                {"word_id": "w21", "text": "could", "audio_start_ms": 7270, "audio_end_ms": 7570},
+                {"word_id": "w22", "text": "save", "audio_start_ms": 7580, "audio_end_ms": 7920},
+                {"word_id": "w23", "text": "a", "audio_start_ms": 7930, "audio_end_ms": 8070},
+                {"word_id": "w24", "text": "river.", "audio_start_ms": 8080, "audio_end_ms": 8620}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": {
+    "turbidity": {"definition": "The cloudiness or haziness of a liquid caused by particles", "phonetic": "/tɜːrˈbɪdɪti/"},
+    "nitrile": {"definition": "A type of synthetic rubber used to make protective gloves", "phonetic": "/ˈnaɪtraɪl/"},
+    "pH": {"definition": "A scale from 0-14 measuring how acidic or basic a substance is; 7 is neutral", "phonetic": "/piːˈeɪtʃ/"},
+    "contamination": {"definition": "The presence of harmful substances in the environment", "phonetic": "/kənˌtæmɪˈneɪʃən/"}
+  }
+}

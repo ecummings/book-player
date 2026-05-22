@@ -1,0 +1,181 @@
+{
+  "book_id": "07-code-breakers",
+  "title": "The Code Breakers",
+  "author": "Dae-Jung Kim",
+  "grade": "4",
+  "grade_band": "4-6",
+  "lexile": "720L",
+  "reading_level": "Grade 4",
+  "cover_color": "#00695C",
+  "tags": ["mystery", "coding", "technology", "problem-solving", "adventure"],
+  "cover_illustration": {
+    "type": "svg",
+    "alt": "Two kids at a glowing computer screen surrounded by code and cipher symbols",
+    "svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='200' fill='#0A0A1A'/><text x='10' y='20' font-size='8' fill='#00FF41' font-family='monospace' opacity='0.4'>01001000 01100101</text><text x='10' y='35' font-size='8' fill='#00FF41' font-family='monospace' opacity='0.3'>01101100 01101100</text><text x='10' y='50' font-size='8' fill='#00FF41' font-family='monospace' opacity='0.4'>01101111 00100001</text><rect x='35' y='65' width='130' height='90' rx='6' fill='#001810'/><rect x='35' y='65' width='130' height='90' rx='6' fill='none' stroke='#00FF41' stroke-width='2'/><text x='45' y='85' font-size='7' fill='#00FF41' font-family='monospace'>$ decrypt msg.txt</text><text x='45' y='97' font-size='7' fill='#00CC33' font-family='monospace'>Loading cipher...</text><text x='45' y='109' font-size='7' fill='#00FF41' font-family='monospace'>KEY FOUND: STAR</text><rect x='45' y='120' width='40' height='6' fill='#00FF41' rx='2'/><rect x='90' y='120' width='60' height='6' fill='#004D20' rx='2'/><rect x='55' y='145' width='90' height='6' rx='3' fill='#001A0D'/><rect x='65' y='145' width='18' height='6' rx='3' fill='#00FF41'/><circle cx='60' cy='90' r='18' fill='#FFCC80'/><circle cx='60' cy='80' r='7' fill='#FF8A65'/><circle cx='140' cy='85' r='16' fill='#FFCC80'/><circle cx='140' cy='76' r='6' fill='#FF7043'/></svg>"
+  },
+  "pages": [
+    {
+      "page_id": "p1",
+      "layout": "text-right",
+      "illustration": {
+        "type": "svg",
+        "alt": "An old locker with a strange symbol carved into it",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#ECEFF1'/><rect x='100' y='30' width='100' height='150' rx='6' fill='#78909C'/><rect x='108' y='38' width='84' height='134' rx='4' fill='#546E7A'/><rect x='138' y='90' width='24' height='24' rx='12' fill='#37474F' stroke='#90A4AE' stroke-width='2'/><circle cx='150' cy='102' r='8' fill='#263238'/><circle cx='150' cy='97' r='3' fill='#546E7A'/><rect x='145' y='60' width='10' height='20' rx='2' fill='#FF6F00'/><text x='128' y='58' font-size='12' fill='#FF6F00' font-family='monospace'>?!</text><path d='M120,75 L130,65 L140,75 L130,85 Z' fill='none' stroke='#FF6F00' stroke-width='2'/><circle cx='130' cy='75' r='4' fill='#FF6F00'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 6500,
+              "words": [
+                {"word_id": "w1", "text": "On", "audio_start_ms": 0, "audio_end_ms": 250},
+                {"word_id": "w2", "text": "the", "audio_start_ms": 260, "audio_end_ms": 420},
+                {"word_id": "w3", "text": "first", "audio_start_ms": 430, "audio_end_ms": 750},
+                {"word_id": "w4", "text": "day", "audio_start_ms": 760, "audio_end_ms": 1050},
+                {"word_id": "w5", "text": "of", "audio_start_ms": 1060, "audio_end_ms": 1220},
+                {"word_id": "w6", "text": "fifth", "audio_start_ms": 1230, "audio_end_ms": 1550},
+                {"word_id": "w7", "text": "grade,", "audio_start_ms": 1560, "audio_end_ms": 1950},
+                {"word_id": "w8", "text": "Zara", "audio_start_ms": 1960, "audio_end_ms": 2280},
+                {"word_id": "w9", "text": "found", "audio_start_ms": 2290, "audio_end_ms": 2620},
+                {"word_id": "w10", "text": "a", "audio_start_ms": 2630, "audio_end_ms": 2760},
+                {"word_id": "w11", "text": "strange", "audio_start_ms": 2770, "audio_end_ms": 3180},
+                {"word_id": "w12", "text": "symbol", "audio_start_ms": 3190, "audio_end_ms": 3630},
+                {"word_id": "w13", "text": "carved", "audio_start_ms": 3640, "audio_end_ms": 4050},
+                {"word_id": "w14", "text": "into", "audio_start_ms": 4060, "audio_end_ms": 4370},
+                {"word_id": "w15", "text": "her", "audio_start_ms": 4380, "audio_end_ms": 4570},
+                {"word_id": "w16", "text": "locker.", "audio_start_ms": 4580, "audio_end_ms": 5100}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p2",
+      "layout": "text-left",
+      "illustration": {
+        "type": "svg",
+        "alt": "Zara showing a mysterious note to her friend Marcus in the hallway",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#FFF8E1'/><rect x='0' y='165' width='300' height='35' fill='#D7CCC8'/><rect x='0' y='0' width='300' height='30' fill='#BDBDBD'/><circle cx='95' cy='130' r='30' fill='#FFCC80'/><rect x='68' y='155' width='54' height='40' rx='6' fill='#7E57C2'/><rect x='55' y='163' width='20' height='8' rx='4' fill='#FFCC80'/><rect x='113' y='160' width='22' height='8' rx='4' fill='#FFCC80'/><circle cx='88' cy='118' r='12' fill='#FF8A65'/><circle cx='102' cy='118' r='12' fill='#FF7043'/><circle cx='200' cy='135' r='28' fill='#FFCC80'/><rect x='175' y='158' width='50' height='38' rx='6' fill='#26A69A'/><rect x='162' y='165' width='18' height='8' rx='4' fill='#FFCC80'/><rect x='218' y='162' width='20' height='8' rx='4' fill='#FFCC80'/><circle cx='193' cy='122' r='11' fill='#4E342E'/><circle cx='207' cy='122' r='11' fill='#3E2723'/><rect x='128' y='120' width='55' height='42' rx='4' fill='#FAFAFA' stroke='#BDBDBD' stroke-width='1.5'/><text x='138' y='135' font-size='7' fill='#37474F' font-family='monospace'>WKUHH</text><text x='138' y='148' font-size='7' fill='#37474F' font-family='monospace'>VWHSV</text><text x='138' y='161' font-size='6' fill='#FF6F00' font-family='monospace'>???</text></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 8500,
+              "words": [
+                {"word_id": "w1", "text": "She", "audio_start_ms": 0, "audio_end_ms": 280},
+                {"word_id": "w2", "text": "showed", "audio_start_ms": 290, "audio_end_ms": 620},
+                {"word_id": "w3", "text": "it", "audio_start_ms": 630, "audio_end_ms": 800},
+                {"word_id": "w4", "text": "to", "audio_start_ms": 810, "audio_end_ms": 980},
+                {"word_id": "w5", "text": "Marcus,", "audio_start_ms": 990, "audio_end_ms": 1480},
+                {"word_id": "w6", "text": "who", "audio_start_ms": 1490, "audio_end_ms": 1720},
+                {"word_id": "w7", "text": "immediately", "audio_start_ms": 1730, "audio_end_ms": 2380},
+                {"word_id": "w8", "text": "recognized", "audio_start_ms": 2390, "audio_end_ms": 3050},
+                {"word_id": "w9", "text": "it", "audio_start_ms": 3060, "audio_end_ms": 3240},
+                {"word_id": "w10", "text": "as", "audio_start_ms": 3250, "audio_end_ms": 3440},
+                {"word_id": "w11", "text": "a", "audio_start_ms": 3450, "audio_end_ms": 3580},
+                {"word_id": "w12", "text": "Caesar", "audio_start_ms": 3590, "audio_end_ms": 4050},
+                {"word_id": "w13", "text": "cipher.", "audio_start_ms": 4060, "audio_end_ms": 4600}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p3",
+      "layout": "text-right",
+      "illustration": {
+        "type": "svg",
+        "alt": "An alphabet wheel cipher decoder being used at a table",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E8F5E9'/><rect x='30' y='130' width='240' height='55' rx='4' fill='#A5D6A7'/><circle cx='150' cy='110' r='75' fill='#FFECB3'/><circle cx='150' cy='110' r='75' fill='none' stroke='#FFA000' stroke-width='3'/><circle cx='150' cy='110' r='55' fill='#FFF9C4'/><circle cx='150' cy='110' r='55' fill='none' stroke='#FF8F00' stroke-width='2'/><circle cx='150' cy='110' r='15' fill='#FF6F00'/><circle cx='150' cy='110' r='8' fill='#E65100'/><text x='145' y='45' font-size='9' fill='#4E342E' font-family='monospace' font-weight='bold'>A</text><text x='172' y='52' font-size='9' fill='#4E342E' font-family='monospace' font-weight='bold'>B</text><text x='191' y='68' font-size='9' fill='#4E342E' font-family='monospace' font-weight='bold'>C</text><text x='199' y='90' font-size='9' fill='#4E342E' font-family='monospace' font-weight='bold'>D</text><text x='196' y='115' font-size='9' fill='#4E342E' font-family='monospace' font-weight='bold'>E</text><text x='188' y='138' font-size='9' fill='#4E342E' font-family='monospace' font-weight='bold'>F</text><text x='148' y='73' font-size='8' fill='#1B5E20' font-family='monospace'>D</text><text x='170' y='79' font-size='8' fill='#1B5E20' font-family='monospace'>E</text><text x='183' y='93' font-size='8' fill='#1B5E20' font-family='monospace'>F</text><text x='186' y='110' font-size='8' fill='#1B5E20' font-family='monospace'>G</text></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 9000,
+              "words": [
+                {"word_id": "w1", "text": "\"A", "audio_start_ms": 0, "audio_end_ms": 280},
+                {"word_id": "w2", "text": "Caesar", "audio_start_ms": 290, "audio_end_ms": 750},
+                {"word_id": "w3", "text": "cipher,\"", "audio_start_ms": 760, "audio_end_ms": 1280},
+                {"word_id": "w4", "text": "Marcus", "audio_start_ms": 1290, "audio_end_ms": 1700},
+                {"word_id": "w5", "text": "explained,", "audio_start_ms": 1710, "audio_end_ms": 2280},
+                {"word_id": "w6", "text": "\"shifts", "audio_start_ms": 2290, "audio_end_ms": 2750},
+                {"word_id": "w7", "text": "every", "audio_start_ms": 2760, "audio_end_ms": 3100},
+                {"word_id": "w8", "text": "letter", "audio_start_ms": 3110, "audio_end_ms": 3480},
+                {"word_id": "w9", "text": "in", "audio_start_ms": 3490, "audio_end_ms": 3660},
+                {"word_id": "w10", "text": "the", "audio_start_ms": 3670, "audio_end_ms": 3840},
+                {"word_id": "w11", "text": "alphabet", "audio_start_ms": 3850, "audio_end_ms": 4380},
+                {"word_id": "w12", "text": "by", "audio_start_ms": 4390, "audio_end_ms": 4600},
+                {"word_id": "w13", "text": "a", "audio_start_ms": 4610, "audio_end_ms": 4730},
+                {"word_id": "w14", "text": "fixed", "audio_start_ms": 4740, "audio_end_ms": 5100},
+                {"word_id": "w15", "text": "number.\"", "audio_start_ms": 5110, "audio_end_ms": 5700}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p4",
+      "layout": "text-left",
+      "illustration": {
+        "type": "svg",
+        "alt": "Two kids triumphantly holding a decoded message that says THREE STEPS",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E3F2FD'/><rect x='0' y='165' width='300' height='35' fill='#90CAF9'/><circle cx='100' cy='130' r='30' fill='#FFCC80'/><rect x='73' y='155' width='54' height='40' rx='6' fill='#EF5350'/><rect x='60' y='162' width='20' height='8' rx='4' fill='#FFCC80'/><rect x='118' y='160' width='22' height='8' rx='4' fill='#FFCC80'/><circle cx='200' cy='132' r='28' fill='#FFCC80'/><rect x='175' y='155' width='50' height='40' rx='6' fill='#42A5F5'/><rect x='162' y='162' width='18' height='8' rx='4' fill='#FFCC80'/><rect x='218' y='160' width='20' height='8' rx='4' fill='#FFCC80'/><rect x='105' y='80' width='90' height='52' rx='5' fill='#FFFDE7' stroke='#FFA000' stroke-width='2'/><text x='120' y='103' font-size='10' fill='#E65100' font-family='monospace' font-weight='bold'>THREE</text><text x='120' y='120' font-size='10' fill='#E65100' font-family='monospace' font-weight='bold'>STEPS</text><path d='M100,120 L105,100' stroke='#FFCC80' stroke-width='3'/><path d='M200,120 L195,100' stroke='#FFCC80' stroke-width='3'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 9500,
+              "words": [
+                {"word_id": "w1", "text": "Together,", "audio_start_ms": 0, "audio_end_ms": 650},
+                {"word_id": "w2", "text": "they", "audio_start_ms": 660, "audio_end_ms": 900},
+                {"word_id": "w3", "text": "shifted", "audio_start_ms": 910, "audio_end_ms": 1350},
+                {"word_id": "w4", "text": "each", "audio_start_ms": 1360, "audio_end_ms": 1650},
+                {"word_id": "w5", "text": "letter", "audio_start_ms": 1660, "audio_end_ms": 2050},
+                {"word_id": "w6", "text": "back", "audio_start_ms": 2060, "audio_end_ms": 2380},
+                {"word_id": "w7", "text": "by", "audio_start_ms": 2390, "audio_end_ms": 2600},
+                {"word_id": "w8", "text": "three,", "audio_start_ms": 2610, "audio_end_ms": 3050},
+                {"word_id": "w9", "text": "and", "audio_start_ms": 3060, "audio_end_ms": 3270},
+                {"word_id": "w10", "text": "the", "audio_start_ms": 3280, "audio_end_ms": 3440},
+                {"word_id": "w11", "text": "message", "audio_start_ms": 3450, "audio_end_ms": 3900},
+                {"word_id": "w12", "text": "revealed", "audio_start_ms": 3910, "audio_end_ms": 4380},
+                {"word_id": "w13", "text": "itself:", "audio_start_ms": 4390, "audio_end_ms": 4850}
+              ]
+            },
+            {
+              "sentence_id": "s2",
+              "audio_start_ms": 4950,
+              "audio_end_ms": 8000,
+              "words": [
+                {"word_id": "w14", "text": "THREE", "audio_start_ms": 4950, "audio_end_ms": 5450},
+                {"word_id": "w15", "text": "STEPS.", "audio_start_ms": 5460, "audio_end_ms": 6100}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": {
+    "cipher": {"definition": "A secret way of writing using a code", "phonetic": "/ˈsaɪfər/"},
+    "decrypt": {"definition": "To convert a coded message into normal language", "phonetic": "/diːˈkrɪpt/"},
+    "algorithm": {"definition": "A set of rules for solving a problem step by step", "phonetic": "/ˈælɡərɪðəm/"}
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "book_id": "06-ocean-adventure",
+  "title": "Ocean Adventure",
+  "author": "Sofia Reyes",
+  "grade": "3",
+  "grade_band": "2-3",
+  "lexile": "550L",
+  "reading_level": "Grade 3",
+  "cover_color": "#0277BD",
+  "tags": ["ocean", "marine life", "science", "adventure", "exploration"],
+  "cover_illustration": {
+    "type": "svg",
+    "alt": "Colorful coral reef with fish, a sea turtle, and an octopus",
+    "svg": "<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><rect width='200' height='200' fill='#0D47A1'/><rect x='0' y='130' width='200' height='70' fill='#1565C0' opacity='0.5'/><ellipse cx='30' cy='175' rx='25' ry='20' fill='#F44336'/><ellipse cx='30' cy='162' rx='8' ry='15' fill='#EF5350'/><ellipse cx='45' cy='158' rx='8' ry='12' fill='#FF7043'/><ellipse cx='60' cy='155' rx='6' ry='10' fill='#FF5722'/><ellipse cx='150' cy='178' rx='22' ry='16' fill='#7B1FA2'/><ellipse cx='150' cy='167' rx='7' ry='12' fill='#8E24AA'/><ellipse cx='165' cy='163' rx='7' ry='10' fill='#9C27B0'/><ellipse cx='178' cy='166' rx='6' ry='9' fill='#AB47BC'/><ellipse cx='100' cy='140' rx='30' ry='20' fill='#1B5E20' opacity='0.8'/><ellipse cx='100' cy='130' rx='26' ry='12' fill='#2E7D32'/><ellipse cx='88' cy='136' r='6' fill='#33691E'/><ellipse cx='112' cy='132' r='5' fill='#1B5E20'/><circle cx='60' cy='80' r='18' fill='#FF6F00'/><ellipse cx='60' cy='65' rx='8' ry='12' fill='#FF8F00'/><ellipse cx='45' cy='70' rx='15' ry='7' fill='#FFA000' transform='rotate(-30 45 70)'/><ellipse cx='75' cy='70' rx='15' ry='7' fill='#FFA000' transform='rotate(30 75 70)'/><circle cx='55' cy='76' r='3' fill='#212121'/><circle cx='65' cy='75' r='3' fill='#212121'/><circle cx='150' cy='70' r='12' fill='#F06292'/><ellipse cx='140' cy='62' rx='9' ry='5' fill='#EC407A' transform='rotate(-20 140 62)'/><ellipse cx='160' cy='63' rx='9' ry='5' fill='#EC407A' transform='rotate(20 160 63)'/></svg>"
+  },
+  "pages": [
+    {
+      "page_id": "p1",
+      "layout": "text-right",
+      "illustration": {
+        "type": "svg",
+        "alt": "A submarine with porthole windows diving into the deep blue ocean",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#0D47A1'/><circle cx='30' cy='30' r='3' fill='#90CAF9' opacity='0.5'/><circle cx='70' cy='15' r='2' fill='#90CAF9' opacity='0.5'/><circle cx='250' cy='20' r='3' fill='#90CAF9' opacity='0.5'/><ellipse cx='155' cy='110' rx='80' ry='35' fill='#FFD600'/><rect x='200' y='85' width='30' height='18' rx='4' fill='#FFC107'/><rect x='205' y='75' width='8' height='14' fill='#FFC107'/><circle cx='120' cy='108' r='15' fill='#0D47A1' stroke='#FFFFFF' stroke-width='3'/><circle cx='120' cy='108' r='8' fill='#4FC3F7'/><circle cx='160' cy='108' r='15' fill='#0D47A1' stroke='#FFFFFF' stroke-width='3'/><circle cx='160' cy='108' r='8' fill='#4FC3F7'/><rect x='75' y='108' width='20' height='10' rx='5' fill='#FFC107'/><ellipse cx='235' cy='118' rx='15' ry='8' fill='#FFA000'/><circle cx='85' cy='55' r='8' fill='#80DEEA' opacity='0.6'/><circle cx='80' cy='42' r='5' fill='#80DEEA' opacity='0.4'/><circle cx='75' cy='32' r='3' fill='#80DEEA' opacity='0.3'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 7000,
+              "words": [
+                {"word_id": "w1", "text": "The", "audio_start_ms": 0, "audio_end_ms": 220},
+                {"word_id": "w2", "text": "yellow", "audio_start_ms": 230, "audio_end_ms": 580},
+                {"word_id": "w3", "text": "submarine", "audio_start_ms": 590, "audio_end_ms": 1150},
+                {"word_id": "w4", "text": "dipped", "audio_start_ms": 1160, "audio_end_ms": 1580},
+                {"word_id": "w5", "text": "beneath", "audio_start_ms": 1590, "audio_end_ms": 2050},
+                {"word_id": "w6", "text": "the", "audio_start_ms": 2060, "audio_end_ms": 2220},
+                {"word_id": "w7", "text": "ocean", "audio_start_ms": 2230, "audio_end_ms": 2650},
+                {"word_id": "w8", "text": "waves.", "audio_start_ms": 2660, "audio_end_ms": 3200}
+              ]
+            },
+            {
+              "sentence_id": "s2",
+              "audio_start_ms": 3300,
+              "audio_end_ms": 9000,
+              "words": [
+                {"word_id": "w9", "text": "Maya", "audio_start_ms": 3300, "audio_end_ms": 3700},
+                {"word_id": "w10", "text": "pressed", "audio_start_ms": 3710, "audio_end_ms": 4150},
+                {"word_id": "w11", "text": "her", "audio_start_ms": 4160, "audio_end_ms": 4400},
+                {"word_id": "w12", "text": "face", "audio_start_ms": 4410, "audio_end_ms": 4750},
+                {"word_id": "w13", "text": "against", "audio_start_ms": 4760, "audio_end_ms": 5200},
+                {"word_id": "w14", "text": "the", "audio_start_ms": 5210, "audio_end_ms": 5380},
+                {"word_id": "w15", "text": "porthole,", "audio_start_ms": 5390, "audio_end_ms": 5950},
+                {"word_id": "w16", "text": "eyes", "audio_start_ms": 5960, "audio_end_ms": 6250},
+                {"word_id": "w17", "text": "wide.", "audio_start_ms": 6260, "audio_end_ms": 6750}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p2",
+      "layout": "text-left",
+      "illustration": {
+        "type": "svg",
+        "alt": "A large sea turtle swimming gracefully through blue water",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#0288D1'/><ellipse cx='150' cy='110' rx='70' ry='45' fill='#2E7D32'/><ellipse cx='150' cy='110' rx='55' ry='35' fill='#388E3C'/><ellipse cx='115' cy='88' rx='25' ry='12' fill='#2E7D32' transform='rotate(-30 115 88)'/><ellipse cx='185' cy='88' rx='25' ry='12' fill='#2E7D32' transform='rotate(30 185 88)'/><ellipse cx='118' cy='135' rx='22' ry='10' fill='#2E7D32' transform='rotate(20 118 135)'/><ellipse cx='182' cy='135' rx='22' ry='10' fill='#2E7D32' transform='rotate(-20 182 135)'/><ellipse cx='150' cy='68' rx='18' ry='12' fill='#33691E'/><circle cx='143' cy='63' r='4' fill='#1B5E20'/><circle cx='157' cy='63' r='4' fill='#1B5E20'/><ellipse cx='100' cy='90' rx='8' ry='4' fill='#4CAF50' opacity='0.6'/><ellipse cx='200' cy='95' rx='8' ry='4' fill='#4CAF50' opacity='0.6'/><ellipse cx='150' cy='112' rx='10' ry='5' fill='#1B5E20' opacity='0.5'/><circle cx='50' cy='50' r='5' fill='#80DEEA' opacity='0.5'/><circle cx='240' cy='150' r='4' fill='#80DEEA' opacity='0.5'/><circle cx='30' cy='140' r='3' fill='#80DEEA' opacity='0.4'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 7500,
+              "words": [
+                {"word_id": "w1", "text": "A", "audio_start_ms": 0, "audio_end_ms": 200},
+                {"word_id": "w2", "text": "giant", "audio_start_ms": 210, "audio_end_ms": 580},
+                {"word_id": "w3", "text": "sea", "audio_start_ms": 590, "audio_end_ms": 850},
+                {"word_id": "w4", "text": "turtle", "audio_start_ms": 860, "audio_end_ms": 1250},
+                {"word_id": "w5", "text": "glided", "audio_start_ms": 1260, "audio_end_ms": 1700},
+                {"word_id": "w6", "text": "past,", "audio_start_ms": 1710, "audio_end_ms": 2100},
+                {"word_id": "w7", "text": "its", "audio_start_ms": 2110, "audio_end_ms": 2350},
+                {"word_id": "w8", "text": "flippers", "audio_start_ms": 2360, "audio_end_ms": 2850},
+                {"word_id": "w9", "text": "moving", "audio_start_ms": 2860, "audio_end_ms": 3250},
+                {"word_id": "w10", "text": "like", "audio_start_ms": 3260, "audio_end_ms": 3500},
+                {"word_id": "w11", "text": "slow", "audio_start_ms": 3510, "audio_end_ms": 3850},
+                {"word_id": "w12", "text": "wings.", "audio_start_ms": 3860, "audio_end_ms": 4400}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p3",
+      "layout": "text-right",
+      "illustration": {
+        "type": "svg",
+        "alt": "A glowing deep sea anglerfish in dark water with its bioluminescent lure",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#0A0A1E'/><ellipse cx='150' cy='120' rx='65' ry='45' fill='#0D2137'/><ellipse cx='115' cy='115' rx='15' ry='8' fill='#1A3A52' transform='rotate(20 115 115)'/><ellipse cx='185' cy='115' rx='15' ry='8' fill='#1A3A52' transform='rotate(-20 185 115)'/><ellipse cx='115' cy='140' rx='15' ry='7' fill='#1A3A52' transform='rotate(-10 115 140)'/><ellipse cx='185' cy='140' rx='15' ry='7' fill='#1A3A52' transform='rotate(10 185 140)'/><circle cx='125' cy='105' r='12' fill='#E8F5E9'/><circle cx='126' cy='105' r='7' fill='#0D2137'/><circle cx='127' cy='104' r='3' fill='white'/><path d='M150,80 Q165,55 170,35' stroke='#1A3A52' stroke-width='3' fill='none'/><circle cx='172' cy='32' r='10' fill='#69F0AE' filter='url(#glow)' opacity='0.9'/><circle cx='172' cy='32' r='6' fill='#B9F6CA'/><defs><filter id='glow'><feGaussianBlur stdDeviation='3' result='coloredBlur'/><feMerge><feMergeNode in='coloredBlur'/><feMergeNode in='SourceGraphic'/></feMerge></filter></defs><path d='M220,110 L250,110 L250,130 L230,130' stroke='#0D2137' stroke-width='15' stroke-linecap='round' fill='none'/><ellipse cx='178' cy='125' rx='5' ry='8' fill='#0D2137'/><path d='M215,108 L235,95 M215,120 L235,135' stroke='#1A3A52' stroke-width='4' fill='none'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 8000,
+              "words": [
+                {"word_id": "w1", "text": "Deeper", "audio_start_ms": 0, "audio_end_ms": 480},
+                {"word_id": "w2", "text": "down,", "audio_start_ms": 490, "audio_end_ms": 850},
+                {"word_id": "w3", "text": "where", "audio_start_ms": 860, "audio_end_ms": 1150},
+                {"word_id": "w4", "text": "no", "audio_start_ms": 1160, "audio_end_ms": 1380},
+                {"word_id": "w5", "text": "sunlight", "audio_start_ms": 1390, "audio_end_ms": 1850},
+                {"word_id": "w6", "text": "reached,", "audio_start_ms": 1860, "audio_end_ms": 2350},
+                {"word_id": "w7", "text": "a", "audio_start_ms": 2360, "audio_end_ms": 2500},
+                {"word_id": "w8", "text": "strange", "audio_start_ms": 2510, "audio_end_ms": 2950},
+                {"word_id": "w9", "text": "fish", "audio_start_ms": 2960, "audio_end_ms": 3250},
+                {"word_id": "w10", "text": "glowed", "audio_start_ms": 3260, "audio_end_ms": 3700},
+                {"word_id": "w11", "text": "green", "audio_start_ms": 3710, "audio_end_ms": 4100},
+                {"word_id": "w12", "text": "in", "audio_start_ms": 4110, "audio_end_ms": 4300},
+                {"word_id": "w13", "text": "the", "audio_start_ms": 4310, "audio_end_ms": 4460},
+                {"word_id": "w14", "text": "dark.", "audio_start_ms": 4470, "audio_end_ms": 4980}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_id": "p4",
+      "layout": "text-left",
+      "illustration": {
+        "type": "svg",
+        "alt": "The submarine surfacing back to sunlit ocean waters",
+        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#B3E5FC'/><circle cx='250' cy='30' r='35' fill='#FFD600'/><rect x='0' y='100' width='300' height='100' fill='#0288D1'/><path d='M0,100 Q75,85 150,100 Q225,115 300,100' fill='#039BE5'/><ellipse cx='155' cy='108' rx='80' ry='30' fill='#FFD600'/><rect x='200' y='88' width='30' height='15' rx='4' fill='#FFC107'/><rect x='205' y='78' width='8' height='12' fill='#FFC107'/><circle cx='120' cy='106' r='13' fill='#0288D1' stroke='white' stroke-width='2'/><circle cx='120' cy='106' r='7' fill='#4FC3F7'/><circle cx='158' cy='106' r='13' fill='#0288D1' stroke='white' stroke-width='2'/><circle cx='158' cy='106' r='7' fill='#4FC3F7'/><circle cx='60' cy='75' r='4' fill='white' opacity='0.8'/><circle cx='80' cy='60' r='5' fill='white' opacity='0.8'/><circle cx='100' cy='72' r='3' fill='white' opacity='0.8'/><circle cx='120' cy='55' r='4' fill='white' opacity='0.8'/></svg>"
+      },
+      "paragraphs": [
+        {
+          "paragraph_id": "para1",
+          "sentences": [
+            {
+              "sentence_id": "s1",
+              "audio_start_ms": 0,
+              "audio_end_ms": 8500,
+              "words": [
+                {"word_id": "w1", "text": "When", "audio_start_ms": 0, "audio_end_ms": 320},
+                {"word_id": "w2", "text": "the", "audio_start_ms": 330, "audio_end_ms": 480},
+                {"word_id": "w3", "text": "submarine", "audio_start_ms": 490, "audio_end_ms": 1100},
+                {"word_id": "w4", "text": "broke", "audio_start_ms": 1110, "audio_end_ms": 1480},
+                {"word_id": "w5", "text": "the", "audio_start_ms": 1490, "audio_end_ms": 1650},
+                {"word_id": "w6", "text": "surface,", "audio_start_ms": 1660, "audio_end_ms": 2180},
+                {"word_id": "w7", "text": "Maya", "audio_start_ms": 2190, "audio_end_ms": 2580},
+                {"word_id": "w8", "text": "knew", "audio_start_ms": 2590, "audio_end_ms": 2920},
+                {"word_id": "w9", "text": "the", "audio_start_ms": 2930, "audio_end_ms": 3080},
+                {"word_id": "w10", "text": "ocean", "audio_start_ms": 3090, "audio_end_ms": 3500},
+                {"word_id": "w11", "text": "held", "audio_start_ms": 3510, "audio_end_ms": 3850},
+                {"word_id": "w12", "text": "a", "audio_start_ms": 3860, "audio_end_ms": 3980},
+                {"word_id": "w13", "text": "million", "audio_start_ms": 3990, "audio_end_ms": 4450},
+                {"word_id": "w14", "text": "more", "audio_start_ms": 4460, "audio_end_ms": 4780},
+                {"word_id": "w15", "text": "secrets.", "audio_start_ms": 4790, "audio_end_ms": 5400}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary": {
+    "porthole": {"definition": "A small round window in the side of a ship or submarine", "phonetic": "/ˈpɔːrthoʊl/"},
+    "bioluminescent": {"definition": "Producing natural light through a chemical reaction", "phonetic": "/ˌbaɪoʊluːmɪˈnɛsənt/"},
+    "submarine": {"definition": "A vehicle that travels underwater", "phonetic": "/ˈsʌbməriːn/"}
+  }
+}

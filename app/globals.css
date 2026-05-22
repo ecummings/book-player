@@ -1,26 +1,146 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --word-highlight: #ffe066;
+  --sentence-highlight: #b3d9ff;
+  --tap-ring: #ff6b35;
+  --accent: #2563eb;
+  --accent-fg: #ffffff;
+  --surface: #f8f9fa;
+  --border: #e2e8f0;
+  --muted: #6b7280;
+  --font-size-base: 1rem;
+  --line-height-base: 1.6;
+  --letter-spacing-base: 0.02em;
+  --word-spacing-base: 0.05em;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+[data-theme="soft"] {
+  --bg: #fff8f0;
+  --text: #2d2d2d;
+  --word-highlight: #ffd54f;
+  --sentence-highlight: #a5c8f0;
+  --surface: #fdf3e8;
+  --border: #e8d5bf;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+[data-theme="high-contrast"] {
+  --bg: #000000;
+  --text: #ffffff;
+  --word-highlight: #00ff41;
+  --sentence-highlight: #00bfff;
+  --tap-ring: #ff0000;
+  --accent: #ffff00;
+  --accent-fg: #000000;
+  --surface: #111111;
+  --border: #444444;
+  --muted: #aaaaaa;
+}
+
+[data-theme="dark"] {
+  --bg: #1a1a2e;
+  --text: #e8e8e8;
+  --word-highlight: #ffe066;
+  --sentence-highlight: #4a90d9;
+  --accent: #60a5fa;
+  --accent-fg: #1a1a2e;
+  --surface: #16213e;
+  --border: #2a2a4e;
+  --muted: #9ca3af;
+}
+
+[data-fontsize="small"]  { --font-size-base: 0.875rem; }
+[data-fontsize="default"]{ --font-size-base: 1rem; }
+[data-fontsize="large"]  { --font-size-base: 1.25rem; }
+[data-fontsize="xlarge"] { --font-size-base: 1.5rem; }
+
+[data-gradeband="K-1"]  { --font-size-base: 1.75rem; --line-height-base: 1.8; }
+[data-gradeband="2-3"]  { --font-size-base: 1.375rem; --line-height-base: 1.65; }
+[data-gradeband="4-6"]  { --font-size-base: 1.125rem; --line-height-base: 1.55; }
+
+[data-dyslexia="true"] {
+  --letter-spacing-base: 0.12em;
+  --word-spacing-base: 0.2em;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.2s, color 0.2s;
+  font-family: var(--font-nunito), 'Nunito', Arial, sans-serif;
+}
+
+/* Reader root: font settings applied here so they are scoped and cascade correctly */
+.reader-root {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  letter-spacing: var(--letter-spacing-base);
+  word-spacing: var(--word-spacing-base);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+[data-dyslexia="true"] .reader-root,
+.reader-root[data-dyslexia="true"] {
+  font-family: var(--font-lexend), 'Lexend', 'Comic Sans MS', sans-serif;
+}
+
+.word-span {
+  display: inline;
+  border-radius: 3px;
+  padding: 1px 2px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.word-span:hover {
+  background-color: color-mix(in srgb, var(--word-highlight) 40%, transparent);
+}
+
+.word-span.highlighted {
+  background-color: var(--word-highlight);
+}
+
+.word-span.sentence-active {
+  text-decoration: underline;
+  text-decoration-color: var(--sentence-highlight);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+.word-span.tapped {
+  outline: 3px solid var(--tap-ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.book-text {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text);
+  max-width: 65ch;
+}
+
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
