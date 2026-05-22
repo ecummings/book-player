@@ -7,7 +7,13 @@
   "lexile": "380L",
   "reading_level": "Grade 2",
   "cover_color": "#7B1FA2",
-  "tags": ["weather", "colors", "science", "nature", "rainbows"],
+  "tags": [
+    "weather",
+    "colors",
+    "science",
+    "nature",
+    "rainbows"
+  ],
   "cover_illustration": {
     "type": "svg",
     "alt": "A bright rainbow arching over green hills after the rain",
@@ -19,8 +25,8 @@
       "layout": "text-right",
       "illustration": {
         "type": "svg",
-        "alt": "Dark storm clouds with rain falling on a neighborhood",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#78909C'/><circle cx='60' cy='50' r='30' fill='#546E7A'/><circle cx='100' cy='40' r='35' fill='#546E7A'/><circle cx='140' cy='45' r='32' fill='#546E7A'/><circle cx='180' cy='48' r='28' fill='#546E7A'/><circle cx='215' cy='55' r='25' fill='#546E7A'/><line x1='70' y1='85' x2='60' y2='110' stroke='#90CAF9' stroke-width='2'/><line x1='90' y1='80' x2='80' y2='110' stroke='#90CAF9' stroke-width='2'/><line x1='110' y1='82' x2='100' y2='112' stroke='#90CAF9' stroke-width='2'/><line x1='130' y1='80' x2='120' y2='110' stroke='#90CAF9' stroke-width='2'/><line x1='150' y1='82' x2='140' y2='112' stroke='#90CAF9' stroke-width='2'/><line x1='170' y1='80' x2='160' y2='110' stroke='#90CAF9' stroke-width='2'/><line x1='190' y1='85' x2='180' y2='115' stroke='#90CAF9' stroke-width='2'/><line x1='210' y1='88' x2='200' y2='118' stroke='#90CAF9' stroke-width='2'/><rect x='50' y='140' width='50' height='40' fill='#8D6E63'/><polygon points='50,140 75,115 100,140' fill='#795548'/><rect x='150' y='145' width='60' height='35' fill='#7E57C2'/><polygon points='150,145 180,118 210,145' fill='#673AB7'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"storm\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#37474F\"/><stop offset=\"100%\" stop-color=\"#546E7A\"/></linearGradient><linearGradient id=\"rain_ground\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#4CAF50\"/><stop offset=\"100%\" stop-color=\"#2E7D32\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#storm)\"/><ellipse cx=\"200\" cy=\"100\" rx=\"180\" ry=\"80\" fill=\"#455A64\"/><ellipse cx=\"320\" cy=\"80\" rx=\"160\" ry=\"70\" fill=\"#37474F\"/><ellipse cx=\"500\" cy=\"110\" rx=\"200\" ry=\"85\" fill=\"#455A64\"/><ellipse cx=\"650\" cy=\"90\" rx=\"170\" ry=\"75\" fill=\"#37474F\"/><ellipse cx=\"400\" cy=\"140\" rx=\"250\" ry=\"80\" fill=\"#263238\"/><path d=\"M480 90 L460 150 L475 150 L450 220 L510 140 L493 140 L520 90Z\" fill=\"#FFE566\" opacity=\"0.9\"/><line x1=\"50\" y1=\"150\" x2=\"42\" y2=\"175\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"100\" y1=\"200\" x2=\"92\" y2=\"225\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"180\" y1=\"170\" x2=\"172\" y2=\"195\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.8\"/><line x1=\"250\" y1=\"220\" x2=\"242\" y2=\"245\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"350\" y1=\"160\" x2=\"342\" y2=\"185\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.8\"/><line x1=\"420\" y1=\"190\" x2=\"412\" y2=\"215\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"500\" y1=\"170\" x2=\"492\" y2=\"195\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"580\" y1=\"200\" x2=\"572\" y2=\"225\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.8\"/><line x1=\"650\" y1=\"165\" x2=\"642\" y2=\"190\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"720\" y1=\"195\" x2=\"712\" y2=\"220\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"780\" y1=\"175\" x2=\"772\" y2=\"200\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"80\" y1=\"280\" x2=\"72\" y2=\"305\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"160\" y1=\"300\" x2=\"152\" y2=\"325\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"240\" y1=\"270\" x2=\"232\" y2=\"295\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.8\"/><line x1=\"380\" y1=\"290\" x2=\"372\" y2=\"315\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.8\"/><line x1=\"470\" y1=\"310\" x2=\"462\" y2=\"335\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"560\" y1=\"280\" x2=\"552\" y2=\"305\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.7\"/><line x1=\"640\" y1=\"310\" x2=\"632\" y2=\"335\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.6\"/><line x1=\"750\" y1=\"285\" x2=\"742\" y2=\"310\" stroke=\"#74D7FF\" stroke-width=\"1.5\" opacity=\"0.8\"/><rect x=\"0\" y=\"380\" width=\"800\" height=\"120\" fill=\"url(#rain_ground)\"/><ellipse cx=\"150\" cy=\"385\" rx=\"60\" ry=\"8\" fill=\"#74D7FF\" opacity=\"0.35\"/><ellipse cx=\"350\" cy=\"385\" rx=\"45\" ry=\"8\" fill=\"#74D7FF\" opacity=\"0.35\"/><ellipse cx=\"580\" cy=\"385\" rx=\"70\" ry=\"8\" fill=\"#74D7FF\" opacity=\"0.35\"/><ellipse cx=\"720\" cy=\"385\" rx=\"40\" ry=\"8\" fill=\"#74D7FF\" opacity=\"0.35\"/><rect x=\"300\" y=\"280\" width=\"8\" height=\"120\" fill=\"#5C4A2A\"/><ellipse cx=\"304\" cy=\"280\" rx=\"80\" ry=\"35\" fill=\"#E63946\"/><path d=\"M224 280 Q304 240 384 280\" fill=\"#C62828\"/><circle cx=\"340\" cy=\"360\" r=\"30\" fill=\"#F5C5A3\"/><ellipse cx=\"340\" cy=\"395\" rx=\"28\" ry=\"42\" fill=\"#1A237E\"/><ellipse cx=\"340\" cy=\"336\" rx=\"32\" ry=\"22\" fill=\"#3D2B1F\"/></svg>",
+        "alt": "Rainbow story page 1"
       },
       "paragraphs": [
         {
@@ -31,12 +37,42 @@
               "audio_start_ms": 0,
               "audio_end_ms": 5000,
               "words": [
-                {"word_id": "w1", "text": "Dark", "audio_start_ms": 0, "audio_end_ms": 380},
-                {"word_id": "w2", "text": "clouds", "audio_start_ms": 390, "audio_end_ms": 750},
-                {"word_id": "w3", "text": "rolled", "audio_start_ms": 760, "audio_end_ms": 1100},
-                {"word_id": "w4", "text": "across", "audio_start_ms": 1110, "audio_end_ms": 1550},
-                {"word_id": "w5", "text": "the", "audio_start_ms": 1560, "audio_end_ms": 1700},
-                {"word_id": "w6", "text": "sky.", "audio_start_ms": 1710, "audio_end_ms": 2200}
+                {
+                  "word_id": "w1",
+                  "text": "Dark",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 380
+                },
+                {
+                  "word_id": "w2",
+                  "text": "clouds",
+                  "audio_start_ms": 390,
+                  "audio_end_ms": 750
+                },
+                {
+                  "word_id": "w3",
+                  "text": "rolled",
+                  "audio_start_ms": 760,
+                  "audio_end_ms": 1100
+                },
+                {
+                  "word_id": "w4",
+                  "text": "across",
+                  "audio_start_ms": 1110,
+                  "audio_end_ms": 1550
+                },
+                {
+                  "word_id": "w5",
+                  "text": "the",
+                  "audio_start_ms": 1560,
+                  "audio_end_ms": 1700
+                },
+                {
+                  "word_id": "w6",
+                  "text": "sky.",
+                  "audio_start_ms": 1710,
+                  "audio_end_ms": 2200
+                }
               ]
             },
             {
@@ -44,13 +80,48 @@
               "audio_start_ms": 2300,
               "audio_end_ms": 6000,
               "words": [
-                {"word_id": "w7", "text": "The", "audio_start_ms": 2300, "audio_end_ms": 2480},
-                {"word_id": "w8", "text": "rain", "audio_start_ms": 2490, "audio_end_ms": 2800},
-                {"word_id": "w9", "text": "came", "audio_start_ms": 2810, "audio_end_ms": 3150},
-                {"word_id": "w10", "text": "down", "audio_start_ms": 3160, "audio_end_ms": 3480},
-                {"word_id": "w11", "text": "in", "audio_start_ms": 3490, "audio_end_ms": 3650},
-                {"word_id": "w12", "text": "heavy", "audio_start_ms": 3660, "audio_end_ms": 4050},
-                {"word_id": "w13", "text": "drops.", "audio_start_ms": 4060, "audio_end_ms": 4600}
+                {
+                  "word_id": "w7",
+                  "text": "The",
+                  "audio_start_ms": 2300,
+                  "audio_end_ms": 2480
+                },
+                {
+                  "word_id": "w8",
+                  "text": "rain",
+                  "audio_start_ms": 2490,
+                  "audio_end_ms": 2800
+                },
+                {
+                  "word_id": "w9",
+                  "text": "came",
+                  "audio_start_ms": 2810,
+                  "audio_end_ms": 3150
+                },
+                {
+                  "word_id": "w10",
+                  "text": "down",
+                  "audio_start_ms": 3160,
+                  "audio_end_ms": 3480
+                },
+                {
+                  "word_id": "w11",
+                  "text": "in",
+                  "audio_start_ms": 3490,
+                  "audio_end_ms": 3650
+                },
+                {
+                  "word_id": "w12",
+                  "text": "heavy",
+                  "audio_start_ms": 3660,
+                  "audio_end_ms": 4050
+                },
+                {
+                  "word_id": "w13",
+                  "text": "drops.",
+                  "audio_start_ms": 4060,
+                  "audio_end_ms": 4600
+                }
               ]
             }
           ]
@@ -62,8 +133,8 @@
       "layout": "text-left",
       "illustration": {
         "type": "svg",
-        "alt": "Sun peeking through breaking clouds after rain",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#B3E5FC'/><circle cx='250' cy='60' r='45' fill='#FFD600'/><circle cx='50' cy='40' r='30' fill='white'/><circle cx='90' cy='30' r='35' fill='white'/><circle cx='130' cy='35' r='32' fill='white'/><circle cx='165' cy='42' r='28' fill='white' opacity='0.7'/><rect x='0' y='155' width='300' height='45' fill='#A5D6A7'/><line x1='50' y1='115' x2='45' y2='140' stroke='#90CAF9' stroke-width='2' opacity='0.5'/><line x1='80' y1='110' x2='75' y2='135' stroke='#90CAF9' stroke-width='2' opacity='0.5'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"after_rain\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"50%\" stop-color=\"#B3E5FC\"/><stop offset=\"100%\" stop-color=\"#E8F8FF\"/></linearGradient><linearGradient id=\"wet_ground\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#4CAF50\"/><stop offset=\"100%\" stop-color=\"#2E7D32\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#after_rain)\"/><circle cx=\"700\" cy=\"80\" r=\"55\" fill=\"#FFE566\" opacity=\"0.95\"/><circle cx=\"700\" cy=\"80\" r=\"38\" fill=\"#FFD700\"/><ellipse cx=\"150\" cy=\"80\" rx=\"120\" ry=\"45\" fill=\"white\" opacity=\"0.8\"/><ellipse cx=\"220\" cy=\"65\" rx=\"90\" ry=\"40\" fill=\"white\" opacity=\"0.85\"/><ellipse cx=\"500\" cy=\"60\" rx=\"100\" ry=\"38\" fill=\"white\" opacity=\"0.7\"/><path d=\"M20 400 A380 380 0 0 1 780 400\" fill=\"none\" stroke=\"#FF0000\" stroke-width=\"32\" opacity=\"0.85\"/><path d=\"M52 400 A348 348 0 0 1 748 400\" fill=\"none\" stroke=\"#FF7F00\" stroke-width=\"32\" opacity=\"0.85\"/><path d=\"M84 400 A316 316 0 0 1 716 400\" fill=\"none\" stroke=\"#FFFF00\" stroke-width=\"32\" opacity=\"0.85\"/><path d=\"M116 400 A284 284 0 0 1 684 400\" fill=\"none\" stroke=\"#00CC00\" stroke-width=\"32\" opacity=\"0.85\"/><path d=\"M148 400 A252 252 0 0 1 652 400\" fill=\"none\" stroke=\"#0000FF\" stroke-width=\"32\" opacity=\"0.85\"/><path d=\"M180 400 A220 220 0 0 1 620 400\" fill=\"none\" stroke=\"#8B00FF\" stroke-width=\"32\" opacity=\"0.85\"/><rect x=\"0\" y=\"400\" width=\"800\" height=\"100\" fill=\"url(#wet_ground)\"/><ellipse cx=\"400\" cy=\"420\" rx=\"200\" ry=\"20\" fill=\"rgba(150,150,255,0.2)\"/><circle cx=\"200\" cy=\"350\" r=\"34\" fill=\"#F5C5A3\"/><ellipse cx=\"200\" cy=\"324\" rx=\"36\" ry=\"24\" fill=\"#3D2B1F\"/><ellipse cx=\"200\" cy=\"390\" rx=\"30\" ry=\"50\" fill=\"#FF6B35\"/><ellipse cx=\"162\" cy=\"370\" rx=\"12\" ry=\"36\" fill=\"#FF6B35\" transform=\"rotate(-50 162 370)\"/><ellipse cx=\"132\" cy=\"345\" rx=\"18\" ry=\"11\" fill=\"#F5C5A3\"/><ellipse cx=\"238\" cy=\"365\" rx=\"12\" ry=\"36\" fill=\"#FF6B35\" transform=\"rotate(25 238 365)\"/><text x=\"45\" y=\"215\" font-size=\"13\" fill=\"#FF4444\" font-family=\"Arial\" font-weight=\"bold\" opacity=\"0.8\">Red</text><text x=\"55\" y=\"250\" font-size=\"13\" fill=\"#FF9933\" font-family=\"Arial\" font-weight=\"bold\" opacity=\"0.8\">Orange</text><text x=\"48\" y=\"283\" font-size=\"13\" fill=\"#FFD700\" font-family=\"Arial\" font-weight=\"bold\" opacity=\"0.8\">Yellow</text><text x=\"42\" y=\"316\" font-size=\"13\" fill=\"#33CC33\" font-family=\"Arial\" font-weight=\"bold\" opacity=\"0.8\">Green</text><text x=\"42\" y=\"348\" font-size=\"13\" fill=\"#4488FF\" font-family=\"Arial\" font-weight=\"bold\" opacity=\"0.8\">Blue</text><text x=\"40\" y=\"380\" font-size=\"13\" fill=\"#9933FF\" font-family=\"Arial\" font-weight=\"bold\" opacity=\"0.8\">Violet</text></svg>",
+        "alt": "Rainbow story page 2"
       },
       "paragraphs": [
         {
@@ -74,11 +145,36 @@
               "audio_start_ms": 0,
               "audio_end_ms": 5500,
               "words": [
-                {"word_id": "w1", "text": "Then", "audio_start_ms": 0, "audio_end_ms": 350},
-                {"word_id": "w2", "text": "the", "audio_start_ms": 360, "audio_end_ms": 510},
-                {"word_id": "w3", "text": "clouds", "audio_start_ms": 520, "audio_end_ms": 880},
-                {"word_id": "w4", "text": "broke", "audio_start_ms": 890, "audio_end_ms": 1280},
-                {"word_id": "w5", "text": "apart,", "audio_start_ms": 1290, "audio_end_ms": 1750}
+                {
+                  "word_id": "w1",
+                  "text": "Then",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 350
+                },
+                {
+                  "word_id": "w2",
+                  "text": "the",
+                  "audio_start_ms": 360,
+                  "audio_end_ms": 510
+                },
+                {
+                  "word_id": "w3",
+                  "text": "clouds",
+                  "audio_start_ms": 520,
+                  "audio_end_ms": 880
+                },
+                {
+                  "word_id": "w4",
+                  "text": "broke",
+                  "audio_start_ms": 890,
+                  "audio_end_ms": 1280
+                },
+                {
+                  "word_id": "w5",
+                  "text": "apart,",
+                  "audio_start_ms": 1290,
+                  "audio_end_ms": 1750
+                }
               ]
             },
             {
@@ -86,11 +182,36 @@
               "audio_start_ms": 1850,
               "audio_end_ms": 5800,
               "words": [
-                {"word_id": "w6", "text": "and", "audio_start_ms": 1850, "audio_end_ms": 2050},
-                {"word_id": "w7", "text": "the", "audio_start_ms": 2060, "audio_end_ms": 2200},
-                {"word_id": "w8", "text": "sun", "audio_start_ms": 2210, "audio_end_ms": 2530},
-                {"word_id": "w9", "text": "peeked", "audio_start_ms": 2540, "audio_end_ms": 2950},
-                {"word_id": "w10", "text": "through.", "audio_start_ms": 2960, "audio_end_ms": 3500}
+                {
+                  "word_id": "w6",
+                  "text": "and",
+                  "audio_start_ms": 1850,
+                  "audio_end_ms": 2050
+                },
+                {
+                  "word_id": "w7",
+                  "text": "the",
+                  "audio_start_ms": 2060,
+                  "audio_end_ms": 2200
+                },
+                {
+                  "word_id": "w8",
+                  "text": "sun",
+                  "audio_start_ms": 2210,
+                  "audio_end_ms": 2530
+                },
+                {
+                  "word_id": "w9",
+                  "text": "peeked",
+                  "audio_start_ms": 2540,
+                  "audio_end_ms": 2950
+                },
+                {
+                  "word_id": "w10",
+                  "text": "through.",
+                  "audio_start_ms": 2960,
+                  "audio_end_ms": 3500
+                }
               ]
             }
           ]
@@ -102,8 +223,8 @@
       "layout": "text-right",
       "illustration": {
         "type": "svg",
-        "alt": "A vivid rainbow with all seven colors stretching across a blue sky",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E1F5FE'/><rect x='0' y='155' width='300' height='45' fill='#81C784'/><path d='M-5,175 Q150,15 305,175' fill='none' stroke='#F44336' stroke-width='14'/><path d='M5,178 Q150,30 295,178' fill='none' stroke='#FF9800' stroke-width='14'/><path d='M15,181 Q150,45 285,181' fill='none' stroke='#FFEB3B' stroke-width='14'/><path d='M25,184 Q150,60 275,184' fill='none' stroke='#4CAF50' stroke-width='14'/><path d='M35,187 Q150,75 265,187' fill='none' stroke='#2196F3' stroke-width='12'/><path d='M44,190 Q150,88 256,190' fill='none' stroke='#3F51B5' stroke-width='12'/><path d='M52,193 Q150,100 248,193' fill='none' stroke='#9C27B0' stroke-width='12'/><circle cx='245' cy='40' r='30' fill='#FFD600'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"room\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#FFF8E1\"/><stop offset=\"100%\" stop-color=\"#FFF3CD\"/></linearGradient><radialGradient id=\"prism_out\" cx=\"0.5\" cy=\"0.5\" r=\"0.6\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"rgba(255,255,200,0.8)\"/><stop offset=\"100%\" stop-color=\"transparent\"/></radialGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#room)\"/><rect x=\"600\" y=\"60\" width=\"160\" height=\"200\" rx=\"8\" fill=\"#87CEEB\" opacity=\"0.7\"/><rect x=\"600\" y=\"60\" width=\"160\" height=\"200\" rx=\"8\" fill=\"none\" stroke=\"#8B6914\" stroke-width=\"12\"/><line x1=\"680\" y1=\"60\" x2=\"680\" y2=\"260\" stroke=\"#8B6914\" stroke-width=\"7\"/><line x1=\"600\" y1=\"160\" x2=\"760\" y2=\"160\" stroke=\"#8B6914\" stroke-width=\"7\"/><circle cx=\"680\" cy=\"120\" r=\"35\" fill=\"#FFE566\"/><path d=\"M600 100 L380 280 L420 290 L640 110Z\" fill=\"rgba(255,235,150,0.25)\"/><polygon points=\"380,200 440,320 320,320\" fill=\"rgba(180,220,255,0.6)\" stroke=\"#74A8D4\" stroke-width=\"2\"/><polygon points=\"380,200 440,320 320,320\" fill=\"none\" stroke=\"white\" stroke-width=\"1\" opacity=\"0.5\"/><line x1=\"360\" y1=\"300\" x2=\"100\" y2=\"400\" stroke=\"#FF0000\" stroke-width=\"4\" opacity=\"0.8\"/><line x1=\"360\" y1=\"300\" x2=\"140\" y2=\"410\" stroke=\"#FF7F00\" stroke-width=\"4\" opacity=\"0.8\"/><line x1=\"360\" y1=\"300\" x2=\"180\" y2=\"420\" stroke=\"#FFFF00\" stroke-width=\"4\" opacity=\"0.8\"/><line x1=\"360\" y1=\"300\" x2=\"220\" y2=\"430\" stroke=\"#00CC00\" stroke-width=\"4\" opacity=\"0.8\"/><line x1=\"360\" y1=\"300\" x2=\"260\" y2=\"440\" stroke=\"#0000FF\" stroke-width=\"4\" opacity=\"0.8\"/><line x1=\"360\" y1=\"300\" x2=\"300\" y2=\"450\" stroke=\"#8B00FF\" stroke-width=\"4\" opacity=\"0.8\"/><ellipse cx=\"200\" cy=\"200\" rx=\"40\" ry=\"55\" fill=\"rgba(100,180,255,0.5)\" stroke=\"#74A8D4\" stroke-width=\"2\"/><ellipse cx=\"185\" cy=\"185\" rx=\"12\" ry=\"18\" fill=\"rgba(255,255,255,0.5)\" transform=\"rotate(-20 185 185)\"/><rect x=\"50\" y=\"360\" width=\"400\" height=\"20\" rx=\"5\" fill=\"#8B6914\"/><circle cx=\"250\" cy=\"320\" r=\"34\" fill=\"#F0B48A\"/><ellipse cx=\"250\" cy=\"294\" rx=\"36\" ry=\"24\" fill=\"#3D2B1F\"/><ellipse cx=\"250\" cy=\"360\" rx=\"30\" ry=\"45\" fill=\"#4A90D9\"/><rect x=\"280\" y=\"345\" width=\"100\" height=\"14\" rx=\"3\" fill=\"#E63946\"/><rect x=\"285\" y=\"348\" width=\"90\" height=\"8\" rx=\"2\" fill=\"#FF6B9D\" opacity=\"0.5\"/><ellipse cx=\"360\" cy=\"260\" rx=\"80\" ry=\"45\" fill=\"white\" stroke=\"#DDD\" stroke-width=\"2\"/><polygon points=\"315,300 295,330 335,305\" fill=\"white\"/><text x=\"320\" y=\"255\" font-size=\"20\" fill=\"#333\" font-family=\"Arial\" text-anchor=\"middle\">\ud83d\udca1</text><text x=\"320\" y=\"278\" font-size=\"10\" fill=\"#555\" font-family=\"Arial\" text-anchor=\"middle\">Light + water =</text><text x=\"320\" y=\"293\" font-size=\"10\" fill=\"#555\" font-family=\"Arial\" text-anchor=\"middle\">rainbow!</text></svg>",
+        "alt": "Rainbow story page 3"
       },
       "paragraphs": [
         {
@@ -114,13 +235,48 @@
               "audio_start_ms": 0,
               "audio_end_ms": 6000,
               "words": [
-                {"word_id": "w1", "text": "A", "audio_start_ms": 0, "audio_end_ms": 180},
-                {"word_id": "w2", "text": "rainbow", "audio_start_ms": 190, "audio_end_ms": 700},
-                {"word_id": "w3", "text": "stretched", "audio_start_ms": 710, "audio_end_ms": 1200},
-                {"word_id": "w4", "text": "across", "audio_start_ms": 1210, "audio_end_ms": 1650},
-                {"word_id": "w5", "text": "the", "audio_start_ms": 1660, "audio_end_ms": 1820},
-                {"word_id": "w6", "text": "whole", "audio_start_ms": 1830, "audio_end_ms": 2200},
-                {"word_id": "w7", "text": "sky.", "audio_start_ms": 2210, "audio_end_ms": 2750}
+                {
+                  "word_id": "w1",
+                  "text": "A",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 180
+                },
+                {
+                  "word_id": "w2",
+                  "text": "rainbow",
+                  "audio_start_ms": 190,
+                  "audio_end_ms": 700
+                },
+                {
+                  "word_id": "w3",
+                  "text": "stretched",
+                  "audio_start_ms": 710,
+                  "audio_end_ms": 1200
+                },
+                {
+                  "word_id": "w4",
+                  "text": "across",
+                  "audio_start_ms": 1210,
+                  "audio_end_ms": 1650
+                },
+                {
+                  "word_id": "w5",
+                  "text": "the",
+                  "audio_start_ms": 1660,
+                  "audio_end_ms": 1820
+                },
+                {
+                  "word_id": "w6",
+                  "text": "whole",
+                  "audio_start_ms": 1830,
+                  "audio_end_ms": 2200
+                },
+                {
+                  "word_id": "w7",
+                  "text": "sky.",
+                  "audio_start_ms": 2210,
+                  "audio_end_ms": 2750
+                }
               ]
             },
             {
@@ -128,13 +284,48 @@
               "audio_start_ms": 2850,
               "audio_end_ms": 7500,
               "words": [
-                {"word_id": "w8", "text": "Red,", "audio_start_ms": 2850, "audio_end_ms": 3200},
-                {"word_id": "w9", "text": "orange,", "audio_start_ms": 3210, "audio_end_ms": 3700},
-                {"word_id": "w10", "text": "yellow,", "audio_start_ms": 3710, "audio_end_ms": 4150},
-                {"word_id": "w11", "text": "green,", "audio_start_ms": 4160, "audio_end_ms": 4600},
-                {"word_id": "w12", "text": "blue,", "audio_start_ms": 4610, "audio_end_ms": 5000},
-                {"word_id": "w13", "text": "and", "audio_start_ms": 5010, "audio_end_ms": 5200},
-                {"word_id": "w14", "text": "violet.", "audio_start_ms": 5210, "audio_end_ms": 5800}
+                {
+                  "word_id": "w8",
+                  "text": "Red,",
+                  "audio_start_ms": 2850,
+                  "audio_end_ms": 3200
+                },
+                {
+                  "word_id": "w9",
+                  "text": "orange,",
+                  "audio_start_ms": 3210,
+                  "audio_end_ms": 3700
+                },
+                {
+                  "word_id": "w10",
+                  "text": "yellow,",
+                  "audio_start_ms": 3710,
+                  "audio_end_ms": 4150
+                },
+                {
+                  "word_id": "w11",
+                  "text": "green,",
+                  "audio_start_ms": 4160,
+                  "audio_end_ms": 4600
+                },
+                {
+                  "word_id": "w12",
+                  "text": "blue,",
+                  "audio_start_ms": 4610,
+                  "audio_end_ms": 5000
+                },
+                {
+                  "word_id": "w13",
+                  "text": "and",
+                  "audio_start_ms": 5010,
+                  "audio_end_ms": 5200
+                },
+                {
+                  "word_id": "w14",
+                  "text": "violet.",
+                  "audio_start_ms": 5210,
+                  "audio_end_ms": 5800
+                }
               ]
             }
           ]
@@ -158,18 +349,78 @@
               "audio_start_ms": 0,
               "audio_end_ms": 7000,
               "words": [
-                {"word_id": "w1", "text": "Light", "audio_start_ms": 0, "audio_end_ms": 380},
-                {"word_id": "w2", "text": "from", "audio_start_ms": 390, "audio_end_ms": 620},
-                {"word_id": "w3", "text": "the", "audio_start_ms": 630, "audio_end_ms": 780},
-                {"word_id": "w4", "text": "sun", "audio_start_ms": 790, "audio_end_ms": 1080},
-                {"word_id": "w5", "text": "passes", "audio_start_ms": 1090, "audio_end_ms": 1520},
-                {"word_id": "w6", "text": "through", "audio_start_ms": 1530, "audio_end_ms": 1900},
-                {"word_id": "w7", "text": "tiny", "audio_start_ms": 1910, "audio_end_ms": 2250},
-                {"word_id": "w8", "text": "water", "audio_start_ms": 2260, "audio_end_ms": 2600},
-                {"word_id": "w9", "text": "drops", "audio_start_ms": 2610, "audio_end_ms": 3000},
-                {"word_id": "w10", "text": "in", "audio_start_ms": 3010, "audio_end_ms": 3180},
-                {"word_id": "w11", "text": "the", "audio_start_ms": 3190, "audio_end_ms": 3340},
-                {"word_id": "w12", "text": "air.", "audio_start_ms": 3350, "audio_end_ms": 3850}
+                {
+                  "word_id": "w1",
+                  "text": "Light",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 380
+                },
+                {
+                  "word_id": "w2",
+                  "text": "from",
+                  "audio_start_ms": 390,
+                  "audio_end_ms": 620
+                },
+                {
+                  "word_id": "w3",
+                  "text": "the",
+                  "audio_start_ms": 630,
+                  "audio_end_ms": 780
+                },
+                {
+                  "word_id": "w4",
+                  "text": "sun",
+                  "audio_start_ms": 790,
+                  "audio_end_ms": 1080
+                },
+                {
+                  "word_id": "w5",
+                  "text": "passes",
+                  "audio_start_ms": 1090,
+                  "audio_end_ms": 1520
+                },
+                {
+                  "word_id": "w6",
+                  "text": "through",
+                  "audio_start_ms": 1530,
+                  "audio_end_ms": 1900
+                },
+                {
+                  "word_id": "w7",
+                  "text": "tiny",
+                  "audio_start_ms": 1910,
+                  "audio_end_ms": 2250
+                },
+                {
+                  "word_id": "w8",
+                  "text": "water",
+                  "audio_start_ms": 2260,
+                  "audio_end_ms": 2600
+                },
+                {
+                  "word_id": "w9",
+                  "text": "drops",
+                  "audio_start_ms": 2610,
+                  "audio_end_ms": 3000
+                },
+                {
+                  "word_id": "w10",
+                  "text": "in",
+                  "audio_start_ms": 3010,
+                  "audio_end_ms": 3180
+                },
+                {
+                  "word_id": "w11",
+                  "text": "the",
+                  "audio_start_ms": 3190,
+                  "audio_end_ms": 3340
+                },
+                {
+                  "word_id": "w12",
+                  "text": "air.",
+                  "audio_start_ms": 3350,
+                  "audio_end_ms": 3850
+                }
               ]
             },
             {
@@ -177,13 +428,48 @@
               "audio_start_ms": 3950,
               "audio_end_ms": 8000,
               "words": [
-                {"word_id": "w13", "text": "The", "audio_start_ms": 3950, "audio_end_ms": 4130},
-                {"word_id": "w14", "text": "drops", "audio_start_ms": 4140, "audio_end_ms": 4480},
-                {"word_id": "w15", "text": "bend", "audio_start_ms": 4490, "audio_end_ms": 4800},
-                {"word_id": "w16", "text": "the", "audio_start_ms": 4810, "audio_end_ms": 4960},
-                {"word_id": "w17", "text": "light", "audio_start_ms": 4970, "audio_end_ms": 5290},
-                {"word_id": "w18", "text": "into", "audio_start_ms": 5300, "audio_end_ms": 5620},
-                {"word_id": "w19", "text": "colors!", "audio_start_ms": 5630, "audio_end_ms": 6300}
+                {
+                  "word_id": "w13",
+                  "text": "The",
+                  "audio_start_ms": 3950,
+                  "audio_end_ms": 4130
+                },
+                {
+                  "word_id": "w14",
+                  "text": "drops",
+                  "audio_start_ms": 4140,
+                  "audio_end_ms": 4480
+                },
+                {
+                  "word_id": "w15",
+                  "text": "bend",
+                  "audio_start_ms": 4490,
+                  "audio_end_ms": 4800
+                },
+                {
+                  "word_id": "w16",
+                  "text": "the",
+                  "audio_start_ms": 4810,
+                  "audio_end_ms": 4960
+                },
+                {
+                  "word_id": "w17",
+                  "text": "light",
+                  "audio_start_ms": 4970,
+                  "audio_end_ms": 5290
+                },
+                {
+                  "word_id": "w18",
+                  "text": "into",
+                  "audio_start_ms": 5300,
+                  "audio_end_ms": 5620
+                },
+                {
+                  "word_id": "w19",
+                  "text": "colors!",
+                  "audio_start_ms": 5630,
+                  "audio_end_ms": 6300
+                }
               ]
             }
           ]
@@ -192,8 +478,17 @@
     }
   ],
   "vocabulary": {
-    "rainbow": {"definition": "An arc of colors in the sky caused by sunlight and rain", "phonetic": "/ˈreɪnboʊ/"},
-    "violet": {"definition": "A purple-blue color; the last color of the rainbow", "phonetic": "/ˈvaɪələt/"},
-    "refraction": {"definition": "When light bends as it passes through water or glass", "phonetic": "/rɪˈfrækʃən/"}
+    "rainbow": {
+      "definition": "An arc of colors in the sky caused by sunlight and rain",
+      "phonetic": "/\u02c8re\u026anbo\u028a/"
+    },
+    "violet": {
+      "definition": "A purple-blue color; the last color of the rainbow",
+      "phonetic": "/\u02c8va\u026a\u0259l\u0259t/"
+    },
+    "refraction": {
+      "definition": "When light bends as it passes through water or glass",
+      "phonetic": "/r\u026a\u02c8fr\u00e6k\u0283\u0259n/"
+    }
   }
 }

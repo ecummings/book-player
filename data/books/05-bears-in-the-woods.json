@@ -7,7 +7,13 @@
   "lexile": "430L",
   "reading_level": "Grade 2",
   "cover_color": "#5D4037",
-  "tags": ["animals", "bears", "forest", "nature", "seasons"],
+  "tags": [
+    "animals",
+    "bears",
+    "forest",
+    "nature",
+    "seasons"
+  ],
   "cover_illustration": {
     "type": "svg",
     "alt": "A brown bear with two bear cubs walking through an autumn forest",
@@ -19,8 +25,8 @@
       "layout": "text-right",
       "illustration": {
         "type": "svg",
-        "alt": "A mother bear emerging from a cave in spring",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E8F5E9'/><ellipse cx='80' cy='120' rx='75' ry='80' fill='#78909C'/><ellipse cx='55' cy='130' rx='50' ry='60' fill='#546E7A'/><ellipse cx='40' cy='140' rx='35' ry='45' fill='#37474F'/><rect x='0' y='150' width='300' height='50' fill='#558B2F'/><ellipse cx='200' cy='160' rx='25' ry='8' fill='#33691E'/><ellipse cx='240' cy='165' rx='20' ry='6' fill='#33691E'/><ellipse cx='130' cy='155' rx='30' ry='20' fill='#795548'/><circle cx='130' cy='135' r='22' fill='#795548'/><ellipse cx='118' cy='122' r='10' fill='#8D6E63'/><ellipse cx='142' cy='122' r='10' fill='#8D6E63'/><circle cx='118' cy='120' r='5' fill='#4E342E'/><circle cx='142' cy='120' r='5' fill='#4E342E'/><ellipse cx='130' cy='129' r='7' fill='#4E342E'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"forest_sky\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#C8E6FF\"/></linearGradient><linearGradient id=\"forest_ground\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#5D9E44\"/><stop offset=\"100%\" stop-color=\"#3A7D2B\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#forest_sky)\"/><path d=\"M650 0 L727 500\" stroke=\"#FFE566\" stroke-width=\"3\" opacity=\"0.08\"/><path d=\"M650 0 L762 500\" stroke=\"#FFE566\" stroke-width=\"2\" opacity=\"0.09\"/><path d=\"M650 0 L799 500\" stroke=\"#FFE566\" stroke-width=\"2\" opacity=\"0.10\"/><path d=\"M650 0 L834 500\" stroke=\"#FFE566\" stroke-width=\"2\" opacity=\"0.11\"/><path d=\"M650 0 L862 500\" stroke=\"#FFE566\" stroke-width=\"1\" opacity=\"0.12\"/><circle cx=\"650\" cy=\"60\" r=\"50\" fill=\"#FFE566\" opacity=\"0.9\"/><circle cx=\"650\" cy=\"60\" r=\"35\" fill=\"#FFD700\"/><polygon points=\"50,100 5.0,193 95.0,193\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"50,193 12.0,286 88.0,286\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"50,286 19.0,379 81.0,379\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"44\" y=\"370\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"160,80 110.0,183 210.0,183\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"160,183 118.0,286 202.0,286\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"160,286 125.0,389 195.0,389\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"154\" y=\"380\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"280,90 233.0,186 327.0,186\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"280,186 240.0,282 320.0,282\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"280,282 247.0,378 313.0,378\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"274\" y=\"370\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"420,70 365.0,176 475.0,176\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"420,176 374.0,282 466.0,282\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"420,282 382.0,388 458.0,388\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"414\" y=\"380\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"550,85 503.0,185 597.0,185\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"550,185 510.0,285 590.0,285\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"550,285 517.0,385 583.0,385\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"544\" y=\"375\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"680,75 630.0,178 730.0,178\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"680,178 638.0,281 722.0,281\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"680,281 645.0,384 715.0,384\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"674\" y=\"375\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"780,95 738.0,185 822.0,185\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"780,185 744.0,275 816.0,275\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"780,275 751.0,365 809.0,365\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"774\" y=\"355\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"110,160 73.0,233 147.0,233\" fill=\"#2D6A27\" opacity=\"0.7\"/><polygon points=\"110,233 79.0,306 141.0,306\" fill=\"#2D6A27\" opacity=\"0.8\"/><polygon points=\"110,306 84.0,379 136.0,379\" fill=\"#2D6A27\" opacity=\"0.9\"/><rect x=\"104\" y=\"370\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"230,150 190.0,230 270.0,230\" fill=\"#2D6A27\" opacity=\"0.7\"/><polygon points=\"230,230 196.0,310 264.0,310\" fill=\"#2D6A27\" opacity=\"0.8\"/><polygon points=\"230,310 202.0,390 258.0,390\" fill=\"#2D6A27\" opacity=\"0.9\"/><rect x=\"224\" y=\"380\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"370,145 328.0,228 412.0,228\" fill=\"#2D6A27\" opacity=\"0.7\"/><polygon points=\"370,228 334.0,311 406.0,311\" fill=\"#2D6A27\" opacity=\"0.8\"/><polygon points=\"370,311 341.0,394 399.0,394\" fill=\"#2D6A27\" opacity=\"0.9\"/><rect x=\"364\" y=\"385\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"520,155 481.0,231 559.0,231\" fill=\"#2D6A27\" opacity=\"0.7\"/><polygon points=\"520,231 487.0,307 553.0,307\" fill=\"#2D6A27\" opacity=\"0.8\"/><polygon points=\"520,307 493.0,383 547.0,383\" fill=\"#2D6A27\" opacity=\"0.9\"/><rect x=\"514\" y=\"375\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"700,160 664.0,230 736.0,230\" fill=\"#2D6A27\" opacity=\"0.7\"/><polygon points=\"700,230 670.0,300 730.0,300\" fill=\"#2D6A27\" opacity=\"0.8\"/><polygon points=\"700,300 675.0,370 725.0,370\" fill=\"#2D6A27\" opacity=\"0.9\"/><rect x=\"694\" y=\"360\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><rect x=\"0\" y=\"380\" width=\"800\" height=\"120\" fill=\"url(#forest_ground)\"/><ellipse cx=\"400\" cy=\"380\" rx=\"500\" ry=\"25\" fill=\"#4A8C38\"/><ellipse cx=\"80\" cy=\"395\" rx=\"30\" ry=\"12\" fill=\"#4A8C38\" transform=\"rotate(-20 80 395)\"/><ellipse cx=\"130\" cy=\"400\" rx=\"30\" ry=\"12\" fill=\"#4A8C38\" transform=\"rotate(15 130 400)\"/><ellipse cx=\"200\" cy=\"390\" rx=\"30\" ry=\"12\" fill=\"#4A8C38\" transform=\"rotate(-25 200 390)\"/><ellipse cx=\"600\" cy=\"395\" rx=\"30\" ry=\"12\" fill=\"#4A8C38\" transform=\"rotate(20 600 395)\"/><ellipse cx=\"660\" cy=\"400\" rx=\"30\" ry=\"12\" fill=\"#4A8C38\" transform=\"rotate(-15 660 400)\"/><ellipse cx=\"730\" cy=\"390\" rx=\"30\" ry=\"12\" fill=\"#4A8C38\" transform=\"rotate(25 730 390)\"/><ellipse cx=\"250\" cy=\"432\" rx=\"54\" ry=\"66\" fill=\"#3D2510\"/><circle cx=\"250\" cy=\"384\" r=\"46\" fill=\"#3D2510\"/><circle cx=\"216\" cy=\"346\" r=\"17\" fill=\"#3D2510\"/><circle cx=\"284\" cy=\"346\" r=\"17\" fill=\"#3D2510\"/><circle cx=\"216\" cy=\"346\" r=\"10\" fill=\"#8B5E3C\"/><circle cx=\"284\" cy=\"346\" r=\"10\" fill=\"#8B5E3C\"/><ellipse cx=\"250\" cy=\"402\" rx=\"24\" ry=\"17\" fill=\"#8B5E3C\"/><circle cx=\"250\" cy=\"396\" r=\"7\" fill=\"#3D1F0A\"/><circle cx=\"233\" cy=\"374\" r=\"7\" fill=\"white\"/><circle cx=\"267\" cy=\"374\" r=\"7\" fill=\"white\"/><circle cx=\"236\" cy=\"373\" r=\"5\" fill=\"#1A0A00\"/><circle cx=\"264\" cy=\"373\" r=\"5\" fill=\"#1A0A00\"/><ellipse cx=\"420\" cy=\"440\" rx=\"45\" ry=\"55\" fill=\"#5C3A1E\"/><circle cx=\"420\" cy=\"400\" r=\"38\" fill=\"#5C3A1E\"/><circle cx=\"392\" cy=\"368\" r=\"14\" fill=\"#5C3A1E\"/><circle cx=\"448\" cy=\"368\" r=\"14\" fill=\"#5C3A1E\"/><circle cx=\"392\" cy=\"368\" r=\"8\" fill=\"#8B5E3C\"/><circle cx=\"448\" cy=\"368\" r=\"8\" fill=\"#8B5E3C\"/><ellipse cx=\"420\" cy=\"415\" rx=\"20\" ry=\"14\" fill=\"#8B5E3C\"/><circle cx=\"420\" cy=\"410\" r=\"6\" fill=\"#3D1F0A\"/><circle cx=\"406\" cy=\"392\" r=\"6\" fill=\"white\"/><circle cx=\"434\" cy=\"392\" r=\"6\" fill=\"white\"/><circle cx=\"408\" cy=\"391\" r=\"4\" fill=\"#1A0A00\"/><circle cx=\"432\" cy=\"391\" r=\"4\" fill=\"#1A0A00\"/><ellipse cx=\"560\" cy=\"447\" rx=\"31\" ry=\"38\" fill=\"#7B5230\"/><circle cx=\"560\" cy=\"419\" r=\"27\" fill=\"#7B5230\"/><circle cx=\"540\" cy=\"397\" r=\"10\" fill=\"#7B5230\"/><circle cx=\"580\" cy=\"397\" r=\"10\" fill=\"#7B5230\"/><circle cx=\"540\" cy=\"397\" r=\"6\" fill=\"#8B5E3C\"/><circle cx=\"580\" cy=\"397\" r=\"6\" fill=\"#8B5E3C\"/><ellipse cx=\"560\" cy=\"430\" rx=\"14\" ry=\"10\" fill=\"#8B5E3C\"/><circle cx=\"560\" cy=\"426\" r=\"4\" fill=\"#3D1F0A\"/><circle cx=\"550\" cy=\"413\" r=\"4\" fill=\"white\"/><circle cx=\"570\" cy=\"413\" r=\"4\" fill=\"white\"/><circle cx=\"552\" cy=\"413\" r=\"3\" fill=\"#1A0A00\"/><circle cx=\"568\" cy=\"413\" r=\"3\" fill=\"#1A0A00\"/><ellipse cx=\"350\" cy=\"290\" rx=\"18\" ry=\"11\" fill=\"#FF9EE0\" transform=\"rotate(-15 350 290)\" opacity=\"0.85\"/><ellipse cx=\"378\" cy=\"297\" rx=\"18\" ry=\"11\" fill=\"#FF9EE0\" transform=\"rotate(15 378 297)\" opacity=\"0.85\"/><ellipse cx=\"362\" cy=\"293\" rx=\"4\" ry=\"10\" fill=\"#C0506A\"/><ellipse cx=\"400\" cy=\"380\" rx=\"500\" ry=\"40\" fill=\"rgba(255,255,255,0.15)\"/></svg>",
+        "alt": "Bears page 1"
       },
       "paragraphs": [
         {
@@ -31,15 +37,60 @@
               "audio_start_ms": 0,
               "audio_end_ms": 5500,
               "words": [
-                {"word_id": "w1", "text": "After", "audio_start_ms": 0, "audio_end_ms": 380},
-                {"word_id": "w2", "text": "a", "audio_start_ms": 390, "audio_end_ms": 520},
-                {"word_id": "w3", "text": "long,", "audio_start_ms": 530, "audio_end_ms": 900},
-                {"word_id": "w4", "text": "cold", "audio_start_ms": 910, "audio_end_ms": 1250},
-                {"word_id": "w5", "text": "winter,", "audio_start_ms": 1260, "audio_end_ms": 1750},
-                {"word_id": "w6", "text": "Mama", "audio_start_ms": 1760, "audio_end_ms": 2100},
-                {"word_id": "w7", "text": "Bear", "audio_start_ms": 2110, "audio_end_ms": 2450},
-                {"word_id": "w8", "text": "woke", "audio_start_ms": 2460, "audio_end_ms": 2780},
-                {"word_id": "w9", "text": "up.", "audio_start_ms": 2790, "audio_end_ms": 3200}
+                {
+                  "word_id": "w1",
+                  "text": "After",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 380
+                },
+                {
+                  "word_id": "w2",
+                  "text": "a",
+                  "audio_start_ms": 390,
+                  "audio_end_ms": 520
+                },
+                {
+                  "word_id": "w3",
+                  "text": "long,",
+                  "audio_start_ms": 530,
+                  "audio_end_ms": 900
+                },
+                {
+                  "word_id": "w4",
+                  "text": "cold",
+                  "audio_start_ms": 910,
+                  "audio_end_ms": 1250
+                },
+                {
+                  "word_id": "w5",
+                  "text": "winter,",
+                  "audio_start_ms": 1260,
+                  "audio_end_ms": 1750
+                },
+                {
+                  "word_id": "w6",
+                  "text": "Mama",
+                  "audio_start_ms": 1760,
+                  "audio_end_ms": 2100
+                },
+                {
+                  "word_id": "w7",
+                  "text": "Bear",
+                  "audio_start_ms": 2110,
+                  "audio_end_ms": 2450
+                },
+                {
+                  "word_id": "w8",
+                  "text": "woke",
+                  "audio_start_ms": 2460,
+                  "audio_end_ms": 2780
+                },
+                {
+                  "word_id": "w9",
+                  "text": "up.",
+                  "audio_start_ms": 2790,
+                  "audio_end_ms": 3200
+                }
               ]
             }
           ]
@@ -51,8 +102,8 @@
       "layout": "text-left",
       "illustration": {
         "type": "svg",
-        "alt": "Two small bear cubs tumbling and playing in the grass",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#F1F8E9'/><rect x='0' y='150' width='300' height='50' fill='#66BB6A'/><ellipse cx='100' cy='160' rx='28' ry='16' fill='#558B2F'/><circle cx='100' cy='145' r='18' fill='#8D6E63' transform='rotate(30 100 145)'/><ellipse cx='90' cy='135' r='8' fill='#A1887F'/><ellipse cx='110' cy='133' r='8' fill='#A1887F'/><circle cx='90' cy='133' r='4' fill='#4E342E'/><circle cx='110' cy='132' r='4' fill='#4E342E'/><ellipse cx='200' cy='155' rx='28' ry='16' fill='#558B2F'/><circle cx='200' cy='138' r='18' fill='#8D6E63' transform='rotate(-20 200 138)'/><ellipse cx='190' cy='128' r='8' fill='#A1887F'/><ellipse cx='210' cy='126' r='8' fill='#A1887F'/><circle cx='190' cy='127' r='4' fill='#4E342E'/><circle cx='210' cy='125' r='4' fill='#4E342E'/><circle cx='30' cy='40' r='15' fill='#FFD600'/><circle cx='60' cy='15' r='8' fill='white'/><circle cx='90' cy='10' r='10' fill='white'/><circle cx='120' cy='12' r='9' fill='white'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"river_sky\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#4FC3F7\"/><stop offset=\"100%\" stop-color=\"#B3E5FC\"/></linearGradient><linearGradient id=\"river\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#1565C0\"/><stop offset=\"100%\" stop-color=\"#0D47A1\"/></linearGradient><linearGradient id=\"bank\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#7B5C1E\"/><stop offset=\"100%\" stop-color=\"#5C4010\"/></linearGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#river_sky)\"/><polygon points=\"30,50 -12.0,143 72.0,143\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"30,143 -6.0,236 66.0,236\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"30,236 1.0,329 59.0,329\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"24\" y=\"320\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"140,60 95.0,146 185.0,146\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"140,146 102.0,232 178.0,232\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"140,232 109.0,318 171.0,318\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"134\" y=\"310\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"600,55 556.0,145 644.0,145\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"600,145 563.0,235 637.0,235\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"600,235 570.0,325 630.0,325\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"594\" y=\"315\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"720,65 679.0,148 761.0,148\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"720,148 686.0,231 754.0,231\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"720,231 692.0,314 748.0,314\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"714\" y=\"305\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"760,50 715.0,146 805.0,146\" fill=\"#1E4D1A\" opacity=\"0.7\"/><polygon points=\"760,146 722.0,242 798.0,242\" fill=\"#1E4D1A\" opacity=\"0.8\"/><polygon points=\"760,242 729.0,338 791.0,338\" fill=\"#1E4D1A\" opacity=\"0.9\"/><rect x=\"754\" y=\"330\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><rect x=\"0\" y=\"280\" width=\"800\" height=\"220\" fill=\"url(#river)\"/><ellipse cx=\"400\" cy=\"280\" rx=\"500\" ry=\"40\" fill=\"url(#bank)\"/><path d=\"M0 320 Q40 310 80 320\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M100 350 Q140 340 180 350\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M200 330 Q240 320 280 330\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M300 360 Q340 350 380 360\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M400 340 Q440 330 480 340\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M500 355 Q540 345 580 355\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M600 335 Q640 325 680 335\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M700 350 Q740 340 780 350\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M300 290 Q320 240 350 260\" stroke=\"#FF6B35\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><ellipse cx=\"352\" cy=\"255\" rx=\"20\" ry=\"10\" fill=\"#FF6B35\" transform=\"rotate(-30 352 255)\"/><path d=\"M500 300 Q520 245 555 268\" stroke=\"#E65525\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><ellipse cx=\"557\" cy=\"263\" rx=\"20\" ry=\"10\" fill=\"#E65525\" transform=\"rotate(-25 557 263)\"/><ellipse cx=\"180\" cy=\"321\" rx=\"50\" ry=\"61\" fill=\"#3D2510\"/><circle cx=\"180\" cy=\"277\" r=\"42\" fill=\"#3D2510\"/><circle cx=\"149\" cy=\"242\" r=\"15\" fill=\"#3D2510\"/><circle cx=\"211\" cy=\"242\" r=\"15\" fill=\"#3D2510\"/><circle cx=\"149\" cy=\"242\" r=\"9\" fill=\"#8B5E3C\"/><circle cx=\"211\" cy=\"242\" r=\"9\" fill=\"#8B5E3C\"/><ellipse cx=\"180\" cy=\"294\" rx=\"22\" ry=\"15\" fill=\"#8B5E3C\"/><circle cx=\"180\" cy=\"288\" r=\"7\" fill=\"#3D1F0A\"/><circle cx=\"165\" cy=\"268\" r=\"7\" fill=\"white\"/><circle cx=\"195\" cy=\"268\" r=\"7\" fill=\"white\"/><circle cx=\"167\" cy=\"267\" r=\"4\" fill=\"#1A0A00\"/><circle cx=\"193\" cy=\"267\" r=\"4\" fill=\"#1A0A00\"/><ellipse cx=\"580\" cy=\"352\" rx=\"29\" ry=\"36\" fill=\"#7B5230\"/><circle cx=\"580\" cy=\"326\" r=\"25\" fill=\"#7B5230\"/><circle cx=\"562\" cy=\"305\" r=\"9\" fill=\"#7B5230\"/><circle cx=\"598\" cy=\"305\" r=\"9\" fill=\"#7B5230\"/><circle cx=\"562\" cy=\"305\" r=\"5\" fill=\"#8B5E3C\"/><circle cx=\"598\" cy=\"305\" r=\"5\" fill=\"#8B5E3C\"/><ellipse cx=\"580\" cy=\"335\" rx=\"13\" ry=\"9\" fill=\"#8B5E3C\"/><circle cx=\"580\" cy=\"332\" r=\"4\" fill=\"#3D1F0A\"/><circle cx=\"571\" cy=\"320\" r=\"4\" fill=\"white\"/><circle cx=\"589\" cy=\"320\" r=\"4\" fill=\"white\"/><circle cx=\"572\" cy=\"320\" r=\"3\" fill=\"#1A0A00\"/><circle cx=\"588\" cy=\"320\" r=\"3\" fill=\"#1A0A00\"/><ellipse cx=\"240\" cy=\"280\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(0 240 280)\"/><ellipse cx=\"230\" cy=\"292\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(40 230 292)\"/><ellipse cx=\"206\" cy=\"299\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(80 206 299)\"/><ellipse cx=\"181\" cy=\"297\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(120 181 297)\"/><ellipse cx=\"163\" cy=\"286\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(160 163 286)\"/><ellipse cx=\"163\" cy=\"274\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(200 163 274)\"/><ellipse cx=\"180\" cy=\"263\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(240 180 263)\"/><ellipse cx=\"206\" cy=\"261\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(280 206 261)\"/><ellipse cx=\"230\" cy=\"268\" rx=\"5\" ry=\"3\" fill=\"rgba(255,255,255,0.7)\" transform=\"rotate(320 230 268)\"/></svg>",
+        "alt": "Bears page 2"
       },
       "paragraphs": [
         {
@@ -63,16 +114,66 @@
               "audio_start_ms": 0,
               "audio_end_ms": 6500,
               "words": [
-                {"word_id": "w1", "text": "Her", "audio_start_ms": 0, "audio_end_ms": 280},
-                {"word_id": "w2", "text": "two", "audio_start_ms": 290, "audio_end_ms": 550},
-                {"word_id": "w3", "text": "cubs,", "audio_start_ms": 560, "audio_end_ms": 950},
-                {"word_id": "w4", "text": "Birch", "audio_start_ms": 960, "audio_end_ms": 1280},
-                {"word_id": "w5", "text": "and", "audio_start_ms": 1290, "audio_end_ms": 1480},
-                {"word_id": "w6", "text": "Clover,", "audio_start_ms": 1490, "audio_end_ms": 1980},
-                {"word_id": "w7", "text": "tumbled", "audio_start_ms": 1990, "audio_end_ms": 2500},
-                {"word_id": "w8", "text": "out", "audio_start_ms": 2510, "audio_end_ms": 2750},
-                {"word_id": "w9", "text": "behind", "audio_start_ms": 2760, "audio_end_ms": 3150},
-                {"word_id": "w10", "text": "her.", "audio_start_ms": 3160, "audio_end_ms": 3600}
+                {
+                  "word_id": "w1",
+                  "text": "Her",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 280
+                },
+                {
+                  "word_id": "w2",
+                  "text": "two",
+                  "audio_start_ms": 290,
+                  "audio_end_ms": 550
+                },
+                {
+                  "word_id": "w3",
+                  "text": "cubs,",
+                  "audio_start_ms": 560,
+                  "audio_end_ms": 950
+                },
+                {
+                  "word_id": "w4",
+                  "text": "Birch",
+                  "audio_start_ms": 960,
+                  "audio_end_ms": 1280
+                },
+                {
+                  "word_id": "w5",
+                  "text": "and",
+                  "audio_start_ms": 1290,
+                  "audio_end_ms": 1480
+                },
+                {
+                  "word_id": "w6",
+                  "text": "Clover,",
+                  "audio_start_ms": 1490,
+                  "audio_end_ms": 1980
+                },
+                {
+                  "word_id": "w7",
+                  "text": "tumbled",
+                  "audio_start_ms": 1990,
+                  "audio_end_ms": 2500
+                },
+                {
+                  "word_id": "w8",
+                  "text": "out",
+                  "audio_start_ms": 2510,
+                  "audio_end_ms": 2750
+                },
+                {
+                  "word_id": "w9",
+                  "text": "behind",
+                  "audio_start_ms": 2760,
+                  "audio_end_ms": 3150
+                },
+                {
+                  "word_id": "w10",
+                  "text": "her.",
+                  "audio_start_ms": 3160,
+                  "audio_end_ms": 3600
+                }
               ]
             }
           ]
@@ -84,8 +185,8 @@
       "layout": "text-right",
       "illustration": {
         "type": "svg",
-        "alt": "A bear catching a jumping salmon from a rushing river",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E3F2FD'/><path d='M0,120 Q75,100 150,120 Q225,140 300,120 L300,200 L0,200 Z' fill='#29B6F6'/><path d='M0,130 Q75,110 150,130 Q225,150 300,130' fill='none' stroke='#0288D1' stroke-width='2'/><ellipse cx='150' cy='150' rx='120' ry='15' fill='#0288D1' opacity='0.3'/><ellipse cx='140' cy='140' rx='28' ry='20' fill='#795548'/><circle cx='140' cy='120' r='22' fill='#795548'/><ellipse cx='128' cy='108' r='10' fill='#8D6E63'/><ellipse cx='152' cy='108' r='10' fill='#8D6E63'/><circle cx='128' cy='106' r='5' fill='#4E342E'/><circle cx='152' cy='106' r='5' fill='#4E342E'/><ellipse cx='140' cy='116' r='7' fill='#4E342E'/><ellipse cx='200' cy='98' rx='30' ry='10' fill='#B0BEC5' transform='rotate(-40 200 98)'/><ellipse cx='218' cy='78' rx='14' ry='6' fill='#90A4AE' transform='rotate(-40 218 78)'/><circle cx='225' cy='72' r='4' fill='#37474F'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"night_f\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#0A1628\"/><stop offset=\"100%\" stop-color=\"#1B2A45\"/></linearGradient><radialGradient id=\"fire_g\" cx=\"0.5\" cy=\"0.5\" r=\"0.5\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#FF9800\"/><stop offset=\"50%\" stop-color=\"#FF5722\"/><stop offset=\"100%\" stop-color=\"transparent\"/></radialGradient><radialGradient id=\"cave_in\" cx=\"0.5\" cy=\"0.8\" r=\"0.7\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#3D2510\"/><stop offset=\"100%\" stop-color=\"#1A0A05\"/></radialGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#night_f)\"/><circle cx=\"50\" cy=\"30\" r=\"2\" fill=\"white\" opacity=\"0.80\"/><circle cx=\"120\" cy=\"60\" r=\"1.5\" fill=\"white\" opacity=\"0.70\"/><circle cx=\"200\" cy=\"40\" r=\"2\" fill=\"white\" opacity=\"0.90\"/><circle cx=\"300\" cy=\"25\" r=\"1.5\" fill=\"white\" opacity=\"0.60\"/><circle cx=\"400\" cy=\"50\" r=\"2\" fill=\"white\" opacity=\"0.80\"/><circle cx=\"500\" cy=\"30\" r=\"1.5\" fill=\"white\" opacity=\"0.70\"/><circle cx=\"600\" cy=\"45\" r=\"2\" fill=\"white\" opacity=\"0.85\"/><circle cx=\"700\" cy=\"25\" r=\"1.5\" fill=\"white\" opacity=\"0.65\"/><circle cx=\"750\" cy=\"55\" r=\"2\" fill=\"white\" opacity=\"0.75\"/><circle cx=\"680\" cy=\"80\" r=\"50\" fill=\"#FFFDE7\" opacity=\"0.9\"/><circle cx=\"700\" cy=\"68\" r=\"40\" fill=\"#0A1628\" opacity=\"0.08\"/><polygon points=\"30,150 -15.0,250 75.0,250\" fill=\"#050A14\" opacity=\"0.7\"/><polygon points=\"30,250 -8.0,350 68.0,350\" fill=\"#050A14\" opacity=\"0.8\"/><polygon points=\"30,350 -1.0,450 61.0,450\" fill=\"#050A14\" opacity=\"0.9\"/><rect x=\"24\" y=\"440\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"550,130 500.0,236 600.0,236\" fill=\"#050A14\" opacity=\"0.7\"/><polygon points=\"550,236 508.0,342 592.0,342\" fill=\"#050A14\" opacity=\"0.8\"/><polygon points=\"550,342 515.0,448 585.0,448\" fill=\"#050A14\" opacity=\"0.9\"/><rect x=\"544\" y=\"440\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"660,145 616.0,241 704.0,241\" fill=\"#050A14\" opacity=\"0.7\"/><polygon points=\"660,241 623.0,337 697.0,337\" fill=\"#050A14\" opacity=\"0.8\"/><polygon points=\"660,337 630.0,433 690.0,433\" fill=\"#050A14\" opacity=\"0.9\"/><rect x=\"654\" y=\"425\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><polygon points=\"760,160 718.0,250 802.0,250\" fill=\"#050A14\" opacity=\"0.7\"/><polygon points=\"760,250 724.0,340 796.0,340\" fill=\"#050A14\" opacity=\"0.8\"/><polygon points=\"760,340 731.0,430 789.0,430\" fill=\"#050A14\" opacity=\"0.9\"/><rect x=\"754\" y=\"420\" width=\"12\" height=\"30\" fill=\"#5C3A1E\"/><ellipse cx=\"300\" cy=\"420\" rx=\"200\" ry=\"130\" fill=\"url(#cave_in)\"/><ellipse cx=\"300\" cy=\"420\" rx=\"180\" ry=\"110\" fill=\"#0D0500\"/><ellipse cx=\"500\" cy=\"440\" rx=\"45\" ry=\"15\" fill=\"#3D2510\"/><ellipse cx=\"500\" cy=\"440\" rx=\"35\" ry=\"10\" fill=\"#2A1508\"/><ellipse cx=\"500\" cy=\"435\" rx=\"30\" ry=\"10\" fill=\"url(#fire_g)\" opacity=\"0.9\"/><path d=\"M488 435 Q495 400 500 380 Q505 400 512 435Z\" fill=\"#FF9800\" opacity=\"0.85\"/><path d=\"M492 435 Q496 415 500 400 Q504 415 508 435Z\" fill=\"#FFD700\" opacity=\"0.9\"/><ellipse cx=\"500\" cy=\"420\" rx=\"80\" ry=\"40\" fill=\"url(#fire_g)\" opacity=\"0.25\"/><ellipse cx=\"220\" cy=\"410\" rx=\"60\" ry=\"35\" fill=\"#1A0A05\" opacity=\"0.9\"/><ellipse cx=\"320\" cy=\"420\" rx=\"45\" ry=\"28\" fill=\"#1A0A05\" opacity=\"0.9\"/><ellipse cx=\"280\" cy=\"400\" rx=\"25\" ry=\"18\" fill=\"#1A0A05\" opacity=\"0.9\"/><circle cx=\"160\" cy=\"320\" r=\"3\" fill=\"#AAFF44\" opacity=\"0.8\"/><circle cx=\"160\" cy=\"320\" r=\"8\" fill=\"#AAFF44\" opacity=\"0.16\"/><circle cx=\"380\" cy=\"280\" r=\"3\" fill=\"#AAFF44\" opacity=\"0.7\"/><circle cx=\"380\" cy=\"280\" r=\"8\" fill=\"#AAFF44\" opacity=\"0.14\"/><circle cx=\"600\" cy=\"310\" r=\"3\" fill=\"#AAFF44\" opacity=\"0.8\"/><circle cx=\"600\" cy=\"310\" r=\"8\" fill=\"#AAFF44\" opacity=\"0.17\"/><circle cx=\"720\" cy=\"350\" r=\"3\" fill=\"#AAFF44\" opacity=\"0.6\"/><circle cx=\"720\" cy=\"350\" r=\"8\" fill=\"#AAFF44\" opacity=\"0.12\"/></svg>",
+        "alt": "Bears page 3"
       },
       "paragraphs": [
         {
@@ -96,10 +197,30 @@
               "audio_start_ms": 0,
               "audio_end_ms": 6000,
               "words": [
-                {"word_id": "w1", "text": "Mama", "audio_start_ms": 0, "audio_end_ms": 380},
-                {"word_id": "w2", "text": "Bear", "audio_start_ms": 390, "audio_end_ms": 680},
-                {"word_id": "w3", "text": "was", "audio_start_ms": 690, "audio_end_ms": 920},
-                {"word_id": "w4", "text": "hungry.", "audio_start_ms": 930, "audio_end_ms": 1450}
+                {
+                  "word_id": "w1",
+                  "text": "Mama",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 380
+                },
+                {
+                  "word_id": "w2",
+                  "text": "Bear",
+                  "audio_start_ms": 390,
+                  "audio_end_ms": 680
+                },
+                {
+                  "word_id": "w3",
+                  "text": "was",
+                  "audio_start_ms": 690,
+                  "audio_end_ms": 920
+                },
+                {
+                  "word_id": "w4",
+                  "text": "hungry.",
+                  "audio_start_ms": 930,
+                  "audio_end_ms": 1450
+                }
               ]
             },
             {
@@ -107,15 +228,60 @@
               "audio_start_ms": 1550,
               "audio_end_ms": 7000,
               "words": [
-                {"word_id": "w5", "text": "She", "audio_start_ms": 1550, "audio_end_ms": 1780},
-                {"word_id": "w6", "text": "waded", "audio_start_ms": 1790, "audio_end_ms": 2200},
-                {"word_id": "w7", "text": "into", "audio_start_ms": 2210, "audio_end_ms": 2550},
-                {"word_id": "w8", "text": "the", "audio_start_ms": 2560, "audio_end_ms": 2700},
-                {"word_id": "w9", "text": "cold", "audio_start_ms": 2710, "audio_end_ms": 3050},
-                {"word_id": "w10", "text": "river", "audio_start_ms": 3060, "audio_end_ms": 3450},
-                {"word_id": "w11", "text": "to", "audio_start_ms": 3460, "audio_end_ms": 3620},
-                {"word_id": "w12", "text": "catch", "audio_start_ms": 3630, "audio_end_ms": 3980},
-                {"word_id": "w13", "text": "fish.", "audio_start_ms": 3990, "audio_end_ms": 4500}
+                {
+                  "word_id": "w5",
+                  "text": "She",
+                  "audio_start_ms": 1550,
+                  "audio_end_ms": 1780
+                },
+                {
+                  "word_id": "w6",
+                  "text": "waded",
+                  "audio_start_ms": 1790,
+                  "audio_end_ms": 2200
+                },
+                {
+                  "word_id": "w7",
+                  "text": "into",
+                  "audio_start_ms": 2210,
+                  "audio_end_ms": 2550
+                },
+                {
+                  "word_id": "w8",
+                  "text": "the",
+                  "audio_start_ms": 2560,
+                  "audio_end_ms": 2700
+                },
+                {
+                  "word_id": "w9",
+                  "text": "cold",
+                  "audio_start_ms": 2710,
+                  "audio_end_ms": 3050
+                },
+                {
+                  "word_id": "w10",
+                  "text": "river",
+                  "audio_start_ms": 3060,
+                  "audio_end_ms": 3450
+                },
+                {
+                  "word_id": "w11",
+                  "text": "to",
+                  "audio_start_ms": 3460,
+                  "audio_end_ms": 3620
+                },
+                {
+                  "word_id": "w12",
+                  "text": "catch",
+                  "audio_start_ms": 3630,
+                  "audio_end_ms": 3980
+                },
+                {
+                  "word_id": "w13",
+                  "text": "fish.",
+                  "audio_start_ms": 3990,
+                  "audio_end_ms": 4500
+                }
               ]
             }
           ]
@@ -139,18 +305,78 @@
               "audio_start_ms": 0,
               "audio_end_ms": 6500,
               "words": [
-                {"word_id": "w1", "text": "As", "audio_start_ms": 0, "audio_end_ms": 280},
-                {"word_id": "w2", "text": "the", "audio_start_ms": 290, "audio_end_ms": 440},
-                {"word_id": "w3", "text": "sun", "audio_start_ms": 450, "audio_end_ms": 720},
-                {"word_id": "w4", "text": "set,", "audio_start_ms": 730, "audio_end_ms": 1100},
-                {"word_id": "w5", "text": "the", "audio_start_ms": 1110, "audio_end_ms": 1260},
-                {"word_id": "w6", "text": "bear", "audio_start_ms": 1270, "audio_end_ms": 1580},
-                {"word_id": "w7", "text": "family", "audio_start_ms": 1590, "audio_end_ms": 2050},
-                {"word_id": "w8", "text": "curled", "audio_start_ms": 2060, "audio_end_ms": 2480},
-                {"word_id": "w9", "text": "up", "audio_start_ms": 2490, "audio_end_ms": 2720},
-                {"word_id": "w10", "text": "together", "audio_start_ms": 2730, "audio_end_ms": 3250},
-                {"word_id": "w11", "text": "and", "audio_start_ms": 3260, "audio_end_ms": 3450},
-                {"word_id": "w12", "text": "slept.", "audio_start_ms": 3460, "audio_end_ms": 3980}
+                {
+                  "word_id": "w1",
+                  "text": "As",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 280
+                },
+                {
+                  "word_id": "w2",
+                  "text": "the",
+                  "audio_start_ms": 290,
+                  "audio_end_ms": 440
+                },
+                {
+                  "word_id": "w3",
+                  "text": "sun",
+                  "audio_start_ms": 450,
+                  "audio_end_ms": 720
+                },
+                {
+                  "word_id": "w4",
+                  "text": "set,",
+                  "audio_start_ms": 730,
+                  "audio_end_ms": 1100
+                },
+                {
+                  "word_id": "w5",
+                  "text": "the",
+                  "audio_start_ms": 1110,
+                  "audio_end_ms": 1260
+                },
+                {
+                  "word_id": "w6",
+                  "text": "bear",
+                  "audio_start_ms": 1270,
+                  "audio_end_ms": 1580
+                },
+                {
+                  "word_id": "w7",
+                  "text": "family",
+                  "audio_start_ms": 1590,
+                  "audio_end_ms": 2050
+                },
+                {
+                  "word_id": "w8",
+                  "text": "curled",
+                  "audio_start_ms": 2060,
+                  "audio_end_ms": 2480
+                },
+                {
+                  "word_id": "w9",
+                  "text": "up",
+                  "audio_start_ms": 2490,
+                  "audio_end_ms": 2720
+                },
+                {
+                  "word_id": "w10",
+                  "text": "together",
+                  "audio_start_ms": 2730,
+                  "audio_end_ms": 3250
+                },
+                {
+                  "word_id": "w11",
+                  "text": "and",
+                  "audio_start_ms": 3260,
+                  "audio_end_ms": 3450
+                },
+                {
+                  "word_id": "w12",
+                  "text": "slept.",
+                  "audio_start_ms": 3460,
+                  "audio_end_ms": 3980
+                }
               ]
             }
           ]
@@ -159,8 +385,17 @@
     }
   ],
   "vocabulary": {
-    "hibernate": {"definition": "To sleep through winter to save energy", "phonetic": "/ˈhaɪbərneɪt/"},
-    "cubs": {"definition": "Young bears", "phonetic": "/kʌbz/"},
-    "waded": {"definition": "Walked slowly through water", "phonetic": "/ˈweɪdɪd/"}
+    "hibernate": {
+      "definition": "To sleep through winter to save energy",
+      "phonetic": "/\u02c8ha\u026ab\u0259rne\u026at/"
+    },
+    "cubs": {
+      "definition": "Young bears",
+      "phonetic": "/k\u028cbz/"
+    },
+    "waded": {
+      "definition": "Walked slowly through water",
+      "phonetic": "/\u02c8we\u026ad\u026ad/"
+    }
   }
 }

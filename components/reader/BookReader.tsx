@@ -6,7 +6,7 @@ import { useSpeech } from '@/hooks/useSpeech';
 import { useAnalytics } from '@/hooks/useAnalytics';
 import { loadReaderSettings, saveReaderSettings } from '@/lib/storage';
 import { COMMON_VOCABULARY } from '@/lib/vocabulary';
-import PageContent from './PageContent';
+import BookSpread from './BookSpread';
 import AudioControls from './AudioControls';
 import WordPopup from './WordPopup';
 import SettingsPanel from '@/components/ui/SettingsPanel';
@@ -69,6 +69,7 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
   const currentPage = book.pages[currentPageIndex];
 
   const [isBookComplete, setIsBookComplete] = useState(false);
+  const [navDirection, setNavDirection] = useState<'forward' | 'backward'>('forward');
 
   const autoPlayRef = useRef(false);
   const playRef    = useRef<() => void>(() => {});
@@ -142,6 +143,7 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
       track('page_completed', { page_index: currentPageIndex, dwell_ms: dwell });
       stop();
       setPopup(null);
+      setNavDirection(index > currentPageIndex ? 'forward' : 'backward');
       setCurrentPageIndex(index);
       track('page_viewed', { page_index: index, page_id: book.pages[index]?.page_id, direction: index > currentPageIndex ? 'next' : 'prev' });
       pageStartTimeRef.current = Date.now();
@@ -351,32 +353,23 @@ export default function BookReader({ book, initialSettings, onClose }: Props) {
 
       {/* ── Main reading area ────────────────────────────────────────── */}
       <main
-        style={{ flex: 1, padding: '1.25rem 1rem', overflowY: 'auto', WebkitOverflowScrolling: 'touch' }}
+        style={{ flex: 1, overflow: 'hidden', position: 'relative', minHeight: 0 }}
         onClick={() => popup && setPopup(null)}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        {currentPage && (
-          /* key forces remount → page-fade-in animation replays on page change */
-          <div key={currentPageIndex} className="page-fade-in">
-            {/* book-content is the ONLY ancestor that gets font/size/dyslexia attrs */}
-            <div
-              className="book-content"
-              data-fontsize={settings.fontSize}
-              data-gradeband={book.grade_band}
-              data-dyslexia={settings.fontFamily === 'dyslexia' ? 'true' : 'false'}
-            >
-              <PageContent
-                page={currentPage}
-                currentWordId={settings.highlightEnabled ? currentWordId : null}
-                currentSentenceId={settings.highlightEnabled ? currentSentenceId : null}
-                onWordTap={handleWordTap}
-                gradeBand={book.grade_band}
-                showIllustration={true}
-              />
-            </div>
-          </div>
-        )}
+        <BookSpread
+          pages={book.pages}
+          currentPageIndex={currentPageIndex}
+          direction={navDirection}
+          currentWordId={currentWordId}
+          currentSentenceId={currentSentenceId}
+          onWordTap={handleWordTap}
+          gradeBand={book.grade_band}
+          highlightEnabled={settings.highlightEnabled}
+          fontSize={settings.fontSize}
+          dyslexia={settings.fontFamily === 'dyslexia'}
+        />
       </main>
 
       <AudioControls

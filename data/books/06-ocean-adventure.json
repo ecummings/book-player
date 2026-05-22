@@ -7,7 +7,13 @@
   "lexile": "550L",
   "reading_level": "Grade 3",
   "cover_color": "#0277BD",
-  "tags": ["ocean", "marine life", "science", "adventure", "exploration"],
+  "tags": [
+    "ocean",
+    "marine life",
+    "science",
+    "adventure",
+    "exploration"
+  ],
   "cover_illustration": {
     "type": "svg",
     "alt": "Colorful coral reef with fish, a sea turtle, and an octopus",
@@ -19,8 +25,8 @@
       "layout": "text-right",
       "illustration": {
         "type": "svg",
-        "alt": "A submarine with porthole windows diving into the deep blue ocean",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#0D47A1'/><circle cx='30' cy='30' r='3' fill='#90CAF9' opacity='0.5'/><circle cx='70' cy='15' r='2' fill='#90CAF9' opacity='0.5'/><circle cx='250' cy='20' r='3' fill='#90CAF9' opacity='0.5'/><ellipse cx='155' cy='110' rx='80' ry='35' fill='#FFD600'/><rect x='200' y='85' width='30' height='18' rx='4' fill='#FFC107'/><rect x='205' y='75' width='8' height='14' fill='#FFC107'/><circle cx='120' cy='108' r='15' fill='#0D47A1' stroke='#FFFFFF' stroke-width='3'/><circle cx='120' cy='108' r='8' fill='#4FC3F7'/><circle cx='160' cy='108' r='15' fill='#0D47A1' stroke='#FFFFFF' stroke-width='3'/><circle cx='160' cy='108' r='8' fill='#4FC3F7'/><rect x='75' y='108' width='20' height='10' rx='5' fill='#FFC107'/><ellipse cx='235' cy='118' rx='15' ry='8' fill='#FFA000'/><circle cx='85' cy='55' r='8' fill='#80DEEA' opacity='0.6'/><circle cx='80' cy='42' r='5' fill='#80DEEA' opacity='0.4'/><circle cx='75' cy='32' r='3' fill='#80DEEA' opacity='0.3'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"sea_surface\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#E3F2FD\"/><stop offset=\"100%\" stop-color=\"#B3E5FC\"/></linearGradient><linearGradient id=\"deep_ocean\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#1565C0\"/><stop offset=\"100%\" stop-color=\"#0D47A1\"/></linearGradient><radialGradient id=\"sun_ocean\" cx=\"0.7\" cy=\"0.1\" r=\"0.4\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#FFE566\"/><stop offset=\"100%\" stop-color=\"transparent\"/></radialGradient></defs><rect width=\"800\" height=\"250\" fill=\"url(#sea_surface)\"/><ellipse cx=\"600\" cy=\"30\" rx=\"150\" ry=\"100\" fill=\"url(#sun_ocean)\" opacity=\"0.8\"/><circle cx=\"620\" cy=\"55\" r=\"50\" fill=\"#FFE566\"/><circle cx=\"620\" cy=\"55\" r=\"35\" fill=\"#FFD700\"/><ellipse cx=\"150\" cy=\"70\" rx=\"90\" ry=\"35\" fill=\"white\" opacity=\"0.85\"/><ellipse cx=\"195\" cy=\"55\" rx=\"65\" ry=\"30\" fill=\"white\" opacity=\"0.9\"/><ellipse cx=\"430\" cy=\"60\" rx=\"75\" ry=\"28\" fill=\"white\" opacity=\"0.8\"/><rect x=\"0\" y=\"240\" width=\"800\" height=\"260\" fill=\"url(#deep_ocean)\"/><path d=\"M0 245 Q50 230 100 245 Q150 260 200 245 Q250 230 300 245 Q350 260 400 245 Q450 230 500 245 Q550 260 600 245 Q650 230 700 245 Q750 260 800 245 L800 270 L0 270Z\" fill=\"#1976D2\" opacity=\"0.8\"/><path d=\"M0 260 Q50 248 100 260 Q150 272 200 260 Q250 248 300 260 Q350 272 400 260 Q450 248 500 260 Q550 272 600 260 Q650 248 700 260 Q750 272 800 260 L800 280 L0 280Z\" fill=\"#1565C0\" opacity=\"0.6\"/><ellipse cx=\"150\" cy=\"350\" rx=\"27\" ry=\"14\" fill=\"#FF6B35\"/><polygon points=\"123,350 107,337 107,363\" fill=\"#FF6B35\"/><circle cx=\"166\" cy=\"346\" r=\"4\" fill=\"white\"/><circle cx=\"167\" cy=\"346\" r=\"3\" fill=\"#1A0A00\"/><path d=\"M141 343 Q150 336 154 339\" stroke=\"rgba(255,255,255,0.4)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M141 357 Q150 364 154 361\" stroke=\"rgba(255,255,255,0.4)\" stroke-width=\"2\" fill=\"none\"/><ellipse cx=\"380\" cy=\"380\" rx=\"21\" ry=\"11\" fill=\"#FFB703\"/><polygon points=\"359,380 346,370 346,390\" fill=\"#FFB703\"/><circle cx=\"393\" cy=\"377\" r=\"4\" fill=\"white\"/><circle cx=\"393\" cy=\"376\" r=\"2\" fill=\"#1A0A00\"/><path d=\"M373 374 Q380 369 384 372\" stroke=\"rgba(255,255,255,0.4)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M373 386 Q380 391 384 388\" stroke=\"rgba(255,255,255,0.4)\" stroke-width=\"2\" fill=\"none\"/><ellipse cx=\"600\" cy=\"360\" rx=\"30\" ry=\"16\" fill=\"#FF6B9D\"/><polygon points=\"570,360 552,346 552,374\" fill=\"#FF6B9D\"/><circle cx=\"618\" cy=\"356\" r=\"5\" fill=\"white\"/><circle cx=\"619\" cy=\"355\" r=\"3\" fill=\"#1A0A00\"/><path d=\"M590 352 Q600 344 605 348\" stroke=\"rgba(255,255,255,0.4)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M590 368 Q600 376 605 372\" stroke=\"rgba(255,255,255,0.4)\" stroke-width=\"2\" fill=\"none\"/><ellipse cx=\"700\" cy=\"400\" rx=\"24\" ry=\"13\" fill=\"#00BCD4\"/><polygon points=\"676,400 662,389 662,411\" fill=\"#00BCD4\"/><circle cx=\"714\" cy=\"397\" r=\"4\" fill=\"white\"/><circle cx=\"715\" cy=\"396\" r=\"2\" fill=\"#1A0A00\"/><path d=\"M692 394 Q700 387 704 390\" stroke=\"rgba(255,255,255,0.4)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M692 406 Q700 413 704 410\" stroke=\"rgba(255,255,255,0.4)\" stroke-width=\"2\" fill=\"none\"/><rect x=\"245\" y=\"380\" width=\"10\" height=\"120\" rx=\"5\" fill=\"#FF6B9D\"/><rect x=\"230\" y=\"400\" width=\"8\" height=\"40\" rx=\"4\" fill=\"#FF6B9D\" opacity=\"0.80\"/><rect x=\"270\" y=\"396.0\" width=\"8\" height=\"38\" rx=\"4\" fill=\"#FF6B9D\" opacity=\"0.85\"/><rect x=\"238\" y=\"386.0\" width=\"7\" height=\"30\" rx=\"3\" fill=\"#FF6B9D\" opacity=\"0.90\"/><rect x=\"262\" y=\"382.0\" width=\"7\" height=\"28\" rx=\"3\" fill=\"#FF6B9D\" opacity=\"0.95\"/><rect x=\"495\" y=\"400\" width=\"10\" height=\"100\" rx=\"5\" fill=\"#FF8C42\"/><rect x=\"480\" y=\"410\" width=\"8\" height=\"40\" rx=\"4\" fill=\"#FF8C42\" opacity=\"0.80\"/><rect x=\"520\" y=\"407.0\" width=\"8\" height=\"38\" rx=\"4\" fill=\"#FF8C42\" opacity=\"0.85\"/><rect x=\"488\" y=\"400.0\" width=\"7\" height=\"30\" rx=\"3\" fill=\"#FF8C42\" opacity=\"0.90\"/><rect x=\"512\" y=\"397.0\" width=\"7\" height=\"28\" rx=\"3\" fill=\"#FF8C42\" opacity=\"0.95\"/><rect x=\"675\" y=\"390\" width=\"10\" height=\"110\" rx=\"5\" fill=\"#E91E8C\"/><rect x=\"660\" y=\"405\" width=\"8\" height=\"40\" rx=\"4\" fill=\"#E91E8C\" opacity=\"0.80\"/><rect x=\"700\" y=\"401.5\" width=\"8\" height=\"38\" rx=\"4\" fill=\"#E91E8C\" opacity=\"0.85\"/><rect x=\"668\" y=\"393.0\" width=\"7\" height=\"30\" rx=\"3\" fill=\"#E91E8C\" opacity=\"0.90\"/><rect x=\"692\" y=\"389.5\" width=\"7\" height=\"28\" rx=\"3\" fill=\"#E91E8C\" opacity=\"0.95\"/><circle cx=\"350\" cy=\"230\" r=\"38\" fill=\"#F5C5A3\"/><ellipse cx=\"350\" cy=\"204\" rx=\"40\" ry=\"27\" fill=\"#3D2B1F\"/><ellipse cx=\"350\" cy=\"235\" rx=\"45\" ry=\"32\" fill=\"rgba(100,180,255,0.3)\" stroke=\"#1565C0\" stroke-width=\"4\"/><line x1=\"390\" y1=\"215\" x2=\"415\" y2=\"165\" stroke=\"#1565C0\" stroke-width=\"5\" stroke-linecap=\"round\"/><circle cx=\"415\" cy=\"160\" r=\"8\" fill=\"#1565C0\"/><ellipse cx=\"290\" cy=\"268\" rx=\"50\" ry=\"15\" fill=\"#F5C5A3\" transform=\"rotate(15 290 268)\"/><ellipse cx=\"415\" cy=\"265\" rx=\"50\" ry=\"15\" fill=\"#F5C5A3\" transform=\"rotate(-15 415 265)\"/></svg>",
+        "alt": "Ocean adventure page 1"
       },
       "paragraphs": [
         {
@@ -31,14 +37,54 @@
               "audio_start_ms": 0,
               "audio_end_ms": 7000,
               "words": [
-                {"word_id": "w1", "text": "The", "audio_start_ms": 0, "audio_end_ms": 220},
-                {"word_id": "w2", "text": "yellow", "audio_start_ms": 230, "audio_end_ms": 580},
-                {"word_id": "w3", "text": "submarine", "audio_start_ms": 590, "audio_end_ms": 1150},
-                {"word_id": "w4", "text": "dipped", "audio_start_ms": 1160, "audio_end_ms": 1580},
-                {"word_id": "w5", "text": "beneath", "audio_start_ms": 1590, "audio_end_ms": 2050},
-                {"word_id": "w6", "text": "the", "audio_start_ms": 2060, "audio_end_ms": 2220},
-                {"word_id": "w7", "text": "ocean", "audio_start_ms": 2230, "audio_end_ms": 2650},
-                {"word_id": "w8", "text": "waves.", "audio_start_ms": 2660, "audio_end_ms": 3200}
+                {
+                  "word_id": "w1",
+                  "text": "The",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 220
+                },
+                {
+                  "word_id": "w2",
+                  "text": "yellow",
+                  "audio_start_ms": 230,
+                  "audio_end_ms": 580
+                },
+                {
+                  "word_id": "w3",
+                  "text": "submarine",
+                  "audio_start_ms": 590,
+                  "audio_end_ms": 1150
+                },
+                {
+                  "word_id": "w4",
+                  "text": "dipped",
+                  "audio_start_ms": 1160,
+                  "audio_end_ms": 1580
+                },
+                {
+                  "word_id": "w5",
+                  "text": "beneath",
+                  "audio_start_ms": 1590,
+                  "audio_end_ms": 2050
+                },
+                {
+                  "word_id": "w6",
+                  "text": "the",
+                  "audio_start_ms": 2060,
+                  "audio_end_ms": 2220
+                },
+                {
+                  "word_id": "w7",
+                  "text": "ocean",
+                  "audio_start_ms": 2230,
+                  "audio_end_ms": 2650
+                },
+                {
+                  "word_id": "w8",
+                  "text": "waves.",
+                  "audio_start_ms": 2660,
+                  "audio_end_ms": 3200
+                }
               ]
             },
             {
@@ -46,15 +92,60 @@
               "audio_start_ms": 3300,
               "audio_end_ms": 9000,
               "words": [
-                {"word_id": "w9", "text": "Maya", "audio_start_ms": 3300, "audio_end_ms": 3700},
-                {"word_id": "w10", "text": "pressed", "audio_start_ms": 3710, "audio_end_ms": 4150},
-                {"word_id": "w11", "text": "her", "audio_start_ms": 4160, "audio_end_ms": 4400},
-                {"word_id": "w12", "text": "face", "audio_start_ms": 4410, "audio_end_ms": 4750},
-                {"word_id": "w13", "text": "against", "audio_start_ms": 4760, "audio_end_ms": 5200},
-                {"word_id": "w14", "text": "the", "audio_start_ms": 5210, "audio_end_ms": 5380},
-                {"word_id": "w15", "text": "porthole,", "audio_start_ms": 5390, "audio_end_ms": 5950},
-                {"word_id": "w16", "text": "eyes", "audio_start_ms": 5960, "audio_end_ms": 6250},
-                {"word_id": "w17", "text": "wide.", "audio_start_ms": 6260, "audio_end_ms": 6750}
+                {
+                  "word_id": "w9",
+                  "text": "Maya",
+                  "audio_start_ms": 3300,
+                  "audio_end_ms": 3700
+                },
+                {
+                  "word_id": "w10",
+                  "text": "pressed",
+                  "audio_start_ms": 3710,
+                  "audio_end_ms": 4150
+                },
+                {
+                  "word_id": "w11",
+                  "text": "her",
+                  "audio_start_ms": 4160,
+                  "audio_end_ms": 4400
+                },
+                {
+                  "word_id": "w12",
+                  "text": "face",
+                  "audio_start_ms": 4410,
+                  "audio_end_ms": 4750
+                },
+                {
+                  "word_id": "w13",
+                  "text": "against",
+                  "audio_start_ms": 4760,
+                  "audio_end_ms": 5200
+                },
+                {
+                  "word_id": "w14",
+                  "text": "the",
+                  "audio_start_ms": 5210,
+                  "audio_end_ms": 5380
+                },
+                {
+                  "word_id": "w15",
+                  "text": "porthole,",
+                  "audio_start_ms": 5390,
+                  "audio_end_ms": 5950
+                },
+                {
+                  "word_id": "w16",
+                  "text": "eyes",
+                  "audio_start_ms": 5960,
+                  "audio_end_ms": 6250
+                },
+                {
+                  "word_id": "w17",
+                  "text": "wide.",
+                  "audio_start_ms": 6260,
+                  "audio_end_ms": 6750
+                }
               ]
             }
           ]
@@ -66,8 +157,8 @@
       "layout": "text-left",
       "illustration": {
         "type": "svg",
-        "alt": "A large sea turtle swimming gracefully through blue water",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#0288D1'/><ellipse cx='150' cy='110' rx='70' ry='45' fill='#2E7D32'/><ellipse cx='150' cy='110' rx='55' ry='35' fill='#388E3C'/><ellipse cx='115' cy='88' rx='25' ry='12' fill='#2E7D32' transform='rotate(-30 115 88)'/><ellipse cx='185' cy='88' rx='25' ry='12' fill='#2E7D32' transform='rotate(30 185 88)'/><ellipse cx='118' cy='135' rx='22' ry='10' fill='#2E7D32' transform='rotate(20 118 135)'/><ellipse cx='182' cy='135' rx='22' ry='10' fill='#2E7D32' transform='rotate(-20 182 135)'/><ellipse cx='150' cy='68' rx='18' ry='12' fill='#33691E'/><circle cx='143' cy='63' r='4' fill='#1B5E20'/><circle cx='157' cy='63' r='4' fill='#1B5E20'/><ellipse cx='100' cy='90' rx='8' ry='4' fill='#4CAF50' opacity='0.6'/><ellipse cx='200' cy='95' rx='8' ry='4' fill='#4CAF50' opacity='0.6'/><ellipse cx='150' cy='112' rx='10' ry='5' fill='#1B5E20' opacity='0.5'/><circle cx='50' cy='50' r='5' fill='#80DEEA' opacity='0.5'/><circle cx='240' cy='150' r='4' fill='#80DEEA' opacity='0.5'/><circle cx='30' cy='140' r='3' fill='#80DEEA' opacity='0.4'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><radialGradient id=\"abyss\" cx=\"0.5\" cy=\"0.3\" r=\"0.7\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#003366\"/><stop offset=\"60%\" stop-color=\"#001A3A\"/><stop offset=\"100%\" stop-color=\"#000A1A\"/></radialGradient><radialGradient id=\"glow_bl\" cx=\"0.5\" cy=\"0.5\" r=\"0.5\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"rgba(0,200,255,0.4)\"/><stop offset=\"100%\" stop-color=\"transparent\"/></radialGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#abyss)\"/><circle cx=\"80\" cy=\"200\" r=\"4\" fill=\"#00FFFF\" opacity=\"0.80\"/><circle cx=\"80\" cy=\"200\" r=\"12\" fill=\"#00FFFF\" opacity=\"0.120\"/><circle cx=\"200\" cy=\"120\" r=\"3\" fill=\"#00FF9F\" opacity=\"0.70\"/><circle cx=\"200\" cy=\"120\" r=\"9\" fill=\"#00FF9F\" opacity=\"0.105\"/><circle cx=\"380\" cy=\"80\" r=\"4\" fill=\"#00BFFF\" opacity=\"0.85\"/><circle cx=\"380\" cy=\"80\" r=\"12\" fill=\"#00BFFF\" opacity=\"0.128\"/><circle cx=\"550\" cy=\"150\" r=\"3\" fill=\"#7FFFAA\" opacity=\"0.75\"/><circle cx=\"550\" cy=\"150\" r=\"9\" fill=\"#7FFFAA\" opacity=\"0.112\"/><circle cx=\"680\" cy=\"200\" r=\"4\" fill=\"#00FFFF\" opacity=\"0.80\"/><circle cx=\"680\" cy=\"200\" r=\"12\" fill=\"#00FFFF\" opacity=\"0.120\"/><circle cx=\"720\" cy=\"100\" r=\"3\" fill=\"#00FF9F\" opacity=\"0.65\"/><circle cx=\"720\" cy=\"100\" r=\"9\" fill=\"#00FF9F\" opacity=\"0.098\"/><circle cx=\"150\" cy=\"350\" r=\"4\" fill=\"#00BFFF\" opacity=\"0.70\"/><circle cx=\"150\" cy=\"350\" r=\"12\" fill=\"#00BFFF\" opacity=\"0.105\"/><circle cx=\"300\" cy=\"320\" r=\"3\" fill=\"#7FFFAA\" opacity=\"0.80\"/><circle cx=\"300\" cy=\"320\" r=\"9\" fill=\"#7FFFAA\" opacity=\"0.120\"/><circle cx=\"500\" cy=\"300\" r=\"4\" fill=\"#00FFFF\" opacity=\"0.75\"/><circle cx=\"500\" cy=\"300\" r=\"12\" fill=\"#00FFFF\" opacity=\"0.112\"/><circle cx=\"650\" cy=\"380\" r=\"3\" fill=\"#00FF9F\" opacity=\"0.85\"/><circle cx=\"650\" cy=\"380\" r=\"9\" fill=\"#00FF9F\" opacity=\"0.128\"/><circle cx=\"100\" cy=\"450\" r=\"4\" fill=\"#00BFFF\" opacity=\"0.70\"/><circle cx=\"100\" cy=\"450\" r=\"12\" fill=\"#00BFFF\" opacity=\"0.105\"/><circle cx=\"750\" cy=\"420\" r=\"3\" fill=\"#7FFFAA\" opacity=\"0.60\"/><circle cx=\"750\" cy=\"420\" r=\"9\" fill=\"#7FFFAA\" opacity=\"0.090\"/><rect x=\"0\" y=\"440\" width=\"800\" height=\"60\" fill=\"#001228\"/><rect x=\"95\" y=\"340\" width=\"10\" height=\"160\" rx=\"5\" fill=\"#FF4081\"/><rect x=\"80\" y=\"380\" width=\"8\" height=\"40\" rx=\"4\" fill=\"#FF4081\" opacity=\"0.80\"/><rect x=\"120\" y=\"374.0\" width=\"8\" height=\"38\" rx=\"4\" fill=\"#FF4081\" opacity=\"0.85\"/><rect x=\"88\" y=\"358.0\" width=\"7\" height=\"30\" rx=\"3\" fill=\"#FF4081\" opacity=\"0.90\"/><rect x=\"112\" y=\"352.0\" width=\"7\" height=\"28\" rx=\"3\" fill=\"#FF4081\" opacity=\"0.95\"/><rect x=\"295\" y=\"370\" width=\"10\" height=\"130\" rx=\"5\" fill=\"#E91E8C\"/><rect x=\"280\" y=\"395\" width=\"8\" height=\"40\" rx=\"4\" fill=\"#E91E8C\" opacity=\"0.80\"/><rect x=\"320\" y=\"390.5\" width=\"8\" height=\"38\" rx=\"4\" fill=\"#E91E8C\" opacity=\"0.85\"/><rect x=\"288\" y=\"379.0\" width=\"7\" height=\"30\" rx=\"3\" fill=\"#E91E8C\" opacity=\"0.90\"/><rect x=\"312\" y=\"374.5\" width=\"7\" height=\"28\" rx=\"3\" fill=\"#E91E8C\" opacity=\"0.95\"/><rect x=\"495\" y=\"350\" width=\"10\" height=\"150\" rx=\"5\" fill=\"#FF6B9D\"/><rect x=\"480\" y=\"385\" width=\"8\" height=\"40\" rx=\"4\" fill=\"#FF6B9D\" opacity=\"0.80\"/><rect x=\"520\" y=\"379.5\" width=\"8\" height=\"38\" rx=\"4\" fill=\"#FF6B9D\" opacity=\"0.85\"/><rect x=\"488\" y=\"365.0\" width=\"7\" height=\"30\" rx=\"3\" fill=\"#FF6B9D\" opacity=\"0.90\"/><rect x=\"512\" y=\"359.5\" width=\"7\" height=\"28\" rx=\"3\" fill=\"#FF6B9D\" opacity=\"0.95\"/><rect x=\"695\" y=\"360\" width=\"10\" height=\"140\" rx=\"5\" fill=\"#C2185B\"/><rect x=\"680\" y=\"390\" width=\"8\" height=\"40\" rx=\"4\" fill=\"#C2185B\" opacity=\"0.80\"/><rect x=\"720\" y=\"385.0\" width=\"8\" height=\"38\" rx=\"4\" fill=\"#C2185B\" opacity=\"0.85\"/><rect x=\"688\" y=\"372.0\" width=\"7\" height=\"30\" rx=\"3\" fill=\"#C2185B\" opacity=\"0.90\"/><rect x=\"712\" y=\"367.0\" width=\"7\" height=\"28\" rx=\"3\" fill=\"#C2185B\" opacity=\"0.95\"/><path d=\"M60 500 Q75 434 50 367 Q72 300 60 300\" stroke=\"#1B5E20\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M200 500 Q215 440 190 380 Q212 320 200 320\" stroke=\"#2E7D32\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M600 500 Q615 430 590 360 Q612 290 600 290\" stroke=\"#1B5E20\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M740 500 Q755 437 730 374 Q752 310 740 310\" stroke=\"#2E7D32\" stroke-width=\"6\" fill=\"none\" stroke-linecap=\"round\"/><ellipse cx=\"200\" cy=\"200\" rx=\"40\" ry=\"30\" fill=\"#E040FB\" opacity=\"0.6\"/><line x1=\"180\" y1=\"230\" x2=\"185\" y2=\"260\" stroke=\"#E040FB\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"190\" y1=\"230\" x2=\"193\" y2=\"260\" stroke=\"#E040FB\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"200\" y1=\"230\" x2=\"200\" y2=\"260\" stroke=\"#E040FB\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"210\" y1=\"230\" x2=\"208\" y2=\"260\" stroke=\"#E040FB\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"220\" y1=\"230\" x2=\"215\" y2=\"260\" stroke=\"#E040FB\" stroke-width=\"1.5\" opacity=\"0.4\"/><ellipse cx=\"480\" cy=\"150\" rx=\"35\" ry=\"28\" fill=\"#FF80AB\" opacity=\"0.6\"/><line x1=\"462\" y1=\"178\" x2=\"467\" y2=\"208\" stroke=\"#FF80AB\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"472\" y1=\"178\" x2=\"474\" y2=\"208\" stroke=\"#FF80AB\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"482\" y1=\"178\" x2=\"482\" y2=\"208\" stroke=\"#FF80AB\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"492\" y1=\"178\" x2=\"489\" y2=\"208\" stroke=\"#FF80AB\" stroke-width=\"1.5\" opacity=\"0.4\"/><ellipse cx=\"650\" cy=\"250\" rx=\"38\" ry=\"28\" fill=\"#40C4FF\" opacity=\"0.6\"/><line x1=\"631\" y1=\"278\" x2=\"636\" y2=\"308\" stroke=\"#40C4FF\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"641\" y1=\"278\" x2=\"644\" y2=\"308\" stroke=\"#40C4FF\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"651\" y1=\"278\" x2=\"651\" y2=\"308\" stroke=\"#40C4FF\" stroke-width=\"1.5\" opacity=\"0.4\"/><line x1=\"661\" y1=\"278\" x2=\"659\" y2=\"308\" stroke=\"#40C4FF\" stroke-width=\"1.5\" opacity=\"0.4\"/><ellipse cx=\"650\" cy=\"380\" rx=\"70\" ry=\"50\" fill=\"#1A3A5C\"/><path d=\"M610 365 L580 340 L600 360Z\" fill=\"#1A3A5C\"/><circle cx=\"675\" cy=\"368\" r=\"18\" fill=\"#0A1F33\"/><circle cx=\"672\" cy=\"366\" r=\"10\" fill=\"#003366\"/><ellipse cx=\"672\" cy=\"366\" rx=\"4\" ry=\"6\" fill=\"rgba(0,200,255,0.6)\"/><path d=\"M640 385 Q650 400 680 390 Q700 380 710 395\" stroke=\"#1A3A5C\" stroke-width=\"4\" fill=\"none\"/><line x1=\"665\" y1=\"340\" x2=\"665\" y2=\"295\" stroke=\"#1A3A5C\" stroke-width=\"3\"/><circle cx=\"665\" cy=\"290\" r=\"10\" fill=\"#AAFF44\"/><circle cx=\"665\" cy=\"290\" r=\"18\" fill=\"#AAFF44\" opacity=\"0.2\"/></svg>",
+        "alt": "Ocean adventure page 2"
       },
       "paragraphs": [
         {
@@ -78,18 +169,78 @@
               "audio_start_ms": 0,
               "audio_end_ms": 7500,
               "words": [
-                {"word_id": "w1", "text": "A", "audio_start_ms": 0, "audio_end_ms": 200},
-                {"word_id": "w2", "text": "giant", "audio_start_ms": 210, "audio_end_ms": 580},
-                {"word_id": "w3", "text": "sea", "audio_start_ms": 590, "audio_end_ms": 850},
-                {"word_id": "w4", "text": "turtle", "audio_start_ms": 860, "audio_end_ms": 1250},
-                {"word_id": "w5", "text": "glided", "audio_start_ms": 1260, "audio_end_ms": 1700},
-                {"word_id": "w6", "text": "past,", "audio_start_ms": 1710, "audio_end_ms": 2100},
-                {"word_id": "w7", "text": "its", "audio_start_ms": 2110, "audio_end_ms": 2350},
-                {"word_id": "w8", "text": "flippers", "audio_start_ms": 2360, "audio_end_ms": 2850},
-                {"word_id": "w9", "text": "moving", "audio_start_ms": 2860, "audio_end_ms": 3250},
-                {"word_id": "w10", "text": "like", "audio_start_ms": 3260, "audio_end_ms": 3500},
-                {"word_id": "w11", "text": "slow", "audio_start_ms": 3510, "audio_end_ms": 3850},
-                {"word_id": "w12", "text": "wings.", "audio_start_ms": 3860, "audio_end_ms": 4400}
+                {
+                  "word_id": "w1",
+                  "text": "A",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 200
+                },
+                {
+                  "word_id": "w2",
+                  "text": "giant",
+                  "audio_start_ms": 210,
+                  "audio_end_ms": 580
+                },
+                {
+                  "word_id": "w3",
+                  "text": "sea",
+                  "audio_start_ms": 590,
+                  "audio_end_ms": 850
+                },
+                {
+                  "word_id": "w4",
+                  "text": "turtle",
+                  "audio_start_ms": 860,
+                  "audio_end_ms": 1250
+                },
+                {
+                  "word_id": "w5",
+                  "text": "glided",
+                  "audio_start_ms": 1260,
+                  "audio_end_ms": 1700
+                },
+                {
+                  "word_id": "w6",
+                  "text": "past,",
+                  "audio_start_ms": 1710,
+                  "audio_end_ms": 2100
+                },
+                {
+                  "word_id": "w7",
+                  "text": "its",
+                  "audio_start_ms": 2110,
+                  "audio_end_ms": 2350
+                },
+                {
+                  "word_id": "w8",
+                  "text": "flippers",
+                  "audio_start_ms": 2360,
+                  "audio_end_ms": 2850
+                },
+                {
+                  "word_id": "w9",
+                  "text": "moving",
+                  "audio_start_ms": 2860,
+                  "audio_end_ms": 3250
+                },
+                {
+                  "word_id": "w10",
+                  "text": "like",
+                  "audio_start_ms": 3260,
+                  "audio_end_ms": 3500
+                },
+                {
+                  "word_id": "w11",
+                  "text": "slow",
+                  "audio_start_ms": 3510,
+                  "audio_end_ms": 3850
+                },
+                {
+                  "word_id": "w12",
+                  "text": "wings.",
+                  "audio_start_ms": 3860,
+                  "audio_end_ms": 4400
+                }
               ]
             }
           ]
@@ -101,8 +252,8 @@
       "layout": "text-right",
       "illustration": {
         "type": "svg",
-        "alt": "A glowing deep sea anglerfish in dark water with its bioluminescent lure",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#0A0A1E'/><ellipse cx='150' cy='120' rx='65' ry='45' fill='#0D2137'/><ellipse cx='115' cy='115' rx='15' ry='8' fill='#1A3A52' transform='rotate(20 115 115)'/><ellipse cx='185' cy='115' rx='15' ry='8' fill='#1A3A52' transform='rotate(-20 185 115)'/><ellipse cx='115' cy='140' rx='15' ry='7' fill='#1A3A52' transform='rotate(-10 115 140)'/><ellipse cx='185' cy='140' rx='15' ry='7' fill='#1A3A52' transform='rotate(10 185 140)'/><circle cx='125' cy='105' r='12' fill='#E8F5E9'/><circle cx='126' cy='105' r='7' fill='#0D2137'/><circle cx='127' cy='104' r='3' fill='white'/><path d='M150,80 Q165,55 170,35' stroke='#1A3A52' stroke-width='3' fill='none'/><circle cx='172' cy='32' r='10' fill='#69F0AE' filter='url(#glow)' opacity='0.9'/><circle cx='172' cy='32' r='6' fill='#B9F6CA'/><defs><filter id='glow'><feGaussianBlur stdDeviation='3' result='coloredBlur'/><feMerge><feMergeNode in='coloredBlur'/><feMergeNode in='SourceGraphic'/></feMerge></filter></defs><path d='M220,110 L250,110 L250,130 L230,130' stroke='#0D2137' stroke-width='15' stroke-linecap='round' fill='none'/><ellipse cx='178' cy='125' rx='5' ry='8' fill='#0D2137'/><path d='M215,108 L235,95 M215,120 L235,135' stroke='#1A3A52' stroke-width='4' fill='none'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"beach_sky\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#87CEEB\"/><stop offset=\"100%\" stop-color=\"#E3F2FD\"/></linearGradient><linearGradient id=\"sand\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#F5DEB3\"/><stop offset=\"100%\" stop-color=\"#E6C97E\"/></linearGradient><radialGradient id=\"sun_b\" cx=\"0.75\" cy=\"0.1\" r=\"0.35\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#FFE566\"/><stop offset=\"100%\" stop-color=\"transparent\"/></radialGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#beach_sky)\"/><ellipse cx=\"650\" cy=\"40\" rx=\"140\" ry=\"100\" fill=\"url(#sun_b)\" opacity=\"0.8\"/><circle cx=\"660\" cy=\"50\" r=\"48\" fill=\"#FFE566\"/><circle cx=\"660\" cy=\"50\" r=\"34\" fill=\"#FFD700\"/><ellipse cx=\"200\" cy=\"80\" rx=\"90\" ry=\"35\" fill=\"white\" opacity=\"0.8\"/><ellipse cx=\"240\" cy=\"62\" rx=\"65\" ry=\"30\" fill=\"white\" opacity=\"0.85\"/><rect x=\"0\" y=\"300\" width=\"800\" height=\"200\" fill=\"#1565C0\"/><path d=\"M0 305 Q100 290 200 305 Q300 320 400 305 Q500 290 600 305 Q700 320 800 305 L800 330 L0 330Z\" fill=\"#1976D2\"/><ellipse cx=\"400\" cy=\"500\" rx=\"600\" ry=\"200\" fill=\"url(#sand)\"/><rect x=\"0\" y=\"360\" width=\"800\" height=\"140\" fill=\"url(#sand)\"/><ellipse cx=\"100\" cy=\"390\" rx=\"12\" ry=\"8\" fill=\"#FFB703\" transform=\"rotate(20 100 390)\"/><ellipse cx=\"180\" cy=\"400\" rx=\"12\" ry=\"8\" fill=\"#FF9EE0\" transform=\"rotate(-15 180 400)\"/><ellipse cx=\"600\" cy=\"395\" rx=\"12\" ry=\"8\" fill=\"#FF9EE0\" transform=\"rotate(30 600 395)\"/><ellipse cx=\"700\" cy=\"405\" rx=\"12\" ry=\"8\" fill=\"#FFB703\" transform=\"rotate(-20 700 405)\"/><g transform=\"translate(650,390)\"><ellipse rx=\"28\" ry=\"8\" fill=\"#FF6B35\" transform=\"rotate(0)\"/><ellipse rx=\"28\" ry=\"8\" fill=\"#FF6B35\" transform=\"rotate(72)\"/><ellipse rx=\"28\" ry=\"8\" fill=\"#FF6B35\" transform=\"rotate(144)\"/><ellipse rx=\"28\" ry=\"8\" fill=\"#FF6B35\" transform=\"rotate(216)\"/><ellipse rx=\"28\" ry=\"8\" fill=\"#FF6B35\" transform=\"rotate(288)\"/></g><circle cx=\"280\" cy=\"340\" r=\"36\" fill=\"#F5C5A3\"/><ellipse cx=\"280\" cy=\"314\" rx=\"38\" ry=\"26\" fill=\"#3D2B1F\"/><ellipse cx=\"280\" cy=\"378\" rx=\"30\" ry=\"46\" fill=\"#FF6B35\"/><circle cx=\"450\" cy=\"345\" r=\"32\" fill=\"#F0B48A\"/><ellipse cx=\"450\" cy=\"321\" rx=\"34\" ry=\"23\" fill=\"#4A3728\"/><ellipse cx=\"450\" cy=\"378\" rx=\"27\" ry=\"40\" fill=\"#4A90D9\"/><ellipse cx=\"200\" cy=\"270\" rx=\"100\" ry=\"55\" fill=\"white\" stroke=\"#DDD\" stroke-width=\"2\"/><polygon points=\"250,322 230,350 270,330\" fill=\"white\"/><text x=\"200\" y=\"258\" font-size=\"28\" fill=\"#333\" font-family=\"Arial\" text-anchor=\"middle\">\ud83d\udc20</text><text x=\"200\" y=\"280\" font-size=\"12\" fill=\"#555\" font-family=\"Arial\" text-anchor=\"middle\">I saw glowing</text><text x=\"200\" y=\"296\" font-size=\"12\" fill=\"#555\" font-family=\"Arial\" text-anchor=\"middle\">creatures!</text><ellipse cx=\"530\" cy=\"390\" rx=\"30\" ry=\"12\" fill=\"rgba(100,180,255,0.5)\" stroke=\"#1565C0\" stroke-width=\"3\"/><line x1=\"558\" y1=\"382\" x2=\"575\" y2=\"360\" stroke=\"#1565C0\" stroke-width=\"4\"/></svg>",
+        "alt": "Ocean adventure page 3"
       },
       "paragraphs": [
         {
@@ -113,20 +264,90 @@
               "audio_start_ms": 0,
               "audio_end_ms": 8000,
               "words": [
-                {"word_id": "w1", "text": "Deeper", "audio_start_ms": 0, "audio_end_ms": 480},
-                {"word_id": "w2", "text": "down,", "audio_start_ms": 490, "audio_end_ms": 850},
-                {"word_id": "w3", "text": "where", "audio_start_ms": 860, "audio_end_ms": 1150},
-                {"word_id": "w4", "text": "no", "audio_start_ms": 1160, "audio_end_ms": 1380},
-                {"word_id": "w5", "text": "sunlight", "audio_start_ms": 1390, "audio_end_ms": 1850},
-                {"word_id": "w6", "text": "reached,", "audio_start_ms": 1860, "audio_end_ms": 2350},
-                {"word_id": "w7", "text": "a", "audio_start_ms": 2360, "audio_end_ms": 2500},
-                {"word_id": "w8", "text": "strange", "audio_start_ms": 2510, "audio_end_ms": 2950},
-                {"word_id": "w9", "text": "fish", "audio_start_ms": 2960, "audio_end_ms": 3250},
-                {"word_id": "w10", "text": "glowed", "audio_start_ms": 3260, "audio_end_ms": 3700},
-                {"word_id": "w11", "text": "green", "audio_start_ms": 3710, "audio_end_ms": 4100},
-                {"word_id": "w12", "text": "in", "audio_start_ms": 4110, "audio_end_ms": 4300},
-                {"word_id": "w13", "text": "the", "audio_start_ms": 4310, "audio_end_ms": 4460},
-                {"word_id": "w14", "text": "dark.", "audio_start_ms": 4470, "audio_end_ms": 4980}
+                {
+                  "word_id": "w1",
+                  "text": "Deeper",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 480
+                },
+                {
+                  "word_id": "w2",
+                  "text": "down,",
+                  "audio_start_ms": 490,
+                  "audio_end_ms": 850
+                },
+                {
+                  "word_id": "w3",
+                  "text": "where",
+                  "audio_start_ms": 860,
+                  "audio_end_ms": 1150
+                },
+                {
+                  "word_id": "w4",
+                  "text": "no",
+                  "audio_start_ms": 1160,
+                  "audio_end_ms": 1380
+                },
+                {
+                  "word_id": "w5",
+                  "text": "sunlight",
+                  "audio_start_ms": 1390,
+                  "audio_end_ms": 1850
+                },
+                {
+                  "word_id": "w6",
+                  "text": "reached,",
+                  "audio_start_ms": 1860,
+                  "audio_end_ms": 2350
+                },
+                {
+                  "word_id": "w7",
+                  "text": "a",
+                  "audio_start_ms": 2360,
+                  "audio_end_ms": 2500
+                },
+                {
+                  "word_id": "w8",
+                  "text": "strange",
+                  "audio_start_ms": 2510,
+                  "audio_end_ms": 2950
+                },
+                {
+                  "word_id": "w9",
+                  "text": "fish",
+                  "audio_start_ms": 2960,
+                  "audio_end_ms": 3250
+                },
+                {
+                  "word_id": "w10",
+                  "text": "glowed",
+                  "audio_start_ms": 3260,
+                  "audio_end_ms": 3700
+                },
+                {
+                  "word_id": "w11",
+                  "text": "green",
+                  "audio_start_ms": 3710,
+                  "audio_end_ms": 4100
+                },
+                {
+                  "word_id": "w12",
+                  "text": "in",
+                  "audio_start_ms": 4110,
+                  "audio_end_ms": 4300
+                },
+                {
+                  "word_id": "w13",
+                  "text": "the",
+                  "audio_start_ms": 4310,
+                  "audio_end_ms": 4460
+                },
+                {
+                  "word_id": "w14",
+                  "text": "dark.",
+                  "audio_start_ms": 4470,
+                  "audio_end_ms": 4980
+                }
               ]
             }
           ]
@@ -150,21 +371,96 @@
               "audio_start_ms": 0,
               "audio_end_ms": 8500,
               "words": [
-                {"word_id": "w1", "text": "When", "audio_start_ms": 0, "audio_end_ms": 320},
-                {"word_id": "w2", "text": "the", "audio_start_ms": 330, "audio_end_ms": 480},
-                {"word_id": "w3", "text": "submarine", "audio_start_ms": 490, "audio_end_ms": 1100},
-                {"word_id": "w4", "text": "broke", "audio_start_ms": 1110, "audio_end_ms": 1480},
-                {"word_id": "w5", "text": "the", "audio_start_ms": 1490, "audio_end_ms": 1650},
-                {"word_id": "w6", "text": "surface,", "audio_start_ms": 1660, "audio_end_ms": 2180},
-                {"word_id": "w7", "text": "Maya", "audio_start_ms": 2190, "audio_end_ms": 2580},
-                {"word_id": "w8", "text": "knew", "audio_start_ms": 2590, "audio_end_ms": 2920},
-                {"word_id": "w9", "text": "the", "audio_start_ms": 2930, "audio_end_ms": 3080},
-                {"word_id": "w10", "text": "ocean", "audio_start_ms": 3090, "audio_end_ms": 3500},
-                {"word_id": "w11", "text": "held", "audio_start_ms": 3510, "audio_end_ms": 3850},
-                {"word_id": "w12", "text": "a", "audio_start_ms": 3860, "audio_end_ms": 3980},
-                {"word_id": "w13", "text": "million", "audio_start_ms": 3990, "audio_end_ms": 4450},
-                {"word_id": "w14", "text": "more", "audio_start_ms": 4460, "audio_end_ms": 4780},
-                {"word_id": "w15", "text": "secrets.", "audio_start_ms": 4790, "audio_end_ms": 5400}
+                {
+                  "word_id": "w1",
+                  "text": "When",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 320
+                },
+                {
+                  "word_id": "w2",
+                  "text": "the",
+                  "audio_start_ms": 330,
+                  "audio_end_ms": 480
+                },
+                {
+                  "word_id": "w3",
+                  "text": "submarine",
+                  "audio_start_ms": 490,
+                  "audio_end_ms": 1100
+                },
+                {
+                  "word_id": "w4",
+                  "text": "broke",
+                  "audio_start_ms": 1110,
+                  "audio_end_ms": 1480
+                },
+                {
+                  "word_id": "w5",
+                  "text": "the",
+                  "audio_start_ms": 1490,
+                  "audio_end_ms": 1650
+                },
+                {
+                  "word_id": "w6",
+                  "text": "surface,",
+                  "audio_start_ms": 1660,
+                  "audio_end_ms": 2180
+                },
+                {
+                  "word_id": "w7",
+                  "text": "Maya",
+                  "audio_start_ms": 2190,
+                  "audio_end_ms": 2580
+                },
+                {
+                  "word_id": "w8",
+                  "text": "knew",
+                  "audio_start_ms": 2590,
+                  "audio_end_ms": 2920
+                },
+                {
+                  "word_id": "w9",
+                  "text": "the",
+                  "audio_start_ms": 2930,
+                  "audio_end_ms": 3080
+                },
+                {
+                  "word_id": "w10",
+                  "text": "ocean",
+                  "audio_start_ms": 3090,
+                  "audio_end_ms": 3500
+                },
+                {
+                  "word_id": "w11",
+                  "text": "held",
+                  "audio_start_ms": 3510,
+                  "audio_end_ms": 3850
+                },
+                {
+                  "word_id": "w12",
+                  "text": "a",
+                  "audio_start_ms": 3860,
+                  "audio_end_ms": 3980
+                },
+                {
+                  "word_id": "w13",
+                  "text": "million",
+                  "audio_start_ms": 3990,
+                  "audio_end_ms": 4450
+                },
+                {
+                  "word_id": "w14",
+                  "text": "more",
+                  "audio_start_ms": 4460,
+                  "audio_end_ms": 4780
+                },
+                {
+                  "word_id": "w15",
+                  "text": "secrets.",
+                  "audio_start_ms": 4790,
+                  "audio_end_ms": 5400
+                }
               ]
             }
           ]
@@ -173,8 +469,17 @@
     }
   ],
   "vocabulary": {
-    "porthole": {"definition": "A small round window in the side of a ship or submarine", "phonetic": "/ˈpɔːrthoʊl/"},
-    "bioluminescent": {"definition": "Producing natural light through a chemical reaction", "phonetic": "/ˌbaɪoʊluːmɪˈnɛsənt/"},
-    "submarine": {"definition": "A vehicle that travels underwater", "phonetic": "/ˈsʌbməriːn/"}
+    "porthole": {
+      "definition": "A small round window in the side of a ship or submarine",
+      "phonetic": "/\u02c8p\u0254\u02d0rtho\u028al/"
+    },
+    "bioluminescent": {
+      "definition": "Producing natural light through a chemical reaction",
+      "phonetic": "/\u02ccba\u026ao\u028alu\u02d0m\u026a\u02c8n\u025bs\u0259nt/"
+    },
+    "submarine": {
+      "definition": "A vehicle that travels underwater",
+      "phonetic": "/\u02c8s\u028cbm\u0259ri\u02d0n/"
+    }
   }
 }

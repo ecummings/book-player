@@ -7,7 +7,13 @@
   "lexile": "980L",
   "reading_level": "Grade 6",
   "cover_color": "#1B5E20",
-  "tags": ["mystery", "environment", "science", "community", "investigation"],
+  "tags": [
+    "mystery",
+    "environment",
+    "science",
+    "community",
+    "investigation"
+  ],
   "cover_illustration": {
     "type": "svg",
     "alt": "A murky river with a silhouetted figure examining water samples at dusk",
@@ -19,8 +25,8 @@
       "layout": "text-right",
       "illustration": {
         "type": "svg",
-        "alt": "Dead fish floating in a brown, foamy river",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E8F5E9'/><rect x='0' y='80' width='300' height='120' fill='#6D4C41'/><path d='M0,80 Q75,65 150,80 Q225,95 300,80 L300,100 Q225,115 150,100 Q75,85 0,100 Z' fill='#795548'/><path d='M0,100 Q75,88 150,100 Q225,112 300,100 L300,120 Q225,132 150,120 Q75,108 0,120 Z' fill='#8D6E63' opacity='0.6'/><ellipse cx='80' cy='90' rx='30' ry='8' fill='#9E9E9E' transform='rotate(15 80 90)'/><circle cx='60' cy='86' r='5' fill='#757575'/><ellipse cx='200' cy='95' rx='25' ry='7' fill='#9E9E9E' transform='rotate(-10 200 95)'/><ellipse cx='150' cy='78' rx='20' ry='6' fill='#BDBDBD' transform='rotate(5 150 78)'/><ellipse cx='260' cy='85' rx='15' ry='5' fill='#9E9E9E' transform='rotate(-15 260 85)'/><ellipse cx='25' cy='68' rx='40' ry='8' fill='#FFFFFF' opacity='0.4'/><ellipse cx='120' cy='72' rx='30' ry='6' fill='#FFFFFF' opacity='0.3'/><rect x='0' y='150' width='300' height='50' fill='#A5D6A7'/><rect x='50' y='60' width='12' height='30' fill='#4E342E'/><ellipse cx='56' cy='60' rx='18' ry='15' fill='#558B2F'/><rect x='230' y='50' width='10' height='40' fill='#5D4037'/><ellipse cx='235' cy='50' rx='20' ry='16' fill='#33691E'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"mist_sky\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#B8D4E8\"/><stop offset=\"60%\" stop-color=\"#D4E8F0\"/><stop offset=\"100%\" stop-color=\"#E8F4F8\"/></linearGradient><linearGradient id=\"river10\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#4A90D9\"/><stop offset=\"100%\" stop-color=\"#2D6BA8\"/></linearGradient><radialGradient id=\"mist\" cx=\"0.5\" cy=\"0.7\" r=\"0.5\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"rgba(255,255,255,0.5)\"/><stop offset=\"100%\" stop-color=\"transparent\"/></radialGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#mist_sky)\"/><ellipse cx=\"400\" cy=\"350\" rx=\"600\" ry=\"180\" fill=\"url(#mist)\"/><ellipse cx=\"200\" cy=\"380\" rx=\"300\" ry=\"100\" fill=\"rgba(255,255,255,0.3)\"/><ellipse cx=\"650\" cy=\"370\" rx=\"250\" ry=\"90\" fill=\"rgba(255,255,255,0.25)\"/><rect x=\"30\" y=\"150\" width=\"20\" height=\"200\" fill=\"#3A5C30\"/><ellipse cx=\"40\" cy=\"150\" rx=\"28\" ry=\"38\" fill=\"#2D5A27\"/><rect x=\"90\" y=\"130\" width=\"20\" height=\"220\" fill=\"#3A5C30\"/><ellipse cx=\"100\" cy=\"130\" rx=\"28\" ry=\"42\" fill=\"#3A7033\"/><rect x=\"160\" y=\"145\" width=\"20\" height=\"210\" fill=\"#3A5C30\"/><ellipse cx=\"170\" cy=\"145\" rx=\"28\" ry=\"40\" fill=\"#2D5A27\"/><rect x=\"230\" y=\"140\" width=\"20\" height=\"215\" fill=\"#3A5C30\"/><ellipse cx=\"240\" cy=\"140\" rx=\"28\" ry=\"38\" fill=\"#3A7033\"/><rect x=\"550\" y=\"145\" width=\"20\" height=\"210\" fill=\"#3A5C30\"/><ellipse cx=\"560\" cy=\"145\" rx=\"28\" ry=\"40\" fill=\"#2D5A27\"/><rect x=\"620\" y=\"130\" width=\"20\" height=\"225\" fill=\"#3A5C30\"/><ellipse cx=\"630\" cy=\"130\" rx=\"28\" ry=\"42\" fill=\"#3A7033\"/><rect x=\"690\" y=\"155\" width=\"20\" height=\"200\" fill=\"#3A5C30\"/><ellipse cx=\"700\" cy=\"155\" rx=\"28\" ry=\"38\" fill=\"#2D5A27\"/><rect x=\"750\" y=\"140\" width=\"20\" height=\"215\" fill=\"#3A5C30\"/><ellipse cx=\"760\" cy=\"140\" rx=\"28\" ry=\"40\" fill=\"#3A7033\"/><rect x=\"0\" y=\"320\" width=\"800\" height=\"180\" fill=\"url(#river10)\"/><path d=\"M0 340 Q30 332 60 340\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M80 360 Q110 352 140 360\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M160 348 Q190 340 220 348\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M240 365 Q270 357 300 365\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M320 352 Q350 344 380 352\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M400 368 Q430 360 460 368\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M480 345 Q510 337 540 345\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M560 362 Q590 354 620 362\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M640 350 Q670 342 700 350\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><path d=\"M720 365 Q750 357 780 365\" stroke=\"rgba(255,255,255,0.2)\" stroke-width=\"2\" fill=\"none\"/><ellipse cx=\"400\" cy=\"322\" rx=\"600\" ry=\"25\" fill=\"#7B8A7A\"/><ellipse cx=\"80\" cy=\"325\" rx=\"30\" ry=\"15\" fill=\"#6B7A6A\"/><ellipse cx=\"200\" cy=\"325\" rx=\"22\" ry=\"12\" fill=\"#7B8A7A\"/><ellipse cx=\"350\" cy=\"325\" rx=\"28\" ry=\"13\" fill=\"#6B7A6A\"/><ellipse cx=\"500\" cy=\"325\" rx=\"25\" ry=\"12\" fill=\"#8A9A8A\"/><ellipse cx=\"650\" cy=\"325\" rx=\"30\" ry=\"14\" fill=\"#6B7A6A\"/><ellipse cx=\"750\" cy=\"325\" rx=\"20\" ry=\"11\" fill=\"#7B8A7A\"/><ellipse cx=\"500\" cy=\"345\" rx=\"60\" ry=\"18\" fill=\"rgba(120,100,50,0.4)\"/><rect x=\"470\" y=\"332\" width=\"60\" height=\"25\" rx=\"4\" fill=\"#8B6914\" opacity=\"0.7\"/><circle cx=\"220\" cy=\"290\" r=\"32\" fill=\"#F5C5A3\"/><ellipse cx=\"220\" cy=\"265\" rx=\"34\" ry=\"23\" fill=\"#3D2B1F\"/><ellipse cx=\"220\" cy=\"328\" rx=\"27\" ry=\"43\" fill=\"#4A90D9\"/><circle cx=\"330\" cy=\"295\" r=\"29\" fill=\"#F0B48A\"/><ellipse cx=\"330\" cy=\"271\" rx=\"31\" ry=\"21\" fill=\"#6B4226\"/><ellipse cx=\"330\" cy=\"328\" rx=\"24\" ry=\"40\" fill=\"#E63946\"/><ellipse cx=\"295\" cy=\"305\" rx=\"28\" ry=\"14\" fill=\"#3D3D3D\"/><ellipse cx=\"295\" cy=\"305\" rx=\"28\" ry=\"14\" fill=\"none\" stroke=\"#555\" stroke-width=\"2\"/><circle cx=\"282\" cy=\"305\" r=\"8\" fill=\"#1A1A1A\"/><circle cx=\"308\" cy=\"305\" r=\"8\" fill=\"#1A1A1A\"/><text x=\"490\" y=\"320\" font-size=\"28\" fill=\"rgba(120,80,20,0.6)\" font-family=\"Arial\">?</text><path d=\"M400 200 Q412 194 424 200\" stroke=\"#5C5C5C\" stroke-width=\"2\" fill=\"none\"/><path d=\"M440 185 Q452 179 464 185\" stroke=\"#5C5C5C\" stroke-width=\"2\" fill=\"none\"/><path d=\"M480 200 Q492 194 504 200\" stroke=\"#5C5C5C\" stroke-width=\"2\" fill=\"none\"/><path d=\"M550 210 Q562 204 574 210\" stroke=\"#5C5C5C\" stroke-width=\"2\" fill=\"none\"/><path d=\"M580 195 Q592 189 604 195\" stroke=\"#5C5C5C\" stroke-width=\"2\" fill=\"none\"/></svg>",
+        "alt": "River mystery page 1"
       },
       "paragraphs": [
         {
@@ -31,30 +37,150 @@
               "audio_start_ms": 0,
               "audio_end_ms": 11500,
               "words": [
-                {"word_id": "w1", "text": "The", "audio_start_ms": 0, "audio_end_ms": 220},
-                {"word_id": "w2", "text": "morning", "audio_start_ms": 230, "audio_end_ms": 620},
-                {"word_id": "w3", "text": "Jordan", "audio_start_ms": 630, "audio_end_ms": 1050},
-                {"word_id": "w4", "text": "arrived", "audio_start_ms": 1060, "audio_end_ms": 1520},
-                {"word_id": "w5", "text": "at", "audio_start_ms": 1530, "audio_end_ms": 1720},
-                {"word_id": "w6", "text": "Clearwater", "audio_start_ms": 1730, "audio_end_ms": 2280},
-                {"word_id": "w7", "text": "Creek,", "audio_start_ms": 2290, "audio_end_ms": 2750},
-                {"word_id": "w8", "text": "the", "audio_start_ms": 2760, "audio_end_ms": 2930},
-                {"word_id": "w9", "text": "river", "audio_start_ms": 2940, "audio_end_ms": 3280},
-                {"word_id": "w10", "text": "that", "audio_start_ms": 3290, "audio_end_ms": 3560},
-                {"word_id": "w11", "text": "had", "audio_start_ms": 3570, "audio_end_ms": 3810},
-                {"word_id": "w12", "text": "run", "audio_start_ms": 3820, "audio_end_ms": 4080},
-                {"word_id": "w13", "text": "crystal-clear", "audio_start_ms": 4090, "audio_end_ms": 4780},
-                {"word_id": "w14", "text": "for", "audio_start_ms": 4790, "audio_end_ms": 4990},
-                {"word_id": "w15", "text": "as", "audio_start_ms": 5000, "audio_end_ms": 5180},
-                {"word_id": "w16", "text": "long", "audio_start_ms": 5190, "audio_end_ms": 5520},
-                {"word_id": "w17", "text": "as", "audio_start_ms": 5530, "audio_end_ms": 5710},
-                {"word_id": "w18", "text": "anyone", "audio_start_ms": 5720, "audio_end_ms": 6180},
-                {"word_id": "w19", "text": "could", "audio_start_ms": 6190, "audio_end_ms": 6490},
-                {"word_id": "w20", "text": "remember,", "audio_start_ms": 6500, "audio_end_ms": 7080},
-                {"word_id": "w21", "text": "was", "audio_start_ms": 7090, "audio_end_ms": 7340},
-                {"word_id": "w22", "text": "brown", "audio_start_ms": 7350, "audio_end_ms": 7720},
-                {"word_id": "w23", "text": "and", "audio_start_ms": 7730, "audio_end_ms": 7940},
-                {"word_id": "w24", "text": "foaming.", "audio_start_ms": 7950, "audio_end_ms": 8550}
+                {
+                  "word_id": "w1",
+                  "text": "The",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 220
+                },
+                {
+                  "word_id": "w2",
+                  "text": "morning",
+                  "audio_start_ms": 230,
+                  "audio_end_ms": 620
+                },
+                {
+                  "word_id": "w3",
+                  "text": "Jordan",
+                  "audio_start_ms": 630,
+                  "audio_end_ms": 1050
+                },
+                {
+                  "word_id": "w4",
+                  "text": "arrived",
+                  "audio_start_ms": 1060,
+                  "audio_end_ms": 1520
+                },
+                {
+                  "word_id": "w5",
+                  "text": "at",
+                  "audio_start_ms": 1530,
+                  "audio_end_ms": 1720
+                },
+                {
+                  "word_id": "w6",
+                  "text": "Clearwater",
+                  "audio_start_ms": 1730,
+                  "audio_end_ms": 2280
+                },
+                {
+                  "word_id": "w7",
+                  "text": "Creek,",
+                  "audio_start_ms": 2290,
+                  "audio_end_ms": 2750
+                },
+                {
+                  "word_id": "w8",
+                  "text": "the",
+                  "audio_start_ms": 2760,
+                  "audio_end_ms": 2930
+                },
+                {
+                  "word_id": "w9",
+                  "text": "river",
+                  "audio_start_ms": 2940,
+                  "audio_end_ms": 3280
+                },
+                {
+                  "word_id": "w10",
+                  "text": "that",
+                  "audio_start_ms": 3290,
+                  "audio_end_ms": 3560
+                },
+                {
+                  "word_id": "w11",
+                  "text": "had",
+                  "audio_start_ms": 3570,
+                  "audio_end_ms": 3810
+                },
+                {
+                  "word_id": "w12",
+                  "text": "run",
+                  "audio_start_ms": 3820,
+                  "audio_end_ms": 4080
+                },
+                {
+                  "word_id": "w13",
+                  "text": "crystal-clear",
+                  "audio_start_ms": 4090,
+                  "audio_end_ms": 4780
+                },
+                {
+                  "word_id": "w14",
+                  "text": "for",
+                  "audio_start_ms": 4790,
+                  "audio_end_ms": 4990
+                },
+                {
+                  "word_id": "w15",
+                  "text": "as",
+                  "audio_start_ms": 5000,
+                  "audio_end_ms": 5180
+                },
+                {
+                  "word_id": "w16",
+                  "text": "long",
+                  "audio_start_ms": 5190,
+                  "audio_end_ms": 5520
+                },
+                {
+                  "word_id": "w17",
+                  "text": "as",
+                  "audio_start_ms": 5530,
+                  "audio_end_ms": 5710
+                },
+                {
+                  "word_id": "w18",
+                  "text": "anyone",
+                  "audio_start_ms": 5720,
+                  "audio_end_ms": 6180
+                },
+                {
+                  "word_id": "w19",
+                  "text": "could",
+                  "audio_start_ms": 6190,
+                  "audio_end_ms": 6490
+                },
+                {
+                  "word_id": "w20",
+                  "text": "remember,",
+                  "audio_start_ms": 6500,
+                  "audio_end_ms": 7080
+                },
+                {
+                  "word_id": "w21",
+                  "text": "was",
+                  "audio_start_ms": 7090,
+                  "audio_end_ms": 7340
+                },
+                {
+                  "word_id": "w22",
+                  "text": "brown",
+                  "audio_start_ms": 7350,
+                  "audio_end_ms": 7720
+                },
+                {
+                  "word_id": "w23",
+                  "text": "and",
+                  "audio_start_ms": 7730,
+                  "audio_end_ms": 7940
+                },
+                {
+                  "word_id": "w24",
+                  "text": "foaming.",
+                  "audio_start_ms": 7950,
+                  "audio_end_ms": 8550
+                }
               ]
             }
           ]
@@ -66,8 +192,8 @@
       "layout": "text-left",
       "illustration": {
         "type": "svg",
-        "alt": "Jordan collecting water samples in test tubes near the riverbank",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#E8F5E9'/><rect x='0' y='140' width='300' height='60' fill='#795548'/><path d='M0,140 Q75,128 150,140 Q225,152 300,140' fill='#6D4C41'/><rect x='0' y='140' width='300' height='15' fill='#8D6E63' opacity='0.5'/><circle cx='180' cy='105' r='32' fill='#FFCC80'/><rect x='155' y='133' width='50' height='55' rx='6' fill='#1976D2'/><rect x='142' y='142' width='20' height='9' rx='4.5' fill='#FFCC80'/><rect x='198' y='140' width='22' height='9' rx='4.5' fill='#FFCC80'/><circle cx='172' cy='92' r='12' fill='#FF7043'/><circle cx='188' cy='92' r='12' fill='#FF5722'/><rect x='120' y='115' width='8' height='35' rx='4' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/><rect x='121' y='130' width='6' height='12' rx='3' fill='#6D4C41' opacity='0.7'/><rect x='138' y='112' width='8' height='32' rx='4' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/><rect x='139' y='124' width='6' height='10' rx='3' fill='#795548' opacity='0.6'/><rect x='156' y='110' width='8' height='38' rx='4' fill='#BDBDBD' stroke='#9E9E9E' stroke-width='1'/><rect x='157' y='118' width='6' height='16' rx='3' fill='#4CAF50' opacity='0.5'/><rect x='108' y='145' width='28' height='10' rx='3' fill='#E0E0E0'/></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"muddy_water\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#1E4D8A\"/><stop offset=\"100%\" stop-color=\"#0D2A52\"/></linearGradient><radialGradient id=\"light_shaft\" cx=\"0.4\" cy=\"0\" r=\"0.5\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"rgba(255,255,200,0.3)\"/><stop offset=\"100%\" stop-color=\"transparent\"/></radialGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#muddy_water)\"/><ellipse cx=\"320\" cy=\"0\" rx=\"200\" ry=\"150\" fill=\"url(#light_shaft)\"/><ellipse cx=\"320\" cy=\"0\" rx=\"100\" ry=\"80\" fill=\"rgba(255,255,200,0.15)\"/><circle cx=\"80\" cy=\"100\" r=\"2\" fill=\"rgba(180,150,100,0.30)\"/><circle cx=\"200\" cy=\"150\" r=\"1.5\" fill=\"rgba(180,150,100,0.25)\"/><circle cx=\"350\" cy=\"80\" r=\"2\" fill=\"rgba(180,150,100,0.35)\"/><circle cx=\"500\" cy=\"200\" r=\"1.5\" fill=\"rgba(180,150,100,0.28)\"/><circle cx=\"650\" cy=\"120\" r=\"2\" fill=\"rgba(180,150,100,0.30)\"/><circle cx=\"750\" cy=\"180\" r=\"1.5\" fill=\"rgba(180,150,100,0.25)\"/><circle cx=\"120\" cy=\"300\" r=\"2\" fill=\"rgba(180,150,100,0.20)\"/><circle cx=\"300\" cy=\"350\" r=\"1.5\" fill=\"rgba(180,150,100,0.25)\"/><circle cx=\"500\" cy=\"320\" r=\"2\" fill=\"rgba(180,150,100,0.30)\"/><circle cx=\"680\" cy=\"380\" r=\"1.5\" fill=\"rgba(180,150,100,0.20)\"/><path d=\"M80 500 Q95 440 70 380 Q92 320 80 320\" stroke=\"#1E5E28\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M200 500 Q215 450 190 400 Q212 350 200 350\" stroke=\"#2E7038\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M650 500 Q665 444 640 387 Q662 330 650 330\" stroke=\"#1E5E28\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M720 500 Q735 447 710 394 Q732 340 720 340\" stroke=\"#2E7038\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><rect x=\"0\" y=\"450\" width=\"800\" height=\"50\" fill=\"#3D3020\"/><ellipse cx=\"100\" cy=\"455\" rx=\"20\" ry=\"5\" fill=\"#4A3C2A\"/><ellipse cx=\"220\" cy=\"455\" rx=\"16\" ry=\"5\" fill=\"#3D3020\"/><ellipse cx=\"380\" cy=\"455\" rx=\"22\" ry=\"5\" fill=\"#4A3C2A\"/><ellipse cx=\"540\" cy=\"455\" rx=\"18\" ry=\"5\" fill=\"#3D3020\"/><ellipse cx=\"680\" cy=\"455\" rx=\"20\" ry=\"5\" fill=\"#4A3C2A\"/><rect x=\"340\" y=\"390\" width=\"140\" height=\"90\" rx=\"6\" fill=\"#5C3A1E\"/><rect x=\"345\" y=\"390\" width=\"130\" height=\"40\" rx=\"4\" fill=\"#7B5230\"/><rect x=\"340\" y=\"425\" width=\"140\" height=\"6\" fill=\"#B8860B\"/><rect x=\"395\" y=\"395\" width=\"30\" height=\"20\" rx=\"4\" fill=\"#B8860B\"/><circle cx=\"410\" cy=\"405\" r=\"8\" fill=\"#FFD700\"/><ellipse cx=\"410\" cy=\"430\" rx=\"60\" ry=\"20\" fill=\"none\" stroke=\"#FFD700\" stroke-width=\"2\" opacity=\"0.25\"/><ellipse cx=\"410\" cy=\"430\" rx=\"75\" ry=\"28\" fill=\"none\" stroke=\"#FFD700\" stroke-width=\"2\" opacity=\"0.19\"/><ellipse cx=\"410\" cy=\"430\" rx=\"90\" ry=\"36\" fill=\"none\" stroke=\"#FFD700\" stroke-width=\"2\" opacity=\"0.13\"/><ellipse cx=\"410\" cy=\"430\" rx=\"105\" ry=\"44\" fill=\"none\" stroke=\"#FFD700\" stroke-width=\"2\" opacity=\"0.07\"/><circle cx=\"360\" cy=\"445\" r=\"8\" fill=\"#FFD700\" opacity=\"0.8\"/><circle cx=\"480\" cy=\"440\" r=\"8\" fill=\"#FFD700\" opacity=\"0.8\"/><circle cx=\"350\" cy=\"460\" r=\"8\" fill=\"#FFD700\" opacity=\"0.8\"/><circle cx=\"490\" cy=\"455\" r=\"8\" fill=\"#FFD700\" opacity=\"0.8\"/><circle cx=\"375\" cy=\"468\" r=\"8\" fill=\"#FFD700\" opacity=\"0.8\"/><circle cx=\"420\" cy=\"472\" r=\"8\" fill=\"#FFD700\" opacity=\"0.8\"/><circle cx=\"455\" cy=\"465\" r=\"8\" fill=\"#FFD700\" opacity=\"0.8\"/><circle cx=\"600\" cy=\"200\" r=\"30\" fill=\"#F5C5A3\"/><ellipse cx=\"600\" cy=\"200\" rx=\"30\" ry=\"30\" fill=\"none\" stroke=\"#1565C0\" stroke-width=\"4\"/><ellipse cx=\"600\" cy=\"202\" rx=\"18\" ry=\"16\" fill=\"rgba(0,150,255,0.3)\"/><ellipse cx=\"600\" cy=\"230\" rx=\"20\" ry=\"28\" fill=\"#1565C0\"/><ellipse cx=\"578\" cy=\"218\" rx=\"9\" ry=\"22\" fill=\"#1565C0\" transform=\"rotate(20 578 218)\"/><ellipse cx=\"622\" cy=\"215\" rx=\"9\" ry=\"22\" fill=\"#1565C0\" transform=\"rotate(-20 622 215)\"/><path d=\"M585 230 L380 430\" stroke=\"rgba(255,255,200,0.3)\" stroke-width=\"20\" fill=\"none\"/><line x1=\"585\" y1=\"230\" x2=\"380\" y2=\"430\" stroke=\"rgba(255,255,200,0.5)\" stroke-width=\"4\"/><circle cx=\"640\" cy=\"150\" r=\"30\" fill=\"rgba(255,255,255,0.9)\"/><text x=\"640\" y=\"160\" font-size=\"28\" fill=\"#E63946\" text-anchor=\"middle\">!</text></svg>",
+        "alt": "River mystery page 2"
       },
       "paragraphs": [
         {
@@ -78,20 +204,90 @@
               "audio_start_ms": 0,
               "audio_end_ms": 12000,
               "words": [
-                {"word_id": "w1", "text": "Jordan", "audio_start_ms": 0, "audio_end_ms": 430},
-                {"word_id": "w2", "text": "pulled", "audio_start_ms": 440, "audio_end_ms": 780},
-                {"word_id": "w3", "text": "on", "audio_start_ms": 790, "audio_end_ms": 980},
-                {"word_id": "w4", "text": "nitrile", "audio_start_ms": 990, "audio_end_ms": 1450},
-                {"word_id": "w5", "text": "gloves,", "audio_start_ms": 1460, "audio_end_ms": 1920},
-                {"word_id": "w6", "text": "uncapped", "audio_start_ms": 1930, "audio_end_ms": 2450},
-                {"word_id": "w7", "text": "three", "audio_start_ms": 2460, "audio_end_ms": 2770},
-                {"word_id": "w8", "text": "collection", "audio_start_ms": 2780, "audio_end_ms": 3280},
-                {"word_id": "w9", "text": "vials,", "audio_start_ms": 3290, "audio_end_ms": 3750},
-                {"word_id": "w10", "text": "and", "audio_start_ms": 3760, "audio_end_ms": 3960},
-                {"word_id": "w11", "text": "knelt", "audio_start_ms": 3970, "audio_end_ms": 4330},
-                {"word_id": "w12", "text": "at", "audio_start_ms": 4340, "audio_end_ms": 4530},
-                {"word_id": "w13", "text": "the", "audio_start_ms": 4540, "audio_end_ms": 4700},
-                {"word_id": "w14", "text": "waterline.", "audio_start_ms": 4710, "audio_end_ms": 5350}
+                {
+                  "word_id": "w1",
+                  "text": "Jordan",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 430
+                },
+                {
+                  "word_id": "w2",
+                  "text": "pulled",
+                  "audio_start_ms": 440,
+                  "audio_end_ms": 780
+                },
+                {
+                  "word_id": "w3",
+                  "text": "on",
+                  "audio_start_ms": 790,
+                  "audio_end_ms": 980
+                },
+                {
+                  "word_id": "w4",
+                  "text": "nitrile",
+                  "audio_start_ms": 990,
+                  "audio_end_ms": 1450
+                },
+                {
+                  "word_id": "w5",
+                  "text": "gloves,",
+                  "audio_start_ms": 1460,
+                  "audio_end_ms": 1920
+                },
+                {
+                  "word_id": "w6",
+                  "text": "uncapped",
+                  "audio_start_ms": 1930,
+                  "audio_end_ms": 2450
+                },
+                {
+                  "word_id": "w7",
+                  "text": "three",
+                  "audio_start_ms": 2460,
+                  "audio_end_ms": 2770
+                },
+                {
+                  "word_id": "w8",
+                  "text": "collection",
+                  "audio_start_ms": 2780,
+                  "audio_end_ms": 3280
+                },
+                {
+                  "word_id": "w9",
+                  "text": "vials,",
+                  "audio_start_ms": 3290,
+                  "audio_end_ms": 3750
+                },
+                {
+                  "word_id": "w10",
+                  "text": "and",
+                  "audio_start_ms": 3760,
+                  "audio_end_ms": 3960
+                },
+                {
+                  "word_id": "w11",
+                  "text": "knelt",
+                  "audio_start_ms": 3970,
+                  "audio_end_ms": 4330
+                },
+                {
+                  "word_id": "w12",
+                  "text": "at",
+                  "audio_start_ms": 4340,
+                  "audio_end_ms": 4530
+                },
+                {
+                  "word_id": "w13",
+                  "text": "the",
+                  "audio_start_ms": 4540,
+                  "audio_end_ms": 4700
+                },
+                {
+                  "word_id": "w14",
+                  "text": "waterline.",
+                  "audio_start_ms": 4710,
+                  "audio_end_ms": 5350
+                }
               ]
             },
             {
@@ -99,17 +295,72 @@
               "audio_start_ms": 5450,
               "audio_end_ms": 13000,
               "words": [
-                {"word_id": "w15", "text": "If", "audio_start_ms": 5450, "audio_end_ms": 5660},
-                {"word_id": "w16", "text": "something", "audio_start_ms": 5670, "audio_end_ms": 6170},
-                {"word_id": "w17", "text": "was", "audio_start_ms": 6180, "audio_end_ms": 6420},
-                {"word_id": "w18", "text": "poisoning", "audio_start_ms": 6430, "audio_end_ms": 6980},
-                {"word_id": "w19", "text": "this", "audio_start_ms": 6990, "audio_end_ms": 7220},
-                {"word_id": "w20", "text": "river,", "audio_start_ms": 7230, "audio_end_ms": 7680},
-                {"word_id": "w21", "text": "the", "audio_start_ms": 7690, "audio_end_ms": 7850},
-                {"word_id": "w22", "text": "evidence", "audio_start_ms": 7860, "audio_end_ms": 8380},
-                {"word_id": "w23", "text": "was", "audio_start_ms": 8390, "audio_end_ms": 8630},
-                {"word_id": "w24", "text": "already", "audio_start_ms": 8640, "audio_end_ms": 9100},
-                {"word_id": "w25", "text": "here.", "audio_start_ms": 9110, "audio_end_ms": 9600}
+                {
+                  "word_id": "w15",
+                  "text": "If",
+                  "audio_start_ms": 5450,
+                  "audio_end_ms": 5660
+                },
+                {
+                  "word_id": "w16",
+                  "text": "something",
+                  "audio_start_ms": 5670,
+                  "audio_end_ms": 6170
+                },
+                {
+                  "word_id": "w17",
+                  "text": "was",
+                  "audio_start_ms": 6180,
+                  "audio_end_ms": 6420
+                },
+                {
+                  "word_id": "w18",
+                  "text": "poisoning",
+                  "audio_start_ms": 6430,
+                  "audio_end_ms": 6980
+                },
+                {
+                  "word_id": "w19",
+                  "text": "this",
+                  "audio_start_ms": 6990,
+                  "audio_end_ms": 7220
+                },
+                {
+                  "word_id": "w20",
+                  "text": "river,",
+                  "audio_start_ms": 7230,
+                  "audio_end_ms": 7680
+                },
+                {
+                  "word_id": "w21",
+                  "text": "the",
+                  "audio_start_ms": 7690,
+                  "audio_end_ms": 7850
+                },
+                {
+                  "word_id": "w22",
+                  "text": "evidence",
+                  "audio_start_ms": 7860,
+                  "audio_end_ms": 8380
+                },
+                {
+                  "word_id": "w23",
+                  "text": "was",
+                  "audio_start_ms": 8390,
+                  "audio_end_ms": 8630
+                },
+                {
+                  "word_id": "w24",
+                  "text": "already",
+                  "audio_start_ms": 8640,
+                  "audio_end_ms": 9100
+                },
+                {
+                  "word_id": "w25",
+                  "text": "here.",
+                  "audio_start_ms": 9110,
+                  "audio_end_ms": 9600
+                }
               ]
             }
           ]
@@ -121,8 +372,8 @@
       "layout": "text-right",
       "illustration": {
         "type": "svg",
-        "alt": "A map showing the river, the factory upstream, and pollution markers",
-        "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><rect width='300' height='200' fill='#FFF9C4'/><path d='M250,10 Q200,50 170,80 Q140,110 100,130 Q60,150 10,180' stroke='#1565C0' stroke-width='8' fill='none' opacity='0.7'/><path d='M248,14 Q198,54 168,84 Q138,114 98,134 Q58,154 8,184' stroke='#795548' stroke-width='5' fill='none' opacity='0.5'/><rect x='230' y='10' width='50' height='35' rx='4' fill='#546E7A'/><rect x='235' y='5' width='10' height='12' fill='#455A64'/><rect x='255' y='3' width='10' height='14' fill='#455A64'/><rect x='240' y='0' width='6' height='10' fill='#FF5722'/><rect x='260' y='0' width='6' height='10' fill='#FF5722'/><rect x='268' y='0' width='6' height='10' fill='#FF5722'/><circle cx='215' cy='62' r='8' fill='#F44336'/><text x='205' y='58' font-size='8' fill='#B71C1C' font-weight='bold'>!</text><circle cx='170' cy='95' r='6' fill='#FF9800'/><circle cx='130' cy='122' r='5' fill='#FFEB3B'/><circle cx='80' cy='158' r='7' fill='#4CAF50'/><text x='230' y='60' font-size='7' fill='#37474F' font-family='sans-serif'>Factory</text><text x='185' y='108' font-size='6' fill='#B71C1C'>pH 4.1</text><text x='140' y='138' font-size='6' fill='#E65100'>pH 5.8</text><text x='88' y='172' font-size='6' fill='#1B5E20'>pH 6.9</text><rect x='10' y='10' width='75' height='55' rx='3' fill='#FFFFFF' stroke='#BDBDBD' stroke-width='1'/><text x='15' y='23' font-size='7' fill='#1A1A1A' font-weight='bold'>LEGEND</text><circle cx='18' cy='33' r='4' fill='#F44336'/><text x='26' y='36' font-size='6' fill='#37474F'>Critical</text><circle cx='18' cy='45' r='4' fill='#FF9800'/><text x='26' y='48' font-size='6' fill='#37474F'>Warning</text><circle cx='18' cy='57' r='4' fill='#4CAF50'/><text x='26' y='60' font-size='6' fill='#37474F'>Normal</text></svg>"
+        "svg": "<svg viewBox=\"0 0 800 500\" xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid slice\" width=\"800\" height=\"500\"><defs><linearGradient id=\"evening_r\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"#FF8C42\"/><stop offset=\"40%\" stop-color=\"#FFB703\"/><stop offset=\"100%\" stop-color=\"#FFE566\"/></linearGradient><radialGradient id=\"highlight_r\" cx=\"0.3\" cy=\"0.3\" r=\"0.5\" gradientUnits=\"objectBoundingBox\"><stop offset=\"0%\" stop-color=\"rgba(255,200,100,0.5)\"/><stop offset=\"100%\" stop-color=\"transparent\"/></radialGradient></defs><rect width=\"800\" height=\"500\" fill=\"url(#evening_r)\"/><ellipse cx=\"300\" cy=\"200\" rx=\"350\" ry=\"250\" fill=\"url(#highlight_r)\"/><rect x=\"0\" y=\"340\" width=\"800\" height=\"160\" fill=\"#2D6BA8\" opacity=\"0.8\"/><ellipse cx=\"400\" cy=\"360\" rx=\"250\" ry=\"30\" fill=\"#FFB703\" opacity=\"0.3\"/><rect x=\"600\" y=\"150\" width=\"18\" height=\"190\" fill=\"#1A2E10\"/><ellipse cx=\"609\" cy=\"150\" rx=\"35\" ry=\"35\" fill=\"#1A2E10\"/><rect x=\"650\" y=\"140\" width=\"18\" height=\"200\" fill=\"#1A2E10\"/><ellipse cx=\"659\" cy=\"140\" rx=\"38\" ry=\"38\" fill=\"#1A2E10\"/><rect x=\"700\" y=\"155\" width=\"18\" height=\"185\" fill=\"#1A2E10\"/><ellipse cx=\"709\" cy=\"155\" rx=\"33\" ry=\"33\" fill=\"#1A2E10\"/><rect x=\"750\" y=\"145\" width=\"18\" height=\"195\" fill=\"#1A2E10\"/><ellipse cx=\"759\" cy=\"145\" rx=\"36\" ry=\"36\" fill=\"#1A2E10\"/><rect x=\"300\" y=\"290\" width=\"130\" height=\"80\" rx=\"5\" fill=\"#5C3A1E\"/><rect x=\"305\" y=\"290\" width=\"120\" height=\"36\" rx=\"4\" fill=\"#7B5230\"/><rect x=\"300\" y=\"322\" width=\"130\" height=\"5\" fill=\"#B8860B\"/><rect x=\"353\" y=\"296\" width=\"24\" height=\"18\" rx=\"3\" fill=\"#B8860B\"/><circle cx=\"365\" cy=\"305\" r=\"7\" fill=\"#FFD700\"/><circle cx=\"250\" cy=\"310\" r=\"12\" fill=\"#FFD700\" opacity=\"0.9\"/><ellipse cx=\"270\" cy=\"305\" rx=\"18\" ry=\"8\" transform=\"rotate(30 270 305)\" fill=\"#C0A060\" opacity=\"0.9\"/><rect x=\"220\" y=\"318\" width=\"25\" height=\"8\" rx=\"2\" transform=\"rotate(-15 220 318)\" fill=\"#B8860B\" opacity=\"0.9\"/><circle cx=\"130\" cy=\"300\" r=\"30\" fill=\"#F5C5A3\"/><ellipse cx=\"130\" cy=\"276\" rx=\"32\" ry=\"22\" fill=\"#3D2B1F\"/><ellipse cx=\"130\" cy=\"335\" rx=\"25\" ry=\"42\" fill=\"#4A90D9\"/><circle cx=\"210\" cy=\"295\" r=\"27\" fill=\"#F0B48A\"/><ellipse cx=\"210\" cy=\"272\" rx=\"29\" ry=\"20\" fill=\"#6B4226\"/><ellipse cx=\"210\" cy=\"325\" rx=\"22\" ry=\"38\" fill=\"#E63946\"/><circle cx=\"490\" cy=\"285\" r=\"30\" fill=\"#F5C5A3\"/><ellipse cx=\"490\" cy=\"262\" rx=\"32\" ry=\"22\" fill=\"#7B5230\"/><rect x=\"468\" y=\"250\" width=\"44\" height=\"8\" rx=\"3\" fill=\"#5C3A1E\"/><ellipse cx=\"490\" cy=\"255\" rx=\"20\" ry=\"14\" fill=\"#6B4226\"/><ellipse cx=\"490\" cy=\"325\" rx=\"27\" ry=\"44\" fill=\"#5C5048\"/><rect x=\"520\" y=\"290\" width=\"55\" height=\"70\" rx=\"4\" fill=\"white\" opacity=\"0.9\"/><rect x=\"530\" y=\"298\" width=\"35\" height=\"2\" fill=\"#DDD\"/><rect x=\"530\" y=\"308\" width=\"35\" height=\"2\" fill=\"#DDD\"/><rect x=\"530\" y=\"318\" width=\"25\" height=\"2\" fill=\"#DDD\"/><circle cx=\"600\" cy=\"288\" r=\"30\" fill=\"#F0B48A\"/><ellipse cx=\"600\" cy=\"266\" rx=\"32\" ry=\"21\" fill=\"#4A3728\"/><ellipse cx=\"600\" cy=\"325\" rx=\"26\" ry=\"42\" fill=\"#2D5E2D\"/><rect x=\"555\" y=\"298\" width=\"45\" height=\"32\" rx=\"5\" fill=\"#1A1A1A\"/><circle cx=\"600\" cy=\"314\" r=\"12\" fill=\"#333\"/><circle cx=\"600\" cy=\"314\" r=\"8\" fill=\"#1A3A5C\"/><circle cx=\"600\" cy=\"314\" r=\"4\" fill=\"#74D7FF\" opacity=\"0.7\"/><ellipse cx=\"140\" cy=\"250\" rx=\"60\" ry=\"30\" fill=\"white\" stroke=\"#DDD\" stroke-width=\"2\"/><polygon points=\"160,278 145,295 175,282\" fill=\"white\"/><text x=\"140\" y=\"256\" font-size=\"13\" fill=\"#333\" font-family=\"Arial\" text-anchor=\"middle\">We found</text><text x=\"140\" y=\"272\" font-size=\"13\" fill=\"#333\" font-family=\"Arial\" text-anchor=\"middle\">a treasure!</text></svg>",
+        "alt": "River mystery page 3"
       },
       "paragraphs": [
         {
@@ -133,24 +384,114 @@
               "audio_start_ms": 0,
               "audio_end_ms": 12000,
               "words": [
-                {"word_id": "w1", "text": "The", "audio_start_ms": 0, "audio_end_ms": 220},
-                {"word_id": "w2", "text": "pH", "audio_start_ms": 230, "audio_end_ms": 580},
-                {"word_id": "w3", "text": "readings", "audio_start_ms": 590, "audio_end_ms": 1050},
-                {"word_id": "w4", "text": "told", "audio_start_ms": 1060, "audio_end_ms": 1380},
-                {"word_id": "w5", "text": "the", "audio_start_ms": 1390, "audio_end_ms": 1550},
-                {"word_id": "w6", "text": "story:", "audio_start_ms": 1560, "audio_end_ms": 1980},
-                {"word_id": "w7", "text": "4.1", "audio_start_ms": 1990, "audio_end_ms": 2520},
-                {"word_id": "w8", "text": "upstream", "audio_start_ms": 2530, "audio_end_ms": 3050},
-                {"word_id": "w9", "text": "near", "audio_start_ms": 3060, "audio_end_ms": 3350},
-                {"word_id": "w10", "text": "the", "audio_start_ms": 3360, "audio_end_ms": 3520},
-                {"word_id": "w11", "text": "factory,", "audio_start_ms": 3530, "audio_end_ms": 4050},
-                {"word_id": "w12", "text": "rising", "audio_start_ms": 4060, "audio_end_ms": 4480},
-                {"word_id": "w13", "text": "gradually", "audio_start_ms": 4490, "audio_end_ms": 5050},
-                {"word_id": "w14", "text": "to", "audio_start_ms": 5060, "audio_end_ms": 5250},
-                {"word_id": "w15", "text": "6.9", "audio_start_ms": 5260, "audio_end_ms": 5850},
-                {"word_id": "w16", "text": "ten", "audio_start_ms": 5860, "audio_end_ms": 6150},
-                {"word_id": "w17", "text": "kilometers", "audio_start_ms": 6160, "audio_end_ms": 6750},
-                {"word_id": "w18", "text": "downstream.", "audio_start_ms": 6760, "audio_end_ms": 7480}
+                {
+                  "word_id": "w1",
+                  "text": "The",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 220
+                },
+                {
+                  "word_id": "w2",
+                  "text": "pH",
+                  "audio_start_ms": 230,
+                  "audio_end_ms": 580
+                },
+                {
+                  "word_id": "w3",
+                  "text": "readings",
+                  "audio_start_ms": 590,
+                  "audio_end_ms": 1050
+                },
+                {
+                  "word_id": "w4",
+                  "text": "told",
+                  "audio_start_ms": 1060,
+                  "audio_end_ms": 1380
+                },
+                {
+                  "word_id": "w5",
+                  "text": "the",
+                  "audio_start_ms": 1390,
+                  "audio_end_ms": 1550
+                },
+                {
+                  "word_id": "w6",
+                  "text": "story:",
+                  "audio_start_ms": 1560,
+                  "audio_end_ms": 1980
+                },
+                {
+                  "word_id": "w7",
+                  "text": "4.1",
+                  "audio_start_ms": 1990,
+                  "audio_end_ms": 2520
+                },
+                {
+                  "word_id": "w8",
+                  "text": "upstream",
+                  "audio_start_ms": 2530,
+                  "audio_end_ms": 3050
+                },
+                {
+                  "word_id": "w9",
+                  "text": "near",
+                  "audio_start_ms": 3060,
+                  "audio_end_ms": 3350
+                },
+                {
+                  "word_id": "w10",
+                  "text": "the",
+                  "audio_start_ms": 3360,
+                  "audio_end_ms": 3520
+                },
+                {
+                  "word_id": "w11",
+                  "text": "factory,",
+                  "audio_start_ms": 3530,
+                  "audio_end_ms": 4050
+                },
+                {
+                  "word_id": "w12",
+                  "text": "rising",
+                  "audio_start_ms": 4060,
+                  "audio_end_ms": 4480
+                },
+                {
+                  "word_id": "w13",
+                  "text": "gradually",
+                  "audio_start_ms": 4490,
+                  "audio_end_ms": 5050
+                },
+                {
+                  "word_id": "w14",
+                  "text": "to",
+                  "audio_start_ms": 5060,
+                  "audio_end_ms": 5250
+                },
+                {
+                  "word_id": "w15",
+                  "text": "6.9",
+                  "audio_start_ms": 5260,
+                  "audio_end_ms": 5850
+                },
+                {
+                  "word_id": "w16",
+                  "text": "ten",
+                  "audio_start_ms": 5860,
+                  "audio_end_ms": 6150
+                },
+                {
+                  "word_id": "w17",
+                  "text": "kilometers",
+                  "audio_start_ms": 6160,
+                  "audio_end_ms": 6750
+                },
+                {
+                  "word_id": "w18",
+                  "text": "downstream.",
+                  "audio_start_ms": 6760,
+                  "audio_end_ms": 7480
+                }
               ]
             },
             {
@@ -158,12 +499,42 @@
               "audio_start_ms": 7580,
               "audio_end_ms": 14000,
               "words": [
-                {"word_id": "w19", "text": "The", "audio_start_ms": 7580, "audio_end_ms": 7760},
-                {"word_id": "w20", "text": "source", "audio_start_ms": 7770, "audio_end_ms": 8150},
-                {"word_id": "w21", "text": "wasn't", "audio_start_ms": 8160, "audio_end_ms": 8550},
-                {"word_id": "w22", "text": "a", "audio_start_ms": 8560, "audio_end_ms": 8700},
-                {"word_id": "w23", "text": "mystery", "audio_start_ms": 8710, "audio_end_ms": 9200},
-                {"word_id": "w24", "text": "anymore.", "audio_start_ms": 9210, "audio_end_ms": 9800}
+                {
+                  "word_id": "w19",
+                  "text": "The",
+                  "audio_start_ms": 7580,
+                  "audio_end_ms": 7760
+                },
+                {
+                  "word_id": "w20",
+                  "text": "source",
+                  "audio_start_ms": 7770,
+                  "audio_end_ms": 8150
+                },
+                {
+                  "word_id": "w21",
+                  "text": "wasn't",
+                  "audio_start_ms": 8160,
+                  "audio_end_ms": 8550
+                },
+                {
+                  "word_id": "w22",
+                  "text": "a",
+                  "audio_start_ms": 8560,
+                  "audio_end_ms": 8700
+                },
+                {
+                  "word_id": "w23",
+                  "text": "mystery",
+                  "audio_start_ms": 8710,
+                  "audio_end_ms": 9200
+                },
+                {
+                  "word_id": "w24",
+                  "text": "anymore.",
+                  "audio_start_ms": 9210,
+                  "audio_end_ms": 9800
+                }
               ]
             }
           ]
@@ -187,30 +558,150 @@
               "audio_start_ms": 0,
               "audio_end_ms": 12000,
               "words": [
-                {"word_id": "w1", "text": "Three", "audio_start_ms": 0, "audio_end_ms": 380},
-                {"word_id": "w2", "text": "weeks", "audio_start_ms": 390, "audio_end_ms": 730},
-                {"word_id": "w3", "text": "later,", "audio_start_ms": 740, "audio_end_ms": 1150},
-                {"word_id": "w4", "text": "Jordan", "audio_start_ms": 1160, "audio_end_ms": 1570},
-                {"word_id": "w5", "text": "stood", "audio_start_ms": 1580, "audio_end_ms": 1930},
-                {"word_id": "w6", "text": "before", "audio_start_ms": 1940, "audio_end_ms": 2340},
-                {"word_id": "w7", "text": "the", "audio_start_ms": 2350, "audio_end_ms": 2510},
-                {"word_id": "w8", "text": "town", "audio_start_ms": 2520, "audio_end_ms": 2840},
-                {"word_id": "w9", "text": "council,", "audio_start_ms": 2850, "audio_end_ms": 3350},
-                {"word_id": "w10", "text": "forty-seven", "audio_start_ms": 3360, "audio_end_ms": 4050},
-                {"word_id": "w11", "text": "pages", "audio_start_ms": 4060, "audio_end_ms": 4430},
-                {"word_id": "w12", "text": "of", "audio_start_ms": 4440, "audio_end_ms": 4620},
-                {"word_id": "w13", "text": "data", "audio_start_ms": 4630, "audio_end_ms": 4980},
-                {"word_id": "w14", "text": "in", "audio_start_ms": 4990, "audio_end_ms": 5170},
-                {"word_id": "w15", "text": "hand,", "audio_start_ms": 5180, "audio_end_ms": 5580},
-                {"word_id": "w16", "text": "ready", "audio_start_ms": 5590, "audio_end_ms": 5940},
-                {"word_id": "w17", "text": "to", "audio_start_ms": 5950, "audio_end_ms": 6140},
-                {"word_id": "w18", "text": "prove", "audio_start_ms": 6150, "audio_end_ms": 6530},
-                {"word_id": "w19", "text": "that", "audio_start_ms": 6540, "audio_end_ms": 6800},
-                {"word_id": "w20", "text": "science", "audio_start_ms": 6810, "audio_end_ms": 7260},
-                {"word_id": "w21", "text": "could", "audio_start_ms": 7270, "audio_end_ms": 7570},
-                {"word_id": "w22", "text": "save", "audio_start_ms": 7580, "audio_end_ms": 7920},
-                {"word_id": "w23", "text": "a", "audio_start_ms": 7930, "audio_end_ms": 8070},
-                {"word_id": "w24", "text": "river.", "audio_start_ms": 8080, "audio_end_ms": 8620}
+                {
+                  "word_id": "w1",
+                  "text": "Three",
+                  "audio_start_ms": 0,
+                  "audio_end_ms": 380
+                },
+                {
+                  "word_id": "w2",
+                  "text": "weeks",
+                  "audio_start_ms": 390,
+                  "audio_end_ms": 730
+                },
+                {
+                  "word_id": "w3",
+                  "text": "later,",
+                  "audio_start_ms": 740,
+                  "audio_end_ms": 1150
+                },
+                {
+                  "word_id": "w4",
+                  "text": "Jordan",
+                  "audio_start_ms": 1160,
+                  "audio_end_ms": 1570
+                },
+                {
+                  "word_id": "w5",
+                  "text": "stood",
+                  "audio_start_ms": 1580,
+                  "audio_end_ms": 1930
+                },
+                {
+                  "word_id": "w6",
+                  "text": "before",
+                  "audio_start_ms": 1940,
+                  "audio_end_ms": 2340
+                },
+                {
+                  "word_id": "w7",
+                  "text": "the",
+                  "audio_start_ms": 2350,
+                  "audio_end_ms": 2510
+                },
+                {
+                  "word_id": "w8",
+                  "text": "town",
+                  "audio_start_ms": 2520,
+                  "audio_end_ms": 2840
+                },
+                {
+                  "word_id": "w9",
+                  "text": "council,",
+                  "audio_start_ms": 2850,
+                  "audio_end_ms": 3350
+                },
+                {
+                  "word_id": "w10",
+                  "text": "forty-seven",
+                  "audio_start_ms": 3360,
+                  "audio_end_ms": 4050
+                },
+                {
+                  "word_id": "w11",
+                  "text": "pages",
+                  "audio_start_ms": 4060,
+                  "audio_end_ms": 4430
+                },
+                {
+                  "word_id": "w12",
+                  "text": "of",
+                  "audio_start_ms": 4440,
+                  "audio_end_ms": 4620
+                },
+                {
+                  "word_id": "w13",
+                  "text": "data",
+                  "audio_start_ms": 4630,
+                  "audio_end_ms": 4980
+                },
+                {
+                  "word_id": "w14",
+                  "text": "in",
+                  "audio_start_ms": 4990,
+                  "audio_end_ms": 5170
+                },
+                {
+                  "word_id": "w15",
+                  "text": "hand,",
+                  "audio_start_ms": 5180,
+                  "audio_end_ms": 5580
+                },
+                {
+                  "word_id": "w16",
+                  "text": "ready",
+                  "audio_start_ms": 5590,
+                  "audio_end_ms": 5940
+                },
+                {
+                  "word_id": "w17",
+                  "text": "to",
+                  "audio_start_ms": 5950,
+                  "audio_end_ms": 6140
+                },
+                {
+                  "word_id": "w18",
+                  "text": "prove",
+                  "audio_start_ms": 6150,
+                  "audio_end_ms": 6530
+                },
+                {
+                  "word_id": "w19",
+                  "text": "that",
+                  "audio_start_ms": 6540,
+                  "audio_end_ms": 6800
+                },
+                {
+                  "word_id": "w20",
+                  "text": "science",
+                  "audio_start_ms": 6810,
+                  "audio_end_ms": 7260
+                },
+                {
+                  "word_id": "w21",
+                  "text": "could",
+                  "audio_start_ms": 7270,
+                  "audio_end_ms": 7570
+                },
+                {
+                  "word_id": "w22",
+                  "text": "save",
+                  "audio_start_ms": 7580,
+                  "audio_end_ms": 7920
+                },
+                {
+                  "word_id": "w23",
+                  "text": "a",
+                  "audio_start_ms": 7930,
+                  "audio_end_ms": 8070
+                },
+                {
+                  "word_id": "w24",
+                  "text": "river.",
+                  "audio_start_ms": 8080,
+                  "audio_end_ms": 8620
+                }
               ]
             }
           ]
@@ -219,9 +710,21 @@
     }
   ],
   "vocabulary": {
-    "turbidity": {"definition": "The cloudiness or haziness of a liquid caused by particles", "phonetic": "/tɜːrˈbɪdɪti/"},
-    "nitrile": {"definition": "A type of synthetic rubber used to make protective gloves", "phonetic": "/ˈnaɪtraɪl/"},
-    "pH": {"definition": "A scale from 0-14 measuring how acidic or basic a substance is; 7 is neutral", "phonetic": "/piːˈeɪtʃ/"},
-    "contamination": {"definition": "The presence of harmful substances in the environment", "phonetic": "/kənˌtæmɪˈneɪʃən/"}
+    "turbidity": {
+      "definition": "The cloudiness or haziness of a liquid caused by particles",
+      "phonetic": "/t\u025c\u02d0r\u02c8b\u026ad\u026ati/"
+    },
+    "nitrile": {
+      "definition": "A type of synthetic rubber used to make protective gloves",
+      "phonetic": "/\u02c8na\u026atra\u026al/"
+    },
+    "pH": {
+      "definition": "A scale from 0-14 measuring how acidic or basic a substance is; 7 is neutral",
+      "phonetic": "/pi\u02d0\u02c8e\u026at\u0283/"
+    },
+    "contamination": {
+      "definition": "The presence of harmful substances in the environment",
+      "phonetic": "/k\u0259n\u02cct\u00e6m\u026a\u02c8ne\u026a\u0283\u0259n/"
+    }
   }
 }
